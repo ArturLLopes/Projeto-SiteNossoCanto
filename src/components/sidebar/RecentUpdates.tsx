@@ -1,0 +1,4 @@
+import { Camera, Heart, ScrollText } from 'lucide-react';
+import { Card } from '@/components/ui/Card';
+import { recentUpdates } from '@/data/memorial';
+export function RecentUpdates(){ return <Card className="p-5"><h3 className="font-display text-xl">Atualizações recentes</h3><div className="mt-4 space-y-4">{recentUpdates.map((item)=><div key={item.title} className="flex gap-3"><span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-[#edf0e9] text-[var(--sage-dark)]">{item.type==='tributo'?<Heart className="h-4 w-4"/>:item.type==='fotografia'?<Camera className="h-4 w-4"/>:<ScrollText className="h-4 w-4"/>}</span><div><p className="text-sm leading-5 text-[#4f554d]">{item.title}</p><p className="mt-1 text-xs text-[var(--warm-gray)]">{item.date}</p></div></div>)}</div></Card>; }

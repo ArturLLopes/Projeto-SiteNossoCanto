@@ -1,0 +1,3 @@
+import { Eye, Heart } from 'lucide-react';
+import { Card } from '@/components/ui/Card';
+export function MemorialStats(){ return <Card className="p-5"><h3 className="font-display text-xl">Estatísticas</h3><div className="mt-4 grid grid-cols-2 gap-3"><div className="rounded-2xl bg-[#f7f5ef] p-4"><Eye className="h-4 w-4 text-[var(--sage-dark)]"/><p className="mt-3 text-2xl font-semibold text-[#40463f]">128</p><p className="text-xs text-[var(--warm-gray)]">Visualizações</p></div><div className="rounded-2xl bg-[#f7f5ef] p-4"><Heart className="h-4 w-4 text-[var(--sage-dark)]"/><p className="mt-3 text-2xl font-semibold text-[#40463f]">7</p><p className="text-xs text-[var(--warm-gray)]">Tributos</p></div></div></Card>; }
