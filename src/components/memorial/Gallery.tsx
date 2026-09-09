@@ -249,6 +249,22 @@ export function Gallery() {
                         </span>
                         <Camera className="h-4 w-4" aria-hidden="true" />
                       </div>
+                      {item.imageUrl ? (
+                        <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#e8e4db]">
+                          <img
+                            src={item.imageUrl}
+                            alt={item.title}
+                            className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                          />
+                        </div>
+                      ) : (
+                        <div className="placeholder-sheen flex aspect-[4/3] items-end justify-between p-3 text-xs text-[#6d716a]">
+                          <span className="font-medium text-[#4f564b]">
+                            {item.title}
+                          </span>
+                          <Camera className="h-4 w-4" aria-hidden="true" />
+                        </div>
+                      )}
                       <div className="p-3">
                         <p className="text-xs text-[var(--warm-gray)]">
                           {item.date}
@@ -499,6 +515,19 @@ export function Gallery() {
         <div className="placeholder-sheen flex aspect-[4/3] items-center justify-center rounded-2xl text-sm font-medium text-[#6d716a]">
           FOTOGRAFIA MEMORIAL
         </div>
+        {selectedPhoto?.item.imageUrl ? (
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-black">
+            <img
+              src={selectedPhoto.item.imageUrl}
+              alt={selectedPhoto.item.title}
+              className="h-full w-full object-contain"
+            />
+          </div>
+        ) : (
+          <div className="placeholder-sheen flex aspect-[4/3] items-center justify-center rounded-2xl text-sm font-medium text-[#6d716a]">
+            FOTOGRAFIA MEMORIAL
+          </div>
+        )}
         <div className="mt-4 space-y-2">
           <div className="flex items-center justify-between text-xs text-[var(--warm-gray)]">
             <span className="font-medium text-[var(--sage-dark)]">

@@ -7,6 +7,8 @@ export interface Memorial {
   quote: string;
   biography: string[];
   familyCredit: string;
+  avatarUrl?: string;
+  coverUrl?: string;
 }
 
 export interface TimelineEvent {
