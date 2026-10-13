@@ -13,6 +13,7 @@ import {
   VolumeX,
   Calendar,
   MessageSquare,
+  ZoomIn,
 } from "lucide-react";
 
 function YoutubeIcon({ className = "h-5 w-5" }: { className?: string }) {
@@ -29,6 +30,7 @@ function YoutubeIcon({ className = "h-5 w-5" }: { className?: string }) {
 }
 import { Card } from "@/components/ui/Card";
 import { Modal } from "@/components/ui/Modal";
+import { ImageLightbox } from "@/components/ui/ImageLightbox";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import {
   galleryFolders,
@@ -46,6 +48,7 @@ export function Gallery() {
     folderTitle: string;
     folderDate: string;
   } | null>(null);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
   // Audio Player State
   const [selectedAudio, setSelectedAudio] = useState<AudioItem>(
@@ -510,18 +513,26 @@ export function Gallery() {
       <Modal
         open={Boolean(selectedPhoto)}
         title={selectedPhoto?.item.title ?? ""}
-        onClose={() => setSelectedPhoto(null)}
+        onClose={() => {
+          setSelectedPhoto(null);
+          setIsLightboxOpen(false);
+        }}
       >
-        <div className="placeholder-sheen flex aspect-[4/3] items-center justify-center rounded-2xl text-sm font-medium text-[#6d716a]">
-          FOTOGRAFIA MEMORIAL
-        </div>
         {selectedPhoto?.item.imageUrl ? (
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-black">
+          <div
+            className="group/img relative aspect-[4/3] w-full cursor-zoom-in overflow-hidden rounded-2xl bg-black"
+            onClick={() => setIsLightboxOpen(true)}
+            title="Clique para ampliar em tela cheia"
+          >
             <img
               src={selectedPhoto.item.imageUrl}
               alt={selectedPhoto.item.title}
-              className="h-full w-full object-contain"
+              className="h-full w-full object-contain transition duration-200 group-hover/img:scale-[1.02]"
             />
+            <div className="absolute right-3 top-3 flex items-center gap-1.5 rounded-full bg-black/70 px-3 py-1.5 text-xs font-medium text-white shadow-lg backdrop-blur transition group-hover/img:bg-black/90">
+              <ZoomIn className="h-3.5 w-3.5" />
+              <span>Ampliar</span>
+            </div>
           </div>
         ) : (
           <div className="placeholder-sheen flex aspect-[4/3] items-center justify-center rounded-2xl text-sm font-medium text-[#6d716a]">
@@ -543,6 +554,16 @@ export function Gallery() {
           </p>
         </div>
       </Modal>
+
+      {/* Lightbox em tela cheia com Zoom */}
+      <ImageLightbox
+        open={isLightboxOpen}
+        images={
+          selectedPhoto?.item.imageUrl ? [selectedPhoto.item.imageUrl] : []
+        }
+        title={selectedPhoto?.item.title}
+        onClose={() => setIsLightboxOpen(false)}
+      />
     </section>
   );
 }

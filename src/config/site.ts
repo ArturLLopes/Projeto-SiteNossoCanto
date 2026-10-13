@@ -5,9 +5,10 @@ const siteUrl =
     : "http://localhost:3000");
 
 export const siteConfig = {
-  name: "Memorial Digital",
-  title: "Eleanor Hart — Memorial Digital",
+  name: "Canto Coral",
+  title: "Solange  & Canto Coral",
   description:
-    "Um espaço digital para preservar histórias, fotografias e memórias de Eleanor Hart.",
+    "Um espaço digital para preservar a história, trajetória musical e memórias de Solange Pinto Mendonça.",
   url: siteUrl,
+  imageUrl: "/images/galeria/capa/favicon.ico",
 };

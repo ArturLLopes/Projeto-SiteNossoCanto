@@ -38,6 +38,28 @@ export interface GalleryFolder {
   items: GalleryItem[];
 }
 
+export type DocumentCategoryType = "cartazes" | "convites" | "correspondencias";
+
+export interface DocumentItem {
+  id: string;
+  title: string;
+  description: string;
+  date: string;
+  category: DocumentCategoryType;
+  imageUrl?: string;
+  images?: string[];
+  notes?: string;
+}
+
+
+export interface DocumentDivision {
+  id: DocumentCategoryType;
+  title: string;
+  description: string;
+  dateRange: string;
+  items: DocumentItem[];
+}
+
 export interface AudioItem {
   id: string;
   title: string;

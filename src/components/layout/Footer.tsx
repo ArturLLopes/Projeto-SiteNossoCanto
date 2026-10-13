@@ -14,7 +14,9 @@ export function Footer() {
           </div>
           <div className="flex flex-wrap gap-3 text-sm text-[#596057]">
             <a href="#sobre">Sobre</a>
+            <a href="#linha-do-tempo">Linha do Tempo</a>
             <a href="#galeria">Galeria</a>
+            <a href="#documentos">Documentos</a>
             <a href="#historias">Histórias</a>
           </div>
         </div>
