@@ -444,78 +444,150 @@ export const documentDivisions: DocumentDivision[] = [
   },
   {
     id: "convites",
-    title: "Convites",
+    title: "Certificados",
     description:
-      "Convites solenes, celebrações em família, bodas e marcos acadêmicos guardados com afeto.",
-    dateRange: "1960 — 2010",
+      "Convites solenes, celebrações em família e marcos acadêmicos guardados com afeto.",
+    dateRange: "",
     items: [
       {
         id: "doc-convite-1",
-        title: "Convite de Casamento Cerimonial",
+        title: "Participação do Coral Harmonia no Projeto Corais ",
         description:
-          "Convite clássico em papel encorpado com caligrafia dourada e fita de cetim preservada.",
-        date: "1965",
-        category: "convites",
+          "Participação do Coral Harmonia no Projeto Corais promovido pelo Departamento de Assuntos Culturais da Secretaria de Educação e Cultura do Governo do Estado do Rio de Janeiro .",
+        date: "11/11/1972",
+        category: "certificados",
         notes:
-          "Guardado junto com uma pétala desidratada do buquê da cerimônia.",
+          "",
+          imageUrl: "/images/galeria/_certificados/A1.jpg",
       },
       {
         id: "doc-convite-2",
-        title: "Bodas de Prata — 25 Anos de Amor",
+        title: "Participação do Coral do C. E. Brigadeiro Schorcht",
         description:
-          "Convite da celebração de bodas de prata reunindo amigos de infância e familiares de diversas cidades.",
-        date: "1990",
-        category: "convites",
-        notes: "Missa em ação de graças e recepção comemorativa.",
+          "Participação do Coral do C. E. Brigadeiro Schorcht no II Encontro de Corais promovido pelo Colégio Estadual Gomes Freire de Andrade.",
+        date: " em 30/5/1981",
+        category: "certificados",
+        notes: "",
+        imageUrl: "/images/galeria/_certificados/A2.jpg",
       },
       {
         id: "doc-convite-3",
-        title: "Formatura Solene do Curso de Magistério",
+        title: "Participação no II Painel Funarte de Regência Coral",
         description:
-          "Convite oficial da colação de grau e baile de formatura com dedicatória especial aos pais.",
-        date: "1960",
+          "Participação de Solange Pinto Mendonça no II Painel Funarte de Regência Coral, promovido pelo Projeto Villa-Lobos do Instituto Nacional de Música e realizado em Brasília (DF).  ",
+        date: "7 e 12/6/1982",
         category: "convites",
         notes:
-          "Início oficial de uma longa e dedicada trajetória como educadora.",
+          "",
+        imageUrl: "/images/galeria/_certificados/A3.jpg",
+      },
+      {
+        id: "doc-convite-3",
+        title: "Moção recebida pelo Coral",
+        description:
+          "Moção recebida pelo Coral do C. E. Brigadeiro Schorcht proposta pelo Vereador Moacyr Bastos e aprovada pela mesa diretora da Câmara Municipal do Rio de Janeiro. ",
+        date: "27/8/1982",
+        category: "convites",
+        notes:
+          "",
+        imageUrl: "/images/galeria/_certificados/A4.jpg",
+      },
+      {
+        id: "doc-convite-3",
+        title: "Certificado atribuído a Solange",
+        description:
+          "Certificado atribuído a Solange Pinto Mendonça por sua atuação no “Treinamento para Regentes” promovido pelo Orfeão de Santa Cecília – Centro de Cultura de Campos e pela Prefeitura Municipal de Campos entre os dias .",
+        date: "11, 12 e 13/11/1982",
+        category: "convites",
+        notes:
+          "",
+        imageUrl: "/images/galeria/_certificados/A5.jpg",
+      },
+      {
+        id: "doc-convite-3",
+        title: "Participação do Coral Harte Vocal",
+        description:
+          "Participação do Coral Harte Vocal no III Encontro de Corais promovido pelo SESC – Três Rios.",
+        date: "13/9/1992",
+        category: "convites",
+        notes:
+          "",
+        imageUrl: "/images/galeria/_certificados/A6.jpg",
+      },
+      {
+        id: "doc-convite-3",
+        title: "Participação de Solange na condição de regente",
+        description:
+          "Participação de Solange Pinto Mendonça, na condição de regente do Coral Harte Vocal, no Encontro de Corais promovido pelo SESC – Tijuca .",
+        date: "16/10/1993",
+        category: "convites",
+        notes:
+          "",
+        imageUrl: "/images/galeria/_certificados/A7.jpg",
+      },
+      {
+        id: "doc-convite-3",
+        title: "Participação de Solange",
+        description:
+          "Participação de Solange Pinto Mendonça, membro do Coral Harte Vocal, no 5º Encontro Nacional de Corais realizado durante a II Semana de Arte e Folclore de Santa Teresa-ES.",
+        date: "29/4/1995",
+        category: "convites",
+        notes:
+          "",
+        imageUrl: "/images/galeria/_certificados/A8.jpg",
       },
     ],
   },
   {
     id: "correspondencias",
-    title: "Correspondências",
+    title: "Convites",
     description:
       "Cartas manuscritas, cartões postais de viagens e bilhetes de carinho trocados ao longo das décadas.",
-    dateRange: "1955 — 2018",
+    dateRange: "",
     items: [
       {
         id: "doc-corr-1",
-        title: "Carta de Tereza sobre a Viagem de Trem",
+        title: "Convite realizado pelos Corais Julia Pardini e Harmonia",
         description:
-          "Carta manuscrita enviada por correio tradicional narrando as novidades, impressões da capital e saudades.",
-        date: "1958",
+          "Convite para concerto realizado pelos Corais Julia Pardini e Harmonia na Igreja de São Francisco de Assis em Ouro Preto (MG) .",
+        date: "30/3/1975",
         category: "correspondencias",
         notes:
-          "Contém selo original de época e carimbo postal do correio de Santa Aurora.",
+          "",
+          imageUrl: "/images/galeria/_convites/A1.jpg",
       },
       {
         id: "doc-corr-2",
-        title: "Cartão Postal da Serra das Hortênsias",
+        title: "Convite para o coquetel comemorativo",
         description:
-          "Postal com fotografia clássica e mensagem carinhosa escrita à mão durante as férias em família.",
-        date: "1974",
+          "Convite para o coquetel comemorativo pelo 6º Aniversário do Coral Harmonia .",
+        date: "27/5/1977",
         category: "correspondencias",
         notes:
-          "Enviado com votos de saúde e paz para todos que ficaram na cidade.",
+          "",
+        imageUrl: "/images/galeria/_convites/A2.jpg",
       },
       {
         id: "doc-corr-3",
-        title: "Carta de Agradecimento da Escola Comunitária",
+        title: "Convite do Conservatório Brasileiro de Música",
         description:
-          "Mensagem calorosa assinada por alunos, colegas professoras e direção em homenagem aos anos de dedicação.",
-        date: "1998",
+          "Convite do Conservatório Brasileiro de Música para lançamento do CD “A obra de José Vieira Brandão”.",
+        date: "29/9/1995",
         category: "correspondencias",
         notes:
-          "Texto emocionante relembrando lições de vida dentro e fora da sala de aula.",
+          "Do qual o Coral Harte Vocal fez parte",
+        imageUrl: "/images/galeria/_convites/A3.jpg",  
+      },
+      {
+        id: "doc-corr-3",
+        title: "Convite para o coquetel de comemoração",
+        description:
+          "Convite para o coquetel de comemoração dos 25 anos de regência coral de Solange Pinto Mendonça .",
+        date: "26/10/1996",
+        category: "correspondencias",
+        notes:
+          "",
+        imageUrl: "/images/galeria/_convites/A4.jpg",  
       },
     ],
   },
