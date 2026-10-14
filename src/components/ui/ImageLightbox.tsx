@@ -141,7 +141,9 @@ export function ImageLightbox({
           <img
             src={currentImg}
             alt={title ? `${title} ampliada` : "Imagem ampliada"}
-            className="max-h-[75vh] max-w-[94vw] rounded-xl object-contain shadow-2xl transition duration-200 select-none"
+            className="max-h-[75vh] max-w-[94vw] rounded-xl object-contain shadow-2xl transition duration-200 select-none pointer-events-none"
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
           />
         </div>
 

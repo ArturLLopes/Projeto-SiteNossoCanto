@@ -233,7 +233,9 @@ export function Documents() {
                   <img
                     src={modalImages[activeImageIndex]}
                     alt={`${selectedDoc.item.title} - Foto ${activeImageIndex + 1}`}
-                    className="h-full w-full object-contain transition duration-200 group-hover/img:scale-[1.02]"
+                    className="h-full w-full object-contain transition duration-200 group-hover/img:scale-[1.02] pointer-events-none select-none"
+                    draggable={false}
+                    onContextMenu={(e) => e.preventDefault()}
                   />
 
                   {/* Indicador de clique para ampliar */}

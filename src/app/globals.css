@@ -47,3 +47,35 @@ body {
   .placeholder-sheen::after { animation: none; }
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
+
+/* Proteção contra salvamento de mídias e cópia */
+img, picture, video, audio, .protected-media {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* Proteção contra impressão ou exportação para PDF (Ctrl+P) */
+@media print {
+  img, video, audio, .protected-media {
+    visibility: hidden !important;
+    display: none !important;
+  }
+  body::before {
+    content: "Acervo memorial protegido contra reprodução não autorizada.";
+    display: block;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
+    padding: 40px;
+    color: #444;
+  }
+}
+

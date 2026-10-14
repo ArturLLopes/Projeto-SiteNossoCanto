@@ -1,6 +1,7 @@
-import type { Metadata } from 'next';
-import { siteConfig } from '@/config/site';
-import './globals.css';
+import type { Metadata } from "next";
+import { siteConfig } from "@/config/site";
+import { MediaProtection } from "@/components/ui/MediaProtection";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: siteConfig.title,
@@ -36,6 +37,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="pt-BR"><body>{children}</body></html>;
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="pt-BR">
+      <body>
+        <MediaProtection />
+        {children}
+      </body>
+    </html>
+  );
 }

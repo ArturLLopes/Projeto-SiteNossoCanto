@@ -518,7 +518,9 @@ export function Gallery() {
             <img
               src={selectedPhoto.item.imageUrl}
               alt={selectedPhoto.item.title}
-              className="h-full w-full object-contain transition duration-200 group-hover/img:scale-[1.02]"
+              className="h-full w-full object-contain transition duration-200 group-hover/img:scale-[1.02] pointer-events-none select-none"
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
             />
             <div className="absolute right-3 top-3 flex items-center gap-1.5 rounded-full bg-black/70 px-3 py-1.5 text-xs font-medium text-white shadow-lg backdrop-blur transition group-hover/img:bg-black/90">
               <ZoomIn className="h-3.5 w-3.5" />
