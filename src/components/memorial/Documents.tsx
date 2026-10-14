@@ -197,21 +197,10 @@ export function Documents() {
                       )}
 
                       {/* Texto informativo */}
-                      <div className="flex flex-1 flex-col justify-between p-3">
-                        <div>
-                          <div className="flex items-center justify-between text-xs text-[var(--warm-gray)]">
-                            <span>{item.date}</span>
-                            <span className="rounded bg-[#f0ede6] px-1.5 py-0.5 text-[10px] font-medium text-[var(--sage-dark)]">
-                              {division.title}
-                            </span>
-                          </div>
-                          <h4 className="mt-1 font-display text-sm font-semibold text-[#383e35]">
-                            {item.title}
-                          </h4>
-                          <p className="mt-1 line-clamp-2 text-xs leading-5 text-[#535950]">
-                            {item.description}
-                          </p>
-                        </div>
+                      <div className="p-3">
+                        <h4 className="line-clamp-1 font-display text-sm font-semibold text-[#383e35]">
+                          {item.title}
+                        </h4>
                       </div>
                     </div>
                   </button>

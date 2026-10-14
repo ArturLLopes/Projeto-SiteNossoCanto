@@ -246,12 +246,6 @@ export function Gallery() {
                     className="group rounded-2xl text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sage)]"
                   >
                     <div className="overflow-hidden rounded-2xl border border-[var(--border)] bg-white transition group-hover:shadow-md">
-                      <div className="placeholder-sheen flex aspect-[4/3] items-end justify-between p-3 text-xs text-[#6d716a]">
-                        <span className="font-medium text-[#4f564b]">
-                          {item.title}
-                        </span>
-                        <Camera className="h-4 w-4" aria-hidden="true" />
-                      </div>
                       {item.imageUrl ? (
                         <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#e8e4db]">
                           <img
@@ -269,12 +263,9 @@ export function Gallery() {
                         </div>
                       )}
                       <div className="p-3">
-                        <p className="text-xs text-[var(--warm-gray)]">
-                          {item.date}
-                        </p>
-                        <p className="mt-1 line-clamp-1 text-xs text-[#535950]">
-                          {item.description}
-                        </p>
+                        <h4 className="line-clamp-1 font-display text-sm font-medium text-[#383e35]">
+                          {item.title}
+                        </h4>
                       </div>
                     </div>
                   </button>
