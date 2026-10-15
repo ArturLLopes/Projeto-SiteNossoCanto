@@ -164,7 +164,7 @@ export function Documents() {
                     onClick={() =>
                       handleOpenDoc(item, division.title, division.dateRange)
                     }
-                    className="group rounded-2xl text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sage)]"
+                    className="group rounded-2xl text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[var--sage)]"
                   >
                     <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-[var(--border)] bg-white transition group-hover:shadow-md">
                       {/* Visualização / miniatura */}

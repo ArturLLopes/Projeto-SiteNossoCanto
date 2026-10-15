@@ -461,6 +461,39 @@ export const documentDivisions: DocumentDivision[] = [
           imageUrl: "/images/galeria/_certificados/A1.jpg",
       },
       {
+        id: "doc-convite-9",
+        title: "Harmonia no Carmela Dutra",
+        description:
+          "Participação do Conjunto Harmonia na Semana de Aniversário da Escola Normal Carmela Dutra .",
+        date: "18/6/1975",
+        category: "convites",
+        notes:
+          "",
+        imageUrl: "/images/galeria/_certificados/A1a.jpg",
+      },
+      {
+        id: "doc-convite-10",
+        title: "Harmonia na Semana da Música",
+        description:
+          "Participação do Conjunto de Flauta Doce “Harmonia” na XXVIII Semana da Música.",
+        date: "23/10/1975",
+        category: "convites",
+        notes:
+          "",
+        imageUrl: "/images/galeria/_certificados/A1b.jpg",
+      },
+      {
+        id: "doc-convite-11",
+        title: "Coral Harmonia em Encontro de Corais",
+        description:
+          "Participação do Coral Harmonia no Primeiro Encontro de Corais do Rio de Janeiro.",
+        date: "13/4/1976",
+        category: "convites",
+        notes:
+          "",
+        imageUrl: "/images/galeria/_certificados/A1c.jpg",
+      },
+      {
         id: "doc-convite-2",
         title: "Participação do Coral do C. E. Brigadeiro Schorcht",
         description:
@@ -482,7 +515,7 @@ export const documentDivisions: DocumentDivision[] = [
         imageUrl: "/images/galeria/_certificados/A3.jpg",
       },
       {
-        id: "doc-convite-3",
+        id: "doc-convite-4",
         title: "Moção recebida pelo Coral",
         description:
           "Moção recebida pelo Coral do C. E. Brigadeiro Schorcht proposta pelo Vereador Moacyr Bastos e aprovada pela mesa diretora da Câmara Municipal do Rio de Janeiro. ",
@@ -493,7 +526,7 @@ export const documentDivisions: DocumentDivision[] = [
         imageUrl: "/images/galeria/_certificados/A4.jpg",
       },
       {
-        id: "doc-convite-3",
+        id: "doc-convite-5",
         title: "Certificado atribuído a Solange",
         description:
           "Certificado atribuído a Solange Pinto Mendonça por sua atuação no “Treinamento para Regentes” promovido pelo Orfeão de Santa Cecília – Centro de Cultura de Campos e pela Prefeitura Municipal de Campos entre os dias .",
@@ -504,7 +537,7 @@ export const documentDivisions: DocumentDivision[] = [
         imageUrl: "/images/galeria/_certificados/A5.jpg",
       },
       {
-        id: "doc-convite-3",
+        id: "doc-convite-6",
         title: "Participação do Coral Harte Vocal",
         description:
           "Participação do Coral Harte Vocal no III Encontro de Corais promovido pelo SESC – Três Rios.",
@@ -515,7 +548,7 @@ export const documentDivisions: DocumentDivision[] = [
         imageUrl: "/images/galeria/_certificados/A6.jpg",
       },
       {
-        id: "doc-convite-3",
+        id: "doc-convite-7",
         title: "Participação de Solange na condição de regente",
         description:
           "Participação de Solange Pinto Mendonça, na condição de regente do Coral Harte Vocal, no Encontro de Corais promovido pelo SESC – Tijuca .",
@@ -526,7 +559,7 @@ export const documentDivisions: DocumentDivision[] = [
         imageUrl: "/images/galeria/_certificados/A7.jpg",
       },
       {
-        id: "doc-convite-3",
+        id: "doc-convite-8",
         title: "Participação de Solange",
         description:
           "Participação de Solange Pinto Mendonça, membro do Coral Harte Vocal, no 5º Encontro Nacional de Corais realizado durante a II Semana de Arte e Folclore de Santa Teresa-ES.",
@@ -535,6 +568,39 @@ export const documentDivisions: DocumentDivision[] = [
         notes:
           "",
         imageUrl: "/images/galeria/_certificados/A8.jpg",
+      },
+      {
+        id: "doc-convite-9",
+        title: "Harmonia no Carmela Dutra",
+        description:
+          "Participação do Conjunto Harmonia na Semana de Aniversário da Escola Normal Carmela Dutra .",
+        date: "18/6/1975",
+        category: "convites",
+        notes:
+          "",
+        imageUrl: "/images/galeria/_certificados/A1a.jpg",
+      },
+      {
+        id: "doc-convite-10",
+        title: "Harmonia na Semana da Música",
+        description:
+          "Participação do Conjunto de Flauta Doce “Harmonia” na XXVIII Semana da Música.",
+        date: "23/10/1975",
+        category: "convites",
+        notes:
+          "",
+        imageUrl: "/images/galeria/_certificados/A1b.jpg",
+      },
+      {
+        id: "doc-convite-11",
+        title: "Coral Harmonia em Encontro de Corais",
+        description:
+          "Participação do Coral Harmonia no Primeiro Encontro de Corais do Rio de Janeiro.",
+        date: "13/4/1976",
+        category: "convites",
+        notes:
+          "",
+        imageUrl: "/images/galeria/_certificados/A1c.jpg",
       },
     ],
   },
@@ -579,7 +645,7 @@ export const documentDivisions: DocumentDivision[] = [
         imageUrl: "/images/galeria/_convites/A3.jpg",  
       },
       {
-        id: "doc-corr-3",
+        id: "doc-corr-4",
         title: "Convite para o coquetel de comemoração",
         description:
           "Convite para o coquetel de comemoração dos 25 anos de regência coral de Solange Pinto Mendonça .",
