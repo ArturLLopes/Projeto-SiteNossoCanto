@@ -569,39 +569,7 @@ export const documentDivisions: DocumentDivision[] = [
           "",
         imageUrl: "/images/galeria/_certificados/A8.jpg",
       },
-      {
-        id: "doc-convite-9",
-        title: "Harmonia no Carmela Dutra",
-        description:
-          "Participação do Conjunto Harmonia na Semana de Aniversário da Escola Normal Carmela Dutra .",
-        date: "18/6/1975",
-        category: "convites",
-        notes:
-          "",
-        imageUrl: "/images/galeria/_certificados/A1a.jpg",
-      },
-      {
-        id: "doc-convite-10",
-        title: "Harmonia na Semana da Música",
-        description:
-          "Participação do Conjunto de Flauta Doce “Harmonia” na XXVIII Semana da Música.",
-        date: "23/10/1975",
-        category: "convites",
-        notes:
-          "",
-        imageUrl: "/images/galeria/_certificados/A1b.jpg",
-      },
-      {
-        id: "doc-convite-11",
-        title: "Coral Harmonia em Encontro de Corais",
-        description:
-          "Participação do Coral Harmonia no Primeiro Encontro de Corais do Rio de Janeiro.",
-        date: "13/4/1976",
-        category: "convites",
-        notes:
-          "",
-        imageUrl: "/images/galeria/_certificados/A1c.jpg",
-      },
+      
     ],
   },
   {
@@ -657,4 +625,71 @@ export const documentDivisions: DocumentDivision[] = [
       },
     ],
   },
+  {
+    id: "correspondencias_cartas",
+    title: "Correspondências",
+    description:
+      "Cartas, ofícios e correspondências trocadas ao longo da trajetória do coral.",
+    dateRange: "",
+    items: [
+      {
+        id: "doc-carta-1",
+        title: "Correspondência 1",
+        description: "Descrição da correspondência.",
+        date: "",
+        category: "correspondencias",
+        notes: "",
+      },
+      {
+        id: "doc-carta-2",
+        title: "Correspondência 2",
+        description: "Descrição da correspondência.",
+        date: "",
+        category: "correspondencias",
+        notes: "",
+      },
+      {
+        id: "doc-carta-3",
+        title: "Correspondência 3",
+        description: "Descrição da correspondência.",
+        date: "",
+        category: "correspondencias",
+        notes: "",
+      },
+    ],
+  },
+  {
+    id: "programas",
+    title: "Programas de concerto",
+    description:
+      "Programas distribuídos nos concertos e apresentações do Coral Harte Vocal ao longo dos anos.",
+    dateRange: "",
+    items: [
+      {
+        id: "doc-prog-1",
+        title: "Programa 1",
+        description: "Descrição do programa de concerto.",
+        date: "",
+        category: "programas",
+        notes: "",
+      },
+      {
+        id: "doc-prog-2",
+        title: "Programa 2",
+        description: "Descrição do programa de concerto.",
+        date: "",
+        category: "programas",
+        notes: "",
+      },
+      {
+        id: "doc-prog-3",
+        title: "Programa 3",
+        description: "Descrição do programa de concerto.",
+        date: "",
+        category: "programas",
+        notes: "",
+      },
+    ],
+  },
 ];
+

@@ -50,6 +50,12 @@ export function Documents() {
         return <Tag className="h-5 w-5" />;
       case "correspondencias":
         return <Mail className="h-5 w-5" />;
+      case "correspondencias_cartas":
+        return <Mail className="h-5 w-5" />;
+      case "certificados":
+        return <BookOpen className="h-5 w-5" />;
+      case "programas":
+        return <Calendar className="h-5 w-5" />;
       default:
         return <BookOpen className="h-5 w-5" />;
     }
