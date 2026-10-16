@@ -65,37 +65,132 @@ export const memorialInfo4: Memorial = {
 
 export const timelineEvents: TimelineEvent[] = [
   {
-    date: "1942",
+    date: "1933",
     title: "Nascimento",
     description:
-      "Início de uma história marcada por afeto, curiosidade e generosidade.",
+      "Nascimento de Solange Pinto Mendonça em 29 de outubro. Início de uma história marcada por afeto, curiosidade e generosidade.",
   },
   {
     date: "1965",
-    title: "Casamento",
-    description: "Começo de uma nova etapa ao lado de seu companheiro de vida.",
+    title: "Aprovação ",
+    description: "Aprovação de Solange no Concurso para professor de Educação Musical do Estado da Guanabara",
   },
   {
-    date: "1970",
-    title: "Nascimento dos filhos",
+    date: "1966",
+    title: "Atividade docente",
     description:
-      "A família cresceu e vieram novos capítulos cheios de descobertas.",
+      "Início da atividade docente de Solange no Ginásio Tobias Monteiro",
   },
   {
-    date: "1985",
-    title: "Mudança de cidade",
+    date: "1971",
+    title: "Fundação",
     description:
-      "Uma mudança que trouxe novos amigos, novas rotinas e novas lembranças.",
+      "Fundou o Coral Harmonia",
   },
   {
-    date: "2001",
-    title: "Aposentadoria",
-    description: "Mais tempo para jardinagem, leituras, café e caminhadas.",
+    date: "1971-2",
+    title: "Premiação",
+    description: "1º lugar na categoria B (Coros Mistos) no 2º Concurso de Corais Escolares da Guanabara com o Coral Harmonia.",
   },
   {
-    date: "2026",
-    title: "Despedida",
-    description: "Uma despedida serena, deixando um legado de amor e presença.",
+    date: "1972",
+    title: "Premiação",
+    description: "1º lugar na categoria D (Corais universitários de vozes mistas) no 3º Concurso de Corais Escolares da Guanabara com o Coral Harmonia.",
+  },
+  {
+    date: "1973",
+    title: "Premiação",
+    description: " 3ª colocada no I Concurso de Corais na Televisão: MEC – Funarte – TV Globo com o Coral Harmonia.",
+  },
+  {
+    date: "1973-2",
+    title: "Participação especial",
+    description: " Participou da gravação do LP do Concurso de Corais Escolares – JB.",
+  },
+  {
+    date: "1974",
+    title: "Participação especial",
+    description: "Participou como hors concours do 4º Concurso de Corais da Guanabara com o Coral Harmonia.",
+  },  
+  {
+    date: "1976",
+    title: "Premiação",
+    description: " 2º lugar na categoria C (corais juvenis e vozes mistas) no 5º Concurso de Corais do Rio de Janeiro com o Coral do Colégio Estadual Brigadeiro Schorcht.",
+  },
+  {
+    date: "1978",
+    title: "Premiação",
+    description: "3ª colocada no II Concurso de Corais na Televisão: MEC – Funarte – TV Globo com o Coral Harmonia.",
+  },
+  {
+    date: "1980",
+    title: "Premiação",
+    description: "1º lugar na categoria C (corais juvenis e vozes mistas) no 7º Concurso de Corais do Rio de Janeiro com o Coral do Colégio Estadual Brigadeiro Schorcht.",
+  },
+  {
+    date: "1982",
+    title: "Premiação",
+    description: "2º lugar na categoria C (corais juvenis e vozes mistas) no 8º Concurso de Corais do Rio de Janeiro com o Coral do Colégio Estadual Brigadeiro Schorcht.",
+  },
+  {
+    date: "1984",
+    title: "Gravação",
+    description: "Gravou o primeiro LP do Coral Harmonia.",
+  },
+  {
+    date: "1984-2",
+    title: "Premiação",
+    description: "1º lugar na categoria C (corais juvenis e vozes mistas) no 9º Concurso de Corais do Rio de Janeiro com o Coral do Colégio Estadual Brigadeiro Schorcht.",
+  },
+   {
+    date: "1986",
+    title: "Regência ",
+    description: "Assumiu a regência do Orfeão Carlos Gomes.",
+  },
+   {
+    date: "1987",
+    title: "Fundação",
+    description: "Fundou o Coral Harte Vocal.",
+  },
+  {
+    date: "1987-2",
+    title: "Premiação",
+    description: "2º lugar no I Concurso Nacional de Corais do Museu de Arte Moderna com o Orfeão Carlos Gomes.",
+  },  
+  {
+    date: "1988",
+    title: "Premiação",
+    description: " 1º lugar na categoria B (corais juvenis de vozes mistas) no 11º Concurso de Corais do Rio de Janeiro com o Coral Harte Vocal.",
+  }, 
+  {
+    date: "1995",
+    title: "Gravação",
+    description: "Gravou CD ao vivo na Sala Cecília Meireles com o Coral Harte Vocal.",
+  },
+  {
+    date: "2000",
+    title: "Participação",
+    description: "Participou do VIII Festival de Corais de Atenas com o Coral Harte Vocal e foi premiada como Melhor Coral Folclórico, além de receber Medalha de Bronze na Categoria Corais Mistos e Medalhe de Bronze na categoria Coros de Câmara.",
+  },
+  {
+    date: "2007",
+    title: "Estreia",
+    description: "Estreou as peças Ave Maria Pater Noster (Lúcio Zandonade), Exéquias (Potiguar Menezes) e Ladainha na XVII Bienal de Música Contemporânea, na Sala Cecília Meireles no Rio de Janeiro no dia 27/10/2007.",
+  },
+  {
+    date: "2009",
+    title: "Estreia",
+    description: "Estreou as peças “É madrugada”, “O Rei mandou chamar João”, “Duas líricas brasileiras”  e “Vida Viração” por encomenda da Funarte para o projeto “Série Coro Juvenil”.",
+  },
+  {
+    date: "2011",
+    title: "Comemoração",
+    description: "Realizou um grande concerto em comemoração aos seus 40 anos de regência.",
+  },
+  {
+    date: "2016",
+    title: "Falecimento",
+    description: "Solange Pinto Mendonça falece no Rio de Janeiro em 01 de agosto.",
   },
 ];
 

@@ -18,12 +18,12 @@ export function SectionTitle({
         </div>
       )}
 
-      <h2 className="font-display text-2xl font-medium text-[#343932] sm:text-3xl">
+      <h2 className="font-display text-3xl font-medium text-[#343932] sm:text-3xl">
         {title}
       </h2>
 
       {description && (
-        <div className="mt-2 max-w-2xl text-sm leading-6 text-[var(--warm-gray)]">
+        <div className="mt-2 max-w-2xl text-base leading-6 text-[var(--warm-gray)]">
           {description}
         </div>
       )}
