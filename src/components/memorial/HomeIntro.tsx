@@ -254,7 +254,7 @@ export function HomeIntro() {
             title="Referências"
             description={
               <>
-                ARTIÈRES, Philippe. Arquivar a própria vida. Estudos Históricos,
+                ARTIÈRES, Philippe. Arquivar a própria vida. <span className="font-bold underline">Estudos Históricos</span>,
                 Rio de Janeiro, v. 11, n. 21, p. 9-34, 1998.
                 <br />
                 Disponível em:{" "}
@@ -273,8 +273,9 @@ export function HomeIntro() {
                 estudo sobre acervos pessoais de educadores (Santa Catarina - 1ª
                 metade do século XX). In: BRAGANÇA, Inês Ferreira de Sousa;
                 ABRAHÃO, Maria Helena Menna Barreto; FERREIRA, Márcia Santos
-                (org.). Perspectivas epistêmico-metodológicas da pesquisa
-                (auto)biográfica. Curitiba: CRV, 2016.
+                (org.).
+                <span className="font-bold underline">Perspectivas epistêmico-metodológicas da pesquisa
+                (auto)biográfica.</span>  Curitiba: CRV, 2016.
               </>
             }
           />

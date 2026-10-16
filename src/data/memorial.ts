@@ -20,7 +20,7 @@ export const memorialInfo: Memorial = {
   deathDate: "",
   birthPlace: "",
   deathPlace: "",
-  quote: "Pois arquivar a própria vida é definitivamente uma maneira de publicar a própria vida, é escrever o livro da própria vida que sobreviverá ao tempo e à morte”.",
+  quote: "Pois arquivar a própria vida é definitivamente uma maneira de publicar a própria vida, é escrever o livro da própria vida que sobreviverá ao tempo e à morte.",
   biography: [
     
   ],
