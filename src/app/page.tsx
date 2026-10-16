@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Navigation, Footer } from "@/components/layout";
 import { Hero } from "@/components/memorial/Hero";
+import { HomeIntro } from "@/components/memorial/HomeIntro";
 import { AboutSection } from "@/components/memorial/AboutSection";
 import { BiographySection } from "@/components/memorial/BiographySection";
 import { Timeline } from "@/components/memorial/Timeline";
@@ -44,7 +45,12 @@ export default function Home() {
       <div className="mx-auto max-w-7xl px-4 py-7 sm:px-6 sm:py-10">
         <div className="grid gap-7 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start">
           <main className="min-w-0">
-            {(activeTab === "inicio" || activeTab === "sobre") && (
+            {activeTab === "inicio" && (
+              <div className="space-y-8 sm:space-y-10">
+                <HomeIntro />
+              </div>
+            )}
+            {activeTab === "sobre" && (
               <div id="sobre" className="scroll-mt-24 space-y-8 sm:space-y-10">
                 <AboutSection />
                 <BiographySection />

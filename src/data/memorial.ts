@@ -20,7 +20,43 @@ export const memorialInfo: Memorial = {
   deathDate: "",
   birthPlace: "",
   deathPlace: "",
-  quote: "Uma vida para lembrar, histórias para continuar compartilhando.",
+  quote: "Pois arquivar a própria vida é definitivamente uma maneira de publicar a própria vida, é escrever o livro da própria vida que sobreviverá ao tempo e à morte”.",
+  biography: [
+    
+  ],
+  familyCredit: "",
+};
+export const memorialInfo2: Memorial = {
+  name: "Canto Coral",
+  birthDate: "",
+  deathDate: "",
+  birthPlace: "",
+  deathPlace: "",
+  quote: "[...] a arte de guardar que compõe a essência da existência dos acervos torna-se necessária no intuito de não apenas preservar memórias, mas também de servir de fonte/documentos à produção historiográfica",
+  biography: [
+    
+  ],
+  familyCredit: "",
+};
+export const memorialInfo3: Memorial = {
+  name: "Canto Coral",
+  birthDate: "",
+  deathDate: "",
+  birthPlace: "",
+  deathPlace: "",
+  quote: "Vanessa Weber de Castro  Rio de Janeiro, outubro de 2026",
+  biography: [
+    
+  ],
+  familyCredit: "",
+};
+export const memorialInfo4: Memorial = {
+  name: "Canto Coral",
+  birthDate: "",
+  deathDate: "",
+  birthPlace: "",
+  deathPlace: "",
+  quote: "Toda história é contemporânea, na medida em que o passado é            apreendido no presente e reponde, portanto, a seus interesses, o que            não só é inevitável como legítimo. Pois que a história é duração, o            passado é ao mesmo tempo passado e presente (Le Goff, 2013,p. 53).",
   biography: [
     
   ],
