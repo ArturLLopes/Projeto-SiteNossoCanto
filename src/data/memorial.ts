@@ -88,7 +88,7 @@ export const timelineEvents: TimelineEvent[] = [
       "Fundou o Coral Harmonia",
   },
   {
-    date: "1971-2",
+    date: "1971­",
     title: "Premiação",
     description: "1º lugar na categoria B (Coros Mistos) no 2º Concurso de Corais Escolares da Guanabara com o Coral Harmonia.",
   },
@@ -103,7 +103,7 @@ export const timelineEvents: TimelineEvent[] = [
     description: " 3ª colocada no I Concurso de Corais na Televisão: MEC – Funarte – TV Globo com o Coral Harmonia.",
   },
   {
-    date: "1973-2",
+    date: "1973­",
     title: "Participação especial",
     description: " Participou da gravação do LP do Concurso de Corais Escolares – JB.",
   },
@@ -138,7 +138,7 @@ export const timelineEvents: TimelineEvent[] = [
     description: "Gravou o primeiro LP do Coral Harmonia.",
   },
   {
-    date: "1984-2",
+    date: "1984­",
     title: "Premiação",
     description: "1º lugar na categoria C (corais juvenis e vozes mistas) no 9º Concurso de Corais do Rio de Janeiro com o Coral do Colégio Estadual Brigadeiro Schorcht.",
   },
@@ -153,7 +153,7 @@ export const timelineEvents: TimelineEvent[] = [
     description: "Fundou o Coral Harte Vocal.",
   },
   {
-    date: "1987-2",
+    date: "1987­",
     title: "Premiação",
     description: "2º lugar no I Concurso Nacional de Corais do Museu de Arte Moderna com o Orfeão Carlos Gomes.",
   },  
