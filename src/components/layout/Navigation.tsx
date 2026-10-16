@@ -8,7 +8,7 @@ const links: Array<{ id: string; label: string; isHome?: boolean }> = [
   { id: "linha-do-tempo", label: "Linha do Tempo" },
   { id: "galeria", label: "Galeria" },
   { id: "documentos", label: "Documentos" },
-  { id: "historias", label: "Histórias" },
+  { id: "historias", label: "Trabalhos Acadêmicos" },
 ];
 
 interface NavigationProps {
