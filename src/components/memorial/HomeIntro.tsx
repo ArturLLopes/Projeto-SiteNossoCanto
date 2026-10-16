@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/Card";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { ImageLightbox } from "@/components/ui/ImageLightbox";
 import Image from "next/image";
+import { Modal } from "@/components/ui/Modal";
 import {
   memorialInfo,
   memorialInfo2,
@@ -52,8 +53,12 @@ import {
 // ];
 
 export function HomeIntro() {
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [photoIndex, setPhotoIndex] = useState(0);
+  // const [lightboxOpen, setLightboxOpen] = useState(false);
+  // const [photoIndex, setPhotoIndex] = useState(0); 
+  const [selectedImage, setSelectedImage] = useState<{
+    src: string;
+    alt: string;
+  } | null>(null);
 
   return (
     <div className="space-y-8 sm:space-y-10">
@@ -73,14 +78,26 @@ export function HomeIntro() {
 
         <div className="space-y-5 text-[15px] leading-7 text-[#555a53]">
           <div className="block ">
-            <Image
-              src="/images/perfil/fotos_texto/foto_1.jpg"
-              alt="Registro histórico de Solange"
-              width={300}
-              height={250}
-              sizes="(max-width: 639px) 100vw, 300px"
-              className="mr-4 float-left mb-4 ml-6 h-auto w-full max-w-[300px] rounded-xl object-contain"
-            />
+            <button
+              type="button"
+              onClick={() =>
+                setSelectedImage({
+                  src: "/images/perfil/fotos_texto/foto_1.jpg",
+                  alt: "Registro histórico de Solange",
+                })
+              }
+              className="float-left mb-4 ml-6 mr-4 block w-full max-w-[300px] cursor-zoom-in rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sage-dark)]"
+              aria-label="Ampliar foto histórica de Solange"
+            >
+              <Image
+                src="/images/perfil/fotos_texto/foto_1.jpg"
+                alt="Registro histórico de Solange"
+                width={300}
+                height={250}
+                sizes="(max-width: 639px) 100vw, 300px"
+                className="h-auto w-full rounded-xl object-contain transition duration-200 hover:opacity-90"
+              />
+            </button>
             <div className="flex-1">
               <p className="text-justify indent-8 sm:flex-1">
                 A trajetória de Solange Pinto Mendonça como regente e
@@ -116,14 +133,26 @@ export function HomeIntro() {
           </div>
 
           <div className="block">
-            <Image
-              src="/images/perfil/fotos_texto/foto_2.png"
-              alt="Registro histórico de Solange"
-              width={300}
-              height={250}
-              sizes="(max-width: 639px) 100vw, 300px"
-              className="float-right mb-4 ml-6 h-auto w-full max-w-[300px] rounded-xl object-contain"
-            />
+            <button
+              type="button"
+              onClick={() =>
+                setSelectedImage({
+                  src: "/images/perfil/fotos_texto/foto_2.png",
+                  alt: "Registro histórico de Solange",
+                })
+              }
+              className="float-right mb-4 ml-6 mr-4 block w-full max-w-[300px] cursor-zoom-in rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sage-dark)]"
+              aria-label="Ampliar foto histórica de Solange"
+            >
+              <Image
+                src="/images/perfil/fotos_texto/foto_2.png"
+                alt="Registro histórico de Solange"
+                width={300}
+                height={250}
+                sizes="(max-width: 639px) 100vw, 300px"
+                className="h-auto w-full rounded-xl object-contain transition duration-200 hover:opacity-90"
+              />
+            </button>
             <div className="flex-1">
               <p className="text-justify indent-8 sm:flex-1">
                 Solange deixou parte de sua história registrada em seu acervo e
@@ -164,43 +193,54 @@ export function HomeIntro() {
             </p>
           </div>
 
-
           <div className="block">
-            <Image
-              src="/images/perfil/fotos_texto/foto_3.png"
-              alt="Registro histórico de Solange"
-              width={300}
-              height={250}
-              sizes="(max-width: 639px) 100vw, 300px"
-              className="mr-4 float-left mb-4 ml-6 h-auto w-full max-w-[300px] rounded-xl object-contain"
-            />
-          <div className="flex-1">
-            <p className="text-justify indent-8 sm:flex-1">
-              Nessa perspectiva, o acervo de Solange constitui um patrimônio
-              documental de grande riqueza, capaz de oferecer fontes para a
-              investigação de sua trajetória e para o estudo mais amplo da
-              atividade coral no Rio de Janeiro.<br></br>
-            </p>
-            <p className="text-justify indent-8 sm:flex-1">
-              Este site se constitui, assim, tanto em um espaço de memória e
-              reencontro para aqueles que conviveram musicalmente com Solange
-              quanto em uma fonte de pesquisa para pesquisadores, musicólogos,
-              historiadores e demais interessados. Ao disponibilizar documentos
-              escritos, registros iconográficos e materiais sonoros, pretende
-              contribuir para a recuperação e a compreensão da intensa atividade
-              coral desenvolvida no Rio de Janeiro na segunda metade do século
-              XX e no início do século XXI.<br></br>
-            </p>
-            <p className="text-justify indent-8 sm:flex-1">
-              Mais do que reunir documentos sobre o passado, este projeto busca
-              conferir novos sentidos a esses registros, tornando-os acessíveis,
-              estimulando pesquisas e favorecendo a circulação do conhecimento.
-              Ao preservar e compartilhar a história de Solange Pinto Mendonça,
-              contribuímos para que seu legado permaneça vivo e para que a
-              memória do canto coral seja reconhecida como parte significativa
-              da história cultural e musical de nossa sociedade.
-            </p>
-          </div>
+            <button
+              type="button"
+              onClick={() =>
+                setSelectedImage({
+                  src: "/images/perfil/fotos_texto/foto_3.png",
+                  alt: "Registro histórico de Solange",
+                })
+              }
+              className="float-left mb-4 ml-6 mr-4 block w-full max-w-[300px] cursor-zoom-in rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sage-dark)]"
+              aria-label="Ampliar foto histórica de Solange"
+            >
+              <Image
+                src="/images/perfil/fotos_texto/foto_3.png"
+                alt="Registro histórico de Solange"
+                width={300}
+                height={250}
+                sizes="(max-width: 639px) 100vw, 300px"
+                className="h-auto w-full rounded-xl object-contain transition duration-200 hover:opacity-90"
+              />
+            </button>
+            <div className="flex-1">
+              <p className="text-justify indent-8 sm:flex-1">
+                Nessa perspectiva, o acervo de Solange constitui um patrimônio
+                documental de grande riqueza, capaz de oferecer fontes para a
+                investigação de sua trajetória e para o estudo mais amplo da
+                atividade coral no Rio de Janeiro.<br></br>
+              </p>
+              <p className="text-justify indent-8 sm:flex-1">
+                Este site se constitui, assim, tanto em um espaço de memória e
+                reencontro para aqueles que conviveram musicalmente com Solange
+                quanto em uma fonte de pesquisa para pesquisadores, musicólogos,
+                historiadores e demais interessados. Ao disponibilizar
+                documentos escritos, registros iconográficos e materiais
+                sonoros, pretende contribuir para a recuperação e a compreensão
+                da intensa atividade coral desenvolvida no Rio de Janeiro na
+                segunda metade do século XX e no início do século XXI.<br></br>
+              </p>
+              <p className="text-justify indent-8 sm:flex-1">
+                Mais do que reunir documentos sobre o passado, este projeto
+                busca conferir novos sentidos a esses registros, tornando-os
+                acessíveis, estimulando pesquisas e favorecendo a circulação do
+                conhecimento. Ao preservar e compartilhar a história de Solange
+                Pinto Mendonça, contribuímos para que seu legado permaneça vivo
+                e para que a memória do canto coral seja reconhecida como parte
+                significativa da história cultural e musical de nossa sociedade.
+              </p>
+            </div>
           </div>
 
           <div className="flex items-start gap-3 rounded-2xl bg-[#edf0e9] p-4">
@@ -240,6 +280,24 @@ export function HomeIntro() {
           />
         </div>
       </Card>
+      <Modal
+        open={Boolean(selectedImage)}
+        title={selectedImage?.alt ?? "Imagem ampliada"}
+        onClose={() => setSelectedImage(null)}
+      >
+        {selectedImage && (
+          <div className="flex max-h-[85vh] items-center justify-center">
+            <Image
+              src={selectedImage.src}
+              alt={selectedImage.alt}
+              width={1600}
+              height={1200}
+              sizes="(max-width: 768px) 95vw, 80vw"
+              className="max-h-[75vh] w-auto max-w-full rounded-xl object-contain"
+            />
+          </div>
+        )}
+      </Modal>
 
       {/* Fotos de apresentação */}
       {/* <section aria-label="Fotos de apresentação">
