@@ -71,12 +71,12 @@ export function HomeIntro() {
       <Card className="p-5 sm:p-7">
         <div className="flex items-start gap-3 rounded-2xl mb-4 bg-[#edf0e9] p-4">
           <Quote className="mt-0.5 h-5 w-5 shrink-0 text-[var(--sage-dark)]" />
-          <p className="text-sm italic leading-6 text-[#3f443e]">
+          <p className="text-base italic leading-6 text-[#3f443e]">
             “{memorialInfo4.quote}”
           </p>
         </div>
 
-        <div className="space-y-5 text-[15px] leading-7 text-[#555a53]">
+        <div className="space-y-5 text-[18px] leading-7 text-[#555a53]">
           <div className="block ">
             <button
               type="button"
@@ -127,7 +127,7 @@ export function HomeIntro() {
 
           <div className="flex items-start gap-3 rounded-2xl bg-[#edf0e9] p-4">
             <Quote className="mt-0.5 h-5 w-5 shrink-0 text-[var(--sage-dark)]" />
-            <p className="text-sm italic leading-6 text-[#3f443e]">
+            <p className="text-base italic leading-6 text-[#3f443e]">
               “{memorialInfo.quote}”
             </p>
           </div>
@@ -188,7 +188,7 @@ export function HomeIntro() {
 
           <div className="flex items-start gap-3 rounded-2xl bg-[#edf0e9] p-4">
             <Quote className="mt-0.5 h-5 w-5 shrink-0 text-[var(--sage-dark)]" />
-            <p className="text-sm italic leading-6 text-[#3f443e]">
+            <p className="text-base italic leading-6 text-[#3f443e]">
               “{memorialInfo2.quote}”
             </p>
           </div>
@@ -245,7 +245,7 @@ export function HomeIntro() {
 
           <div className="flex items-start gap-3 rounded-2xl bg-[#edf0e9] p-4">
             <Quote className="mt-0.5 h-5 w-5 shrink-0 text-[var(--sage-dark)]" />
-            <p className="text-sm italic leading-6 text-[#3f443e]">
+            <p className="text-base italic leading-6 text-[#3f443e]">
               “{memorialInfo3.quote}”
             </p>
           </div>
