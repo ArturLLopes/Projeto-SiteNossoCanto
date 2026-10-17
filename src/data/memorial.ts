@@ -384,20 +384,117 @@ export const memorialAudios: AudioItem[] = [
 export const memorialVideos: VideoItem[] = [
   {
     id: "video-1",
-    title: "Homenagem em Família — Momentos & Lembranças",
-    date: "Maio de 2022",
-    youtubeId: "jfKfPfyJRdk",
+    title: "Harte Vocal – Série Vesperal",
+    date: "04 de agosto de 1995",
+    youtubeId: "tBpbEM2j1-U",
     comment:
-      "Vídeo memorial com fotografias da trajetória de Eleanor, canções favoritas e mensagens carinhosas.",
+      "Concerto do Coral Harte Vocal na Sala Cecília Meireles – Rio de Janeiro (Vídeo convertido de VHS) ",
   },
   {
     id: "video-2",
-    title: "Tarde de Primavera no Jardim das Hortênsias",
-    date: "Novembro de 2019",
-    youtubeId: "5qap5aO4i9A",
+    title: "Concerto Comemorativo dos 10 anos do Coral Harte Vocal",
+    date: "29 de novembro de 1998",
+    youtubeId: "toxGVXsD55E",
     comment:
-      "Registro gravado em família mostrando o jardim florido e a paz das tardes de primavera.",
+      "Concerto realizado no dia 29 de novembro de 1998 às 18h na Sala Cecília Meireles. Vídeo convertido de VHS.",
   },
+  {
+    id: "video-3",
+    title: "Coral Harte Vocal na Grécia - Arbole, Arbole",
+    date: "outubro de 2000",
+    youtubeId: "7tm8fecjby8",
+    comment:
+      "Apresentação do Coral Harte Vocal no Festival Internacional de Corais de Atenas em outubro de 2000. Música: Arbole, Arbole (Miguel Letelier)",
+  },
+  {
+    id: "video-4",
+    title: "Coral Harte Vocal na Grécia - Embraceable you",
+    date: "outubro de 2000",
+    youtubeId: "7tm8fecjby8",
+    comment:
+      "Apresentação do Coral Harte Vocal no Festival Internacional de Corais de Atenas em outubro de 2000. Música: Embraceable you (George Gershwin / Ira Gershwin - Arr. Teena Chinn )",
+  },
+  {
+    id: "video-5",
+    title: "Coral Harte Vocal - Sala Cecília Meireles",
+    date: "14 de dezembro de 2000 ",
+    youtubeId: "oIlIvd-gzEw",
+    comment:
+      "Concerto realizado em 14 de dezembro de 2000 na Sala Cecília Meireles, cantando o repertório que apresentou no Festival Internacional de Corais de Atenas.",
+  },
+  {
+    id: "video-6",
+    title: "Concerto comemorativo dos 15 anos do Coral Harte Vocal",
+    date: "2004",
+    youtubeId: "dPgKipFkc2U",
+    comment:
+      "Concerto comemorativo dos 15 anos do Coral Harte Vocal realizado no Clube Naval do Rio de Janeiro em 2004. Vídeo convertido de VHS.",
+  },
+  {
+    id: "video-7",
+    title: "Coro de Câmara Vocalis - Não dá mais pra segurar (Explode Coração)",
+    date: "18 de agosto de 2004",
+    youtubeId: "O187uCGBnp4",
+    comment:
+      "Encontro de Corais no BNDES em 18/8/2004. Música: Não dá mais pra segurar (Explode Coração) (Gonzaguinha - Arr.: Solange Pinto Mendonça). Gravação: LR Produções & Eventos (original em DVD)",
+  },
+  {
+    id: "video-8",
+    title: "Coro de Câmara Vocalis - Sometimes I fell like a motherless child ",
+    date: "18 de agosto de 2004",
+    youtubeId: "Mwmq2Yq0wgk",
+    comment:
+      "Encontro de Corais no BNDES em 18/8/2004. Música: Sometimes I fell like a motherless child (Negro Spirituals - Arr.: Pamela Baskin-Watson). Gravação: LR Produções & Eventos (original em DVD)",
+  },
+  {
+    id: "video-9",
+    title: "Coro de Câmara Vocalis - My funny valentine",
+    date: "18 de agosto de 2004",
+    youtubeId: "lRvjoRiijkI",
+    comment:
+      "Encontro de Corais no BNDES em 18/8/2004. Música: My funny valentine (Richard Rodgers e Lorentz Hart - Arr.: Kirby Shaw). Gravação: LR Produções & Eventos (original em DVD)",
+  },
+  {
+    id: "video-10",
+    title: "Coro de Câmara Vocalis - La Blanche Neige",
+    date: "18 de agosto de 2004",
+    youtubeId: "9ZMYBts18XA",
+    comment:
+      "Encontro de Corais no BNDES em 18/8/2004. Música: La Blanche Neige (Francis Poulenc e Guillaume Apollinaire). Gravação: LR Produções & Eventos (original em DVD)",
+  },
+  {
+    id: "video-11",
+    title: "Coro de Câmara Vocalis - Lasciate mi morire",
+    date: "18 de agosto de 2004",
+    youtubeId: "1Q_qSEwZ94c",
+    comment:
+      "Encontro de Corais no BNDES em 18/8/2004. Música: Lasciate mi morire (Claudio Monteverdi). Gravação: LR Produções & Eventos (original em DVD)",
+  },
+  {
+    id: "video-12",
+    title: "Encontro dos Corais de Solange Pinto Mendonça",
+    date: "07 de julho de 2007",
+    youtubeId: "v823D-Zn3Kg",
+    comment:
+      "Encontro entre os Coral Lorenzo Fernandes, Coro de Câmara Vocalis, Coro Feminino José Vieira Brandão e Coral Harte Vocal no Recreio dos Anciãos em 07 de julho de 2007.",
+  },
+  {
+    id: "video-13",
+    title: "Concerto comemorativo dos 40 anos de regência de Solange Pinto Mendonça",
+    date: "03 de dezembro de 2011",
+    youtubeId: "lbwXO1yz-Fk",
+    comment:
+      "Concerto comemorativo dos 40 anos de regência de Solange Pinto Mendonça, realizado em 03 de dezembro de 2011 no Salão Leopoldo Miguez da Escola de Música da UFRJ.",
+  },
+  {
+    id: "video-14",
+    title: "Coro de Câmara Vocalis na ASA ",
+    date: "03 de dezembro de 2015",
+    youtubeId: "gHldM_iC5fo",
+    comment:
+      "Concerto do Coro de Câmara Vocalis na Associação Scholem Aleichem (ASA) em 03 de outubro de 2015.",
+  },
+    
 ];
 
 export const stories: Story[] = [

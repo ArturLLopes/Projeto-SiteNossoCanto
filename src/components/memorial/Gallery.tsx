@@ -14,6 +14,7 @@ import {
   Calendar,
   MessageSquare,
   ZoomIn,
+  Quote,
 } from "lucide-react";
 
 function YoutubeIcon({ className = "h-5 w-5" }: { className?: string }) {
@@ -42,6 +43,7 @@ import type { AudioItem, GalleryItem, VideoItem } from "@/types/memorial";
 type GalleryCategory = "imagens" | "audios" | "videos";
 
 export function Gallery() {
+  const videoPlayerRef = useRef<HTMLDivElement>(null);
   const [category, setCategory] = useState<GalleryCategory>("imagens");
   const [selectedPhoto, setSelectedPhoto] = useState<{
     item: GalleryItem;
@@ -164,12 +166,12 @@ export function Gallery() {
   }
 
   function formatSeconds(secs: number) {
-  const totalSeconds = Math.floor(secs);
-  const m = Math.floor(totalSeconds / 60);
-  const s = totalSeconds % 60;
+    const totalSeconds = Math.floor(secs);
+    const m = Math.floor(totalSeconds / 60);
+    const s = totalSeconds % 60;
 
-  return `${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
-}
+    return `${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
+  }
 
   return (
     <section id="galeria" className="scroll-mt-24 space-y-6">
@@ -476,7 +478,7 @@ export function Gallery() {
 
       {/* 3. SEÇÃO DE VÍDEOS COM PLAYER DO YOUTUBE */}
       {category === "videos" && (
-        <div className="space-y-5">
+        <div ref={videoPlayerRef} className="space-y-5">
           {/* Player do YouTube Principal */}
           <Card className="overflow-hidden p-5 sm:p-7">
             <div className="mb-4 flex items-center justify-between border-b border-[var(--border)] pb-3">
@@ -530,7 +532,23 @@ export function Gallery() {
                   <button
                     key={video.id}
                     type="button"
-                    onClick={() => setSelectedVideo(video)}
+                    onClick={() => {
+                      setSelectedVideo(video);
+
+                      requestAnimationFrame(() => {
+                        if (videoPlayerRef.current) {
+                          const top =
+                            videoPlayerRef.current.getBoundingClientRect().top +
+                            window.scrollY -
+                            150;
+
+                          window.scrollTo({
+                            top,
+                            behavior: "smooth",
+                          });
+                        }
+                      });
+                    }}
                     className={`rounded-2xl text-left transition focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sage)] ${
                       isCurrent
                         ? "border-2 border-[#A4B494] bg-[#fbf9f4] shadow-sm"
@@ -552,6 +570,27 @@ export function Gallery() {
                   </button>
                 );
               })}
+            </div>
+            <div className="mb-4 flex items-start gap-3 rounded-2xl bg-[#edf0e9] p-4">
+              <Quote className="mt-0.5 h-5 w-5 shrink-0 text-[var(--sage-dark)]" />
+              <div>
+                <p className="text-base italic leading-6 text-[#3f443e]">
+                  Reviva momentos especiais e apresentações marcantes do coral
+                  em nossa seleção de vídeos no YouTube. Cada canção guarda um
+                  pouco dessa história e do legado musical que permanece vivo na
+                  memória.
+                </p>
+
+                <a
+                  href="https://www.youtube.com/@SolangePintoMendonça-Legado/videos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#A4B494] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#8d9e7d] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sage-dark)] focus-visible:ring-offset-2"
+                >
+                  <Play className="h-5 w-5" />
+                  Assistir aos vídeos no YouTube
+                </a>
+              </div>
             </div>
           </div>
         </div>
