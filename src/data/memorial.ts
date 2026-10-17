@@ -20,10 +20,9 @@ export const memorialInfo: Memorial = {
   deathDate: "",
   birthPlace: "",
   deathPlace: "",
-  quote: "Pois arquivar a própria vida é definitivamente uma maneira de publicar a própria vida, é escrever o livro da própria vida que sobreviverá ao tempo e à morte.",
-  biography: [
-    
-  ],
+  quote:
+    "Pois arquivar a própria vida é definitivamente uma maneira de publicar a própria vida, é escrever o livro da própria vida que sobreviverá ao tempo e à morte.",
+  biography: [],
   familyCredit: "",
 };
 export const memorialInfo2: Memorial = {
@@ -32,10 +31,9 @@ export const memorialInfo2: Memorial = {
   deathDate: "",
   birthPlace: "",
   deathPlace: "",
-  quote: "[...] a arte de guardar que compõe a essência da existência dos acervos torna-se necessária no intuito de não apenas preservar memórias, mas também de servir de fonte/documentos à produção historiográfica",
-  biography: [
-    
-  ],
+  quote:
+    "[...] a arte de guardar que compõe a essência da existência dos acervos torna-se necessária no intuito de não apenas preservar memórias, mas também de servir de fonte/documentos à produção historiográfica",
+  biography: [],
   familyCredit: "",
 };
 export const memorialInfo3: Memorial = {
@@ -45,9 +43,7 @@ export const memorialInfo3: Memorial = {
   birthPlace: "",
   deathPlace: "",
   quote: "Vanessa Weber de Castro  Rio de Janeiro, outubro de 2026",
-  biography: [
-    
-  ],
+  biography: [],
   familyCredit: "",
 };
 export const memorialInfo4: Memorial = {
@@ -56,10 +52,9 @@ export const memorialInfo4: Memorial = {
   deathDate: "",
   birthPlace: "",
   deathPlace: "",
-  quote: "Toda história é contemporânea, na medida em que o passado é            apreendido no presente e reponde, portanto, a seus interesses, o que            não só é inevitável como legítimo. Pois que a história é duração, o            passado é ao mesmo tempo passado e presente (Le Goff, 2013,p. 53).",
-  biography: [
-    
-  ],
+  quote:
+    "Toda história é contemporânea, na medida em que o passado é            apreendido no presente e reponde, portanto, a seus interesses, o que            não só é inevitável como legítimo. Pois que a história é duração, o            passado é ao mesmo tempo passado e presente (Le Goff, 2013,p. 53).",
+  biography: [],
   familyCredit: "",
 };
 export const memorialInfo5: Memorial = {
@@ -68,10 +63,9 @@ export const memorialInfo5: Memorial = {
   deathDate: "",
   birthPlace: "",
   deathPlace: "",
-  quote: "“Eu fui criando meu próprio estilo... Com voz branca, sem impostação, sem vibrato. [...] Sempre trabalhei com alunos de escola pública. Sempre fui uma pessoa muito simples, nunca fui vaidosa, sempre trabalhei, sempre reconheci as minhas dificuldades e todos foram assim também, foram ficando, foram aprendendo... Por que em primeiro lugar em sempre fui educadora.”Solange Pinto Mendonça, 2011",
-  biography: [
-    
-  ],
+  quote:
+    "“Eu fui criando meu próprio estilo... Com voz branca, sem impostação, sem vibrato. [...] Sempre trabalhei com alunos de escola pública. Sempre fui uma pessoa muito simples, nunca fui vaidosa, sempre trabalhei, sempre reconheci as minhas dificuldades e todos foram assim também, foram ficando, foram aprendendo... Por que em primeiro lugar em sempre fui educadora.”Solange Pinto Mendonça, 2011",
+  biography: [],
   familyCredit: "",
 };
 
@@ -85,7 +79,8 @@ export const timelineEvents: TimelineEvent[] = [
   {
     date: "1965",
     title: "Aprovação ",
-    description: "Aprovação de Solange no Concurso para professor de Educação Musical do Estado da Guanabara",
+    description:
+      "Aprovação de Solange no Concurso para professor de Educação Musical do Estado da Guanabara",
   },
   {
     date: "1966",
@@ -96,53 +91,61 @@ export const timelineEvents: TimelineEvent[] = [
   {
     date: "1971",
     title: "Fundação",
-    description:
-      "Fundou o Coral Harmonia",
+    description: "Fundou o Coral Harmonia",
   },
   {
     date: "1971­",
     title: "Premiação",
-    description: "1º lugar na categoria B (Coros Mistos) no 2º Concurso de Corais Escolares da Guanabara com o Coral Harmonia.",
+    description:
+      "1º lugar na categoria B (Coros Mistos) no 2º Concurso de Corais Escolares da Guanabara com o Coral Harmonia.",
   },
   {
     date: "1972",
     title: "Premiação",
-    description: "1º lugar na categoria D (Corais universitários de vozes mistas) no 3º Concurso de Corais Escolares da Guanabara com o Coral Harmonia.",
+    description:
+      "1º lugar na categoria D (Corais universitários de vozes mistas) no 3º Concurso de Corais Escolares da Guanabara com o Coral Harmonia.",
   },
   {
     date: "1973",
     title: "Premiação",
-    description: " 3ª colocada no I Concurso de Corais na Televisão: MEC – Funarte – TV Globo com o Coral Harmonia.",
+    description:
+      " 3ª colocada no I Concurso de Corais na Televisão: MEC – Funarte – TV Globo com o Coral Harmonia.",
   },
   {
     date: "1973­",
     title: "Participação especial",
-    description: " Participou da gravação do LP do Concurso de Corais Escolares – JB.",
+    description:
+      " Participou da gravação do LP do Concurso de Corais Escolares – JB.",
   },
   {
     date: "1974",
     title: "Participação especial",
-    description: "Participou como hors concours do 4º Concurso de Corais da Guanabara com o Coral Harmonia.",
-  },  
+    description:
+      "Participou como hors concours do 4º Concurso de Corais da Guanabara com o Coral Harmonia.",
+  },
   {
     date: "1976",
     title: "Premiação",
-    description: " 2º lugar na categoria C (corais juvenis e vozes mistas) no 5º Concurso de Corais do Rio de Janeiro com o Coral do Colégio Estadual Brigadeiro Schorcht.",
+    description:
+      " 2º lugar na categoria C (corais juvenis e vozes mistas) no 5º Concurso de Corais do Rio de Janeiro com o Coral do Colégio Estadual Brigadeiro Schorcht.",
   },
   {
     date: "1978",
     title: "Premiação",
-    description: "3ª colocada no II Concurso de Corais na Televisão: MEC – Funarte – TV Globo com o Coral Harmonia.",
+    description:
+      "3ª colocada no II Concurso de Corais na Televisão: MEC – Funarte – TV Globo com o Coral Harmonia.",
   },
   {
     date: "1980",
     title: "Premiação",
-    description: "1º lugar na categoria C (corais juvenis e vozes mistas) no 7º Concurso de Corais do Rio de Janeiro com o Coral do Colégio Estadual Brigadeiro Schorcht.",
+    description:
+      "1º lugar na categoria C (corais juvenis e vozes mistas) no 7º Concurso de Corais do Rio de Janeiro com o Coral do Colégio Estadual Brigadeiro Schorcht.",
   },
   {
     date: "1982",
     title: "Premiação",
-    description: "2º lugar na categoria C (corais juvenis e vozes mistas) no 8º Concurso de Corais do Rio de Janeiro com o Coral do Colégio Estadual Brigadeiro Schorcht.",
+    description:
+      "2º lugar na categoria C (corais juvenis e vozes mistas) no 8º Concurso de Corais do Rio de Janeiro com o Coral do Colégio Estadual Brigadeiro Schorcht.",
   },
   {
     date: "1984",
@@ -152,14 +155,15 @@ export const timelineEvents: TimelineEvent[] = [
   {
     date: "1984­",
     title: "Premiação",
-    description: "1º lugar na categoria C (corais juvenis e vozes mistas) no 9º Concurso de Corais do Rio de Janeiro com o Coral do Colégio Estadual Brigadeiro Schorcht.",
+    description:
+      "1º lugar na categoria C (corais juvenis e vozes mistas) no 9º Concurso de Corais do Rio de Janeiro com o Coral do Colégio Estadual Brigadeiro Schorcht.",
   },
-   {
+  {
     date: "1986",
     title: "Regência ",
     description: "Assumiu a regência do Orfeão Carlos Gomes.",
   },
-   {
+  {
     date: "1987",
     title: "Fundação",
     description: "Fundou o Coral Harte Vocal.",
@@ -167,42 +171,50 @@ export const timelineEvents: TimelineEvent[] = [
   {
     date: "1987­",
     title: "Premiação",
-    description: "2º lugar no I Concurso Nacional de Corais do Museu de Arte Moderna com o Orfeão Carlos Gomes.",
-  },  
+    description:
+      "2º lugar no I Concurso Nacional de Corais do Museu de Arte Moderna com o Orfeão Carlos Gomes.",
+  },
   {
     date: "1988",
     title: "Premiação",
-    description: " 1º lugar na categoria B (corais juvenis de vozes mistas) no 11º Concurso de Corais do Rio de Janeiro com o Coral Harte Vocal.",
-  }, 
+    description:
+      " 1º lugar na categoria B (corais juvenis de vozes mistas) no 11º Concurso de Corais do Rio de Janeiro com o Coral Harte Vocal.",
+  },
   {
     date: "1995",
     title: "Gravação",
-    description: "Gravou CD ao vivo na Sala Cecília Meireles com o Coral Harte Vocal.",
+    description:
+      "Gravou CD ao vivo na Sala Cecília Meireles com o Coral Harte Vocal.",
   },
   {
     date: "2000",
     title: "Participação",
-    description: "Participou do VIII Festival de Corais de Atenas com o Coral Harte Vocal e foi premiada como Melhor Coral Folclórico, além de receber Medalha de Bronze na Categoria Corais Mistos e Medalhe de Bronze na categoria Coros de Câmara.",
+    description:
+      "Participou do VIII Festival de Corais de Atenas com o Coral Harte Vocal e foi premiada como Melhor Coral Folclórico, além de receber Medalha de Bronze na Categoria Corais Mistos e Medalhe de Bronze na categoria Coros de Câmara.",
   },
   {
     date: "2007",
     title: "Estreia",
-    description: "Estreou as peças Ave Maria Pater Noster (Lúcio Zandonade), Exéquias (Potiguar Menezes) e Ladainha na XVII Bienal de Música Contemporânea, na Sala Cecília Meireles no Rio de Janeiro no dia 27/10/2007.",
+    description:
+      "Estreou as peças Ave Maria Pater Noster (Lúcio Zandonade), Exéquias (Potiguar Menezes) e Ladainha na XVII Bienal de Música Contemporânea, na Sala Cecília Meireles no Rio de Janeiro no dia 27/10/2007.",
   },
   {
     date: "2009",
     title: "Estreia",
-    description: "Estreou as peças “É madrugada”, “O Rei mandou chamar João”, “Duas líricas brasileiras”  e “Vida Viração” por encomenda da Funarte para o projeto “Série Coro Juvenil”.",
+    description:
+      "Estreou as peças “É madrugada”, “O Rei mandou chamar João”, “Duas líricas brasileiras”  e “Vida Viração” por encomenda da Funarte para o projeto “Série Coro Juvenil”.",
   },
   {
     date: "2011",
     title: "Comemoração",
-    description: "Realizou um grande concerto em comemoração aos seus 40 anos de regência.",
+    description:
+      "Realizou um grande concerto em comemoração aos seus 40 anos de regência.",
   },
   {
     date: "2016",
     title: "Falecimento",
-    description: "Solange Pinto Mendonça falece no Rio de Janeiro em 01 de agosto.",
+    description:
+      "Solange Pinto Mendonça falece no Rio de Janeiro em 01 de agosto.",
   },
 ];
 
@@ -331,32 +343,42 @@ export const galleryItems: GalleryItem[] = galleryFolders.flatMap(
 
 export const memorialAudios: AudioItem[] = [
   {
-    id: "audio-1",
-    title: "Mensagem de Fim de Ano em Família",
-    speaker: "Eleanor Hart",
-    date: "24 de dezembro de 1998",
-    duration: "01:42",
+    id: "audio-500anos-1",
+    title: "CD 500 anos de Música Coral",
+    speaker: "Acervo memorial",
+    date: "",
+    duration: "38:17",
     comment:
-      "Gravação em fita cassete com uma mensagem carinhosa desejando paz, saúde e união a todos.",
+      "CD 500 anos de Música Coral do Orfeão Carlos Gomes, coral do Instituto Superior de Educação do Rio de Janeiro, gravado em 2000.",
+    audioUrl: "/images/galeria/_audio/500Anos_Audio1.mp4",
   },
-  {
-    id: "audio-2",
-    title: "Lembranças sobre o Jardim da Infância",
-    speaker: "Eleanor contando histórias aos netos",
-    date: "14 de maio de 2010",
-    duration: "02:15",
-    comment:
-      "Áudio gravado durante a comemoração do aniversário, relatando como aprendeu a plantar rosas com sua mãe.",
-  },
-  {
-    id: "audio-3",
-    title: "Receita Tradicional do Bolo de Fubá",
-    speaker: "Eleanor e Margaret",
-    date: "18 de outubro de 2018",
-    duration: "01:10",
-    comment:
-      "Uma tarde descontraída na cozinha com muitas risadas e segredos culinários de família.",
-  },
+  // {
+  //   id: "audio-1",
+  //   title: "Mensagem de Fim de Ano em Família",
+  //   speaker: "Eleanor Hart",
+  //   date: "24 de dezembro de 1998",
+  //   duration: "01:42",
+  //   comment:
+  //     "Gravação em fita cassete com uma mensagem carinhosa desejando paz, saúde e união a todos.",    
+  // },
+  // {
+  //   id: "audio-2",
+  //   title: "Lembranças sobre o Jardim da Infância",
+  //   speaker: "Eleanor contando histórias aos netos",
+  //   date: "14 de maio de 2010",
+  //   duration: "02:15",
+  //   comment:
+  //     "Áudio gravado durante a comemoração do aniversário, relatando como aprendeu a plantar rosas com sua mãe.",
+  // },
+  // {
+  //   id: "audio-3",
+  //   title: "Receita Tradicional do Bolo de Fubá",
+  //   speaker: "Eleanor e Margaret",
+  //   date: "18 de outubro de 2018",
+  //   duration: "01:10",
+  //   comment:
+  //     "Uma tarde descontraída na cozinha com muitas risadas e segredos culinários de família.",
+  // },
 ];
 
 export const memorialVideos: VideoItem[] = [
@@ -487,7 +509,8 @@ export const documentDivisions: DocumentDivision[] = [
       },
       {
         id: "doc-cartaz-3",
-        title: "Participação do Coral Harte Vocal na série “Pérolas e Corais” do Centro Cultural Banco do Brasil",
+        title:
+          "Participação do Coral Harte Vocal na série “Pérolas e Corais” do Centro Cultural Banco do Brasil",
         description:
           "A apresentação foi intitulada “Pérolas e Corais: Francis Hime e Coral Harte Vocal – Fantasia Carioca”",
         date: "26/3/1996",
@@ -502,7 +525,8 @@ export const documentDivisions: DocumentDivision[] = [
       },
       {
         id: "doc-cartaz-4",
-        title: "Concerto de 10 anos do Coral Harte Vocal, realizado na Sala Cecília Meireles.",
+        title:
+          "Concerto de 10 anos do Coral Harte Vocal, realizado na Sala Cecília Meireles.",
         description:
           "Concerto de 10 anos do Coral Harte Vocal, realizado na Sala Cecília Meireles, em 29/11/1998.",
         date: "29/11/1998",
@@ -560,14 +584,13 @@ export const documentDivisions: DocumentDivision[] = [
         notes: "",
         images: [
           "/images/galeria/_cartazes/A9a.jpg",
-          "/images/galeria/_cartazes/A9b.jpg",          
+          "/images/galeria/_cartazes/A9b.jpg",
         ],
       },
       {
         id: "doc-cartaz-10",
         title: "Concerto do Coral Harte Vocal",
-        description:
-          "Concerto do Coral Harte Vocal na Sala Cecília Meireles ",
+        description: "Concerto do Coral Harte Vocal na Sala Cecília Meireles ",
         date: "04/8",
         category: "cartazes",
         notes: "",
@@ -599,9 +622,8 @@ export const documentDivisions: DocumentDivision[] = [
           "Participação do Coral Harmonia no Projeto Corais promovido pelo Departamento de Assuntos Culturais da Secretaria de Educação e Cultura do Governo do Estado do Rio de Janeiro .",
         date: "11/11/1972",
         category: "certificados",
-        notes:
-          "",
-          imageUrl: "/images/galeria/_certificados/A1.jpg",
+        notes: "",
+        imageUrl: "/images/galeria/_certificados/A1.jpg",
       },
       {
         id: "doc-convite-9",
@@ -610,8 +632,7 @@ export const documentDivisions: DocumentDivision[] = [
           "Participação do Conjunto Harmonia na Semana de Aniversário da Escola Normal Carmela Dutra .",
         date: "18/6/1975",
         category: "convites",
-        notes:
-          "",
+        notes: "",
         imageUrl: "/images/galeria/_certificados/A1a.jpg",
       },
       {
@@ -621,8 +642,7 @@ export const documentDivisions: DocumentDivision[] = [
           "Participação do Conjunto de Flauta Doce “Harmonia” na XXVIII Semana da Música.",
         date: "23/10/1975",
         category: "convites",
-        notes:
-          "",
+        notes: "",
         imageUrl: "/images/galeria/_certificados/A1b.jpg",
       },
       {
@@ -632,8 +652,7 @@ export const documentDivisions: DocumentDivision[] = [
           "Participação do Coral Harmonia no Primeiro Encontro de Corais do Rio de Janeiro.",
         date: "13/4/1976",
         category: "convites",
-        notes:
-          "",
+        notes: "",
         imageUrl: "/images/galeria/_certificados/A1c.jpg",
       },
       {
@@ -653,8 +672,7 @@ export const documentDivisions: DocumentDivision[] = [
           "Participação de Solange Pinto Mendonça no II Painel Funarte de Regência Coral, promovido pelo Projeto Villa-Lobos do Instituto Nacional de Música e realizado em Brasília (DF).  ",
         date: "7 e 12/6/1982",
         category: "convites",
-        notes:
-          "",
+        notes: "",
         imageUrl: "/images/galeria/_certificados/A3.jpg",
       },
       {
@@ -664,8 +682,7 @@ export const documentDivisions: DocumentDivision[] = [
           "Moção recebida pelo Coral do C. E. Brigadeiro Schorcht proposta pelo Vereador Moacyr Bastos e aprovada pela mesa diretora da Câmara Municipal do Rio de Janeiro. ",
         date: "27/8/1982",
         category: "convites",
-        notes:
-          "",
+        notes: "",
         imageUrl: "/images/galeria/_certificados/A4.jpg",
       },
       {
@@ -675,8 +692,7 @@ export const documentDivisions: DocumentDivision[] = [
           "Certificado atribuído a Solange Pinto Mendonça por sua atuação no “Treinamento para Regentes” promovido pelo Orfeão de Santa Cecília – Centro de Cultura de Campos e pela Prefeitura Municipal de Campos entre os dias .",
         date: "11, 12 e 13/11/1982",
         category: "convites",
-        notes:
-          "",
+        notes: "",
         imageUrl: "/images/galeria/_certificados/A5.jpg",
       },
       {
@@ -686,8 +702,7 @@ export const documentDivisions: DocumentDivision[] = [
           "Participação do Coral Harte Vocal no III Encontro de Corais promovido pelo SESC – Três Rios.",
         date: "13/9/1992",
         category: "convites",
-        notes:
-          "",
+        notes: "",
         imageUrl: "/images/galeria/_certificados/A6.jpg",
       },
       {
@@ -697,8 +712,7 @@ export const documentDivisions: DocumentDivision[] = [
           "Participação de Solange Pinto Mendonça, na condição de regente do Coral Harte Vocal, no Encontro de Corais promovido pelo SESC – Tijuca .",
         date: "16/10/1993",
         category: "convites",
-        notes:
-          "",
+        notes: "",
         imageUrl: "/images/galeria/_certificados/A7.jpg",
       },
       {
@@ -708,11 +722,9 @@ export const documentDivisions: DocumentDivision[] = [
           "Participação de Solange Pinto Mendonça, membro do Coral Harte Vocal, no 5º Encontro Nacional de Corais realizado durante a II Semana de Arte e Folclore de Santa Teresa-ES.",
         date: "29/4/1995",
         category: "convites",
-        notes:
-          "",
+        notes: "",
         imageUrl: "/images/galeria/_certificados/A8.jpg",
       },
-      
     ],
   },
   {
@@ -729,9 +741,8 @@ export const documentDivisions: DocumentDivision[] = [
           "Convite para concerto realizado pelos Corais Julia Pardini e Harmonia na Igreja de São Francisco de Assis em Ouro Preto (MG) .",
         date: "30/3/1975",
         category: "correspondencias",
-        notes:
-          "",
-          imageUrl: "/images/galeria/_convites/A1.jpg",
+        notes: "",
+        imageUrl: "/images/galeria/_convites/A1.jpg",
       },
       {
         id: "doc-corr-2",
@@ -740,8 +751,7 @@ export const documentDivisions: DocumentDivision[] = [
           "Convite para o coquetel comemorativo pelo 6º Aniversário do Coral Harmonia .",
         date: "27/5/1977",
         category: "correspondencias",
-        notes:
-          "",
+        notes: "",
         imageUrl: "/images/galeria/_convites/A2.jpg",
       },
       {
@@ -751,9 +761,8 @@ export const documentDivisions: DocumentDivision[] = [
           "Convite do Conservatório Brasileiro de Música para lançamento do CD “A obra de José Vieira Brandão”.",
         date: "29/9/1995",
         category: "correspondencias",
-        notes:
-          "Do qual o Coral Harte Vocal fez parte",
-        imageUrl: "/images/galeria/_convites/A3.jpg",  
+        notes: "Do qual o Coral Harte Vocal fez parte",
+        imageUrl: "/images/galeria/_convites/A3.jpg",
       },
       {
         id: "doc-corr-4",
@@ -762,9 +771,8 @@ export const documentDivisions: DocumentDivision[] = [
           "Convite para o coquetel de comemoração dos 25 anos de regência coral de Solange Pinto Mendonça .",
         date: "26/10/1996",
         category: "correspondencias",
-        notes:
-          "",
-        imageUrl: "/images/galeria/_convites/A4.jpg",  
+        notes: "",
+        imageUrl: "/images/galeria/_convites/A4.jpg",
       },
     ],
   },
@@ -778,7 +786,8 @@ export const documentDivisions: DocumentDivision[] = [
       {
         id: "doc-carta-1",
         title: "Ofício ao Coral Harmonia",
-        description: "Ofício da Diretora do Departamento de Difusão Cultural da Universidade Federal Fluminense ao Coral Harmonia por ocasião do fim do ano de 1975.",
+        description:
+          "Ofício da Diretora do Departamento de Difusão Cultural da Universidade Federal Fluminense ao Coral Harmonia por ocasião do fim do ano de 1975.",
         date: "08/12/1975 ",
         category: "correspondencias",
         notes: "",
@@ -787,7 +796,8 @@ export const documentDivisions: DocumentDivision[] = [
       {
         id: "doc-carta-2",
         title: "Carta ao Orfeão Carlos Gomes",
-        description: "Carta do Orfeão Carlos Gomes a Solange Pinto Mendonça por ocasião de seu aniversário ",
+        description:
+          "Carta do Orfeão Carlos Gomes a Solange Pinto Mendonça por ocasião de seu aniversário ",
         date: "",
         category: "correspondencias",
         notes: "",
@@ -802,13 +812,14 @@ export const documentDivisions: DocumentDivision[] = [
         notes: "",
         images: [
           "/images/galeria/_correspondencias/A3a.jpg",
-          "/images/galeria/_correspondencias/A3b.jpg",          
+          "/images/galeria/_correspondencias/A3b.jpg",
         ],
       },
       {
         id: "doc-carta-4",
         title: "Carta de José Vieira Brandão",
-        description: "Carta de José Vieira Brandão a Solange Pinto Mendonça por ocasião do concerto do Coral Harte Vocal em 12/8/1995.",
+        description:
+          "Carta de José Vieira Brandão a Solange Pinto Mendonça por ocasião do concerto do Coral Harte Vocal em 12/8/1995.",
         date: "14/8/1995 ",
         category: "correspondencias",
         notes: "",
@@ -817,14 +828,15 @@ export const documentDivisions: DocumentDivision[] = [
       {
         id: "doc-carta-5",
         title: "Carta a Solange Pinto Mendonça",
-        description: "Carta de Antonio Carlos a Solange Pinto Mendonça por ocasião da apresentação do Coral Harte Vocal no Rio Jazz Club, com demonstração de carinho e admiração.",
+        description:
+          "Carta de Antonio Carlos a Solange Pinto Mendonça por ocasião da apresentação do Coral Harte Vocal no Rio Jazz Club, com demonstração de carinho e admiração.",
         date: "02/10/1995",
         category: "correspondencias",
         notes: "",
         images: [
           "/images/galeria/_correspondencias/A5a.jpg",
-          "/images/galeria/_correspondencias/A5b.jpg",          
-        ],      
+          "/images/galeria/_correspondencias/A5b.jpg",
+        ],
       },
       {
         id: "doc-carta-6",
@@ -838,15 +850,16 @@ export const documentDivisions: DocumentDivision[] = [
       {
         id: "doc-carta-7",
         title: "Cartão de agradecimento",
-        description: "Cartão de agradecimento da Instituição Legionários de Maria ao Coral Lorenzo Fernandes, sob regência de Solange Pinto Mendonça.",
+        description:
+          "Cartão de agradecimento da Instituição Legionários de Maria ao Coral Lorenzo Fernandes, sob regência de Solange Pinto Mendonça.",
         date: "",
         category: "correspondencias",
         notes: "",
         images: [
           "/images/galeria/_correspondencias/A7a.jpg",
-          "/images/galeria/_correspondencias/A7b.jpg", 
-          "/images/galeria/_correspondencias/A7c.jpg",          
-        ],      
+          "/images/galeria/_correspondencias/A7b.jpg",
+          "/images/galeria/_correspondencias/A7c.jpg",
+        ],
       },
     ],
   },
@@ -860,7 +873,8 @@ export const documentDivisions: DocumentDivision[] = [
       {
         id: "doc-prog-1",
         title: "Concerto do Coral do Colégio Estadual Brigadeiro Schorcht ",
-        description: "Programa do Concerto do Coral do Colégio Estadual Brigadeiro Schorcht no Concerto Didático na Sala Cecília Meireles em 07/10/1980.",
+        description:
+          "Programa do Concerto do Coral do Colégio Estadual Brigadeiro Schorcht no Concerto Didático na Sala Cecília Meireles em 07/10/1980.",
         date: "1980",
         category: "programas",
         notes: "",
@@ -869,36 +883,39 @@ export const documentDivisions: DocumentDivision[] = [
       {
         id: "doc-prog-2",
         title: "Concerto do Coral do Colégio Estadual Brigadeiro Schorcht ",
-        description: "Programa do Concerto do Coral do Colégio Estadual Brigadeiro Schorcht no Concerto Didático na Sala Cecília Meireles em 09/6/1981.",
+        description:
+          "Programa do Concerto do Coral do Colégio Estadual Brigadeiro Schorcht no Concerto Didático na Sala Cecília Meireles em 09/6/1981.",
         date: "1981",
         category: "programas",
         notes: "",
         images: [
           "/images/galeria/_programas/A2a1.jpg",
-          "/images/galeria/_programas/A2a2.jpg", 
-          "/images/galeria/_programas/A2a3.jpg",          
-        ], 
+          "/images/galeria/_programas/A2a2.jpg",
+          "/images/galeria/_programas/A2a3.jpg",
+        ],
       },
       {
         id: "doc-prog-3",
         title: "Coral Harmonia nos Sessenta Anos da Semana de Arte Moderna",
-        description: "Programa das atividades comemorativas dos Sessenta Anos da Semana de Arte Moderna, com participação do Coral Harmonia em 05/4/1982.",
+        description:
+          "Programa das atividades comemorativas dos Sessenta Anos da Semana de Arte Moderna, com participação do Coral Harmonia em 05/4/1982.",
         date: "1982",
         category: "programas",
         notes: "vozes femininas em coro oculto",
         images: [
           "/images/galeria/_programas/A3a1.jpg",
-          "/images/galeria/_programas/A3a2.jpg", 
+          "/images/galeria/_programas/A3a2.jpg",
           "/images/galeria/_programas/A3a3.jpg",
           "/images/galeria/_programas/A3a4.jpg",
-          "/images/galeria/_programas/A3a5.jpg", 
-          "/images/galeria/_programas/A3a6.jpg",            
+          "/images/galeria/_programas/A3a5.jpg",
+          "/images/galeria/_programas/A3a6.jpg",
         ],
       },
       {
         id: "doc-prog-4",
         title: "Coral Harmonia na Igreja São José",
-        description: "Programa do concerto do Coral Harmonia na Igreja São José na série “Música no Corredor Cultural” em 14/4/1982",
+        description:
+          "Programa do concerto do Coral Harmonia na Igreja São José na série “Música no Corredor Cultural” em 14/4/1982",
         date: "1982",
         category: "programas",
         notes: "",
@@ -907,7 +924,8 @@ export const documentDivisions: DocumentDivision[] = [
       {
         id: "doc-prog-5",
         title: "Coral Harmonia no Salão Leopoldo Miguez",
-        description: "Programa do concerto do Coral Harmonia no Salão Leopoldo Miguez, na “Temporada Oficial de 1986” em 11/11/1986.",
+        description:
+          "Programa do concerto do Coral Harmonia no Salão Leopoldo Miguez, na “Temporada Oficial de 1986” em 11/11/1986.",
         date: "1986",
         category: "programas",
         notes: "",
@@ -916,20 +934,22 @@ export const documentDivisions: DocumentDivision[] = [
       {
         id: "doc-prog-6",
         title: "4º Encontro de Coros no Teatro Nacional de Brasília",
-        description: "Programa do 4º Encontro de Coros realizado no Teatro Nacional de Brasília com participação do Coral Harte Vocal na “Noite dos convidados especiais” em 03/6/1989.",
+        description:
+          "Programa do 4º Encontro de Coros realizado no Teatro Nacional de Brasília com participação do Coral Harte Vocal na “Noite dos convidados especiais” em 03/6/1989.",
         date: "1989",
         category: "programas",
         notes: "Sala Martins Penna",
         images: [
           "/images/galeria/_programas/A6a1.jpg",
-          "/images/galeria/_programas/A6a2.jpg", 
-          "/images/galeria/_programas/A6a3.jpg",                     
+          "/images/galeria/_programas/A6a2.jpg",
+          "/images/galeria/_programas/A6a3.jpg",
         ],
       },
       {
         id: "doc-prog-7",
         title: "Encontro com a Harte 1989",
-        description: "Programa do Encontro com a Harte 1989, com a partipação do Orfeão Carlos Gomes, do Coral Harte Vocal, realizado na Casa Rosa (SESC Tijuca) em 30/8/1989",
+        description:
+          "Programa do Encontro com a Harte 1989, com a partipação do Orfeão Carlos Gomes, do Coral Harte Vocal, realizado na Casa Rosa (SESC Tijuca) em 30/8/1989",
         date: "1989",
         category: "programas",
         notes: "apresentações independentes piano, violão e vozes",
@@ -938,150 +958,161 @@ export const documentDivisions: DocumentDivision[] = [
       {
         id: "doc-prog-8",
         title: " I Encontro de Corais da Escola Naval",
-        description: "Programa do I Encontro de Corais da Escola Naval com participação do Coral Harte Vocal em 03/5/1990.",
+        description:
+          "Programa do I Encontro de Corais da Escola Naval com participação do Coral Harte Vocal em 03/5/1990.",
         date: "1990",
         category: "programas",
         notes: "",
         images: [
           "/images/galeria/_programas/A8a1.jpg",
-          "/images/galeria/_programas/A8a2.jpg", 
-          "/images/galeria/_programas/A8a3.jpg",  
-          "/images/galeria/_programas/A8a4.jpg",                    
+          "/images/galeria/_programas/A8a2.jpg",
+          "/images/galeria/_programas/A8a3.jpg",
+          "/images/galeria/_programas/A8a4.jpg",
         ],
       },
       {
         id: "doc-prog-9",
         title: "I Encontro com a Harte e a Uni-Rio",
-        description: "Programa do I Encontro com a Harte e a Uni-Rio com participação do Coral Harte Vocal em 18/10/1990.",
+        description:
+          "Programa do I Encontro com a Harte e a Uni-Rio com participação do Coral Harte Vocal em 18/10/1990.",
         date: "1990",
         category: "programas",
         notes: "",
         images: [
           "/images/galeria/_programas/A9a1.jpg",
-          "/images/galeria/_programas/A9a2.jpg", 
+          "/images/galeria/_programas/A9a2.jpg",
           "/images/galeria/_programas/A9a3.jpg",
           "/images/galeria/_programas/A9a4.jpg",
-          "/images/galeria/_programas/A9a5.jpg", 
-          "/images/galeria/_programas/A9a6.jpg",            
+          "/images/galeria/_programas/A9a5.jpg",
+          "/images/galeria/_programas/A9a6.jpg",
         ],
       },
       {
         id: "doc-prog-10",
         title: "Coral Harte Vocal no Projeto MontrealBank",
-        description: "Programa do concerto do Coral Harte Vocal no Paço Imperial promovido pelo Projeto MontrealBank em 28/5/1992.",
+        description:
+          "Programa do concerto do Coral Harte Vocal no Paço Imperial promovido pelo Projeto MontrealBank em 28/5/1992.",
         date: "1992",
         category: "programas",
         notes: "",
         images: [
           "/images/galeria/_programas/B1a1.jpg",
-          "/images/galeria/_programas/B1a2.jpg", 
+          "/images/galeria/_programas/B1a2.jpg",
           "/images/galeria/_programas/B1a3.jpg",
-          "/images/galeria/_programas/B1a4.jpg",                   
+          "/images/galeria/_programas/B1a4.jpg",
         ],
       },
       {
         id: "doc-prog-11",
         title: "30º Aniversário do Coral do Centro Educacional de Niterói",
-        description: "Programa do Encontro de Corais comemorativo do 30º Aniversário do Coral do Centro Educacional de Niterói, com participação do Coral Harte Vocal em 22/10/1992",
+        description:
+          "Programa do Encontro de Corais comemorativo do 30º Aniversário do Coral do Centro Educacional de Niterói, com participação do Coral Harte Vocal em 22/10/1992",
         date: "1992",
         category: "programas",
         notes: "",
         images: [
           "/images/galeria/_programas/B2a1.jpg",
-          "/images/galeria/_programas/B2a2.jpg", 
+          "/images/galeria/_programas/B2a2.jpg",
           "/images/galeria/_programas/B2a3.jpg",
-          "/images/galeria/_programas/B2a4.jpg",  
+          "/images/galeria/_programas/B2a4.jpg",
           "/images/galeria/_programas/B2a5.jpg",
-          "/images/galeria/_programas/B2a6.jpg",                  
+          "/images/galeria/_programas/B2a6.jpg",
         ],
       },
       {
         id: "doc-prog-12",
         title: "Encontro de Corais da Escola Naval",
-        description: "Programa do Encontro de Corais da Escola Naval com participação do Coral Harte Vocal em 13/5/1993.",
+        description:
+          "Programa do Encontro de Corais da Escola Naval com participação do Coral Harte Vocal em 13/5/1993.",
         date: "1993",
         category: "programas",
         notes: "",
         images: [
           "/images/galeria/_programas/B3a1.jpg",
-          "/images/galeria/_programas/B3a2.jpg", 
-          "/images/galeria/_programas/B3a3.jpg",                          
+          "/images/galeria/_programas/B3a2.jpg",
+          "/images/galeria/_programas/B3a3.jpg",
         ],
       },
       {
         id: "doc-prog-13",
         title: "Série Sábados Musicais",
-        description: "Programa do concerto do Coral Harte Vocal na Série Sábados Musicais do Museu Villa-Lobos em 23/9/1993.",
+        description:
+          "Programa do concerto do Coral Harte Vocal na Série Sábados Musicais do Museu Villa-Lobos em 23/9/1993.",
         date: "1993",
         category: "programas",
         notes: "",
         images: [
           "/images/galeria/_programas/B4a1.jpg",
-          "/images/galeria/_programas/B4a2.jpg", 
+          "/images/galeria/_programas/B4a2.jpg",
           "/images/galeria/_programas/B4a3.jpg",
-          "/images/galeria/_programas/B4a4.jpg",                   
+          "/images/galeria/_programas/B4a4.jpg",
         ],
       },
       {
         id: "doc-prog-14",
         title: "Encontro de Corais da Casa Rosa (SESC Tijuca)",
-        description: "Programa do Encontro de Corais da Casa Rosa (SESC Tijuca) com participação do Coral Harte Vocal em 16/10/1993.",
+        description:
+          "Programa do Encontro de Corais da Casa Rosa (SESC Tijuca) com participação do Coral Harte Vocal em 16/10/1993.",
         date: "1993",
         category: "programas",
         notes: "",
         images: [
           "/images/galeria/_programas/B5a1.jpg",
-          "/images/galeria/_programas/B5a2.jpg", 
+          "/images/galeria/_programas/B5a2.jpg",
           "/images/galeria/_programas/B5a3.jpg",
-          "/images/galeria/_programas/B5a4.jpg",                   
+          "/images/galeria/_programas/B5a4.jpg",
         ],
       },
       {
         id: "doc-prog-15",
         title: "Coral Harte Vocal no Projeto MontrealBank ",
-        description: "Programa do concerto do Coral Harte Vocal no Paço Imperial promovido pelo Projeto MontrealBank em 16/12/1993.",
+        description:
+          "Programa do concerto do Coral Harte Vocal no Paço Imperial promovido pelo Projeto MontrealBank em 16/12/1993.",
         date: "1993",
         category: "programas",
         notes: "",
         images: [
           "/images/galeria/_programas/B6a1.jpg",
-          "/images/galeria/_programas/B6a2.jpg", 
+          "/images/galeria/_programas/B6a2.jpg",
           "/images/galeria/_programas/B6a3.jpg",
-          "/images/galeria/_programas/B6a4.jpg",                   
+          "/images/galeria/_programas/B6a4.jpg",
         ],
       },
       {
         id: "doc-prog-16",
         title: "I Encontro de Corais do Museu Villa-Lobos",
-        description: "Programa do I Encontro de Corais do Museu Villa-Lobos, com participação do Coral Entrecanto e do Coral Harte Vocal em 13/4/1994.",
+        description:
+          "Programa do I Encontro de Corais do Museu Villa-Lobos, com participação do Coral Entrecanto e do Coral Harte Vocal em 13/4/1994.",
         date: "1994",
         category: "programas",
         notes: "",
         images: [
           "/images/galeria/_programas/B7a1.jpg",
-          "/images/galeria/_programas/B7a2.jpg", 
+          "/images/galeria/_programas/B7a2.jpg",
           "/images/galeria/_programas/B7a3.jpg",
-          "/images/galeria/_programas/B7a4.jpg", 
-          "/images/galeria/_programas/B7a5.jpg",                   
+          "/images/galeria/_programas/B7a4.jpg",
+          "/images/galeria/_programas/B7a5.jpg",
         ],
       },
       {
         id: "doc-prog-17",
         title: "Movimento Artístico Lúcia Branco",
-        description: "Programa do concerto do Coral Harte Vocal na Apresentação do Movimento Artístico Lúcia Branco em 15/4/1994, realizado na Sala da Congregação da Escola de Música da UFRJ.",
+        description:
+          "Programa do concerto do Coral Harte Vocal na Apresentação do Movimento Artístico Lúcia Branco em 15/4/1994, realizado na Sala da Congregação da Escola de Música da UFRJ.",
         date: "1994",
         category: "programas",
         notes: "",
         images: [
           "/images/galeria/_programas/B8a1.jpg",
-          "/images/galeria/_programas/B8a2.jpg", 
-          "/images/galeria/_programas/B8a3.jpg",                             
+          "/images/galeria/_programas/B8a2.jpg",
+          "/images/galeria/_programas/B8a3.jpg",
         ],
       },
       {
         id: "doc-prog-18",
         title: "Coral Harte Vocal no Paço Imperial",
-        description: "Programa do concerto do Coral Harte Vocal no Paço Imperial em 28/4/1994.",
+        description:
+          "Programa do concerto do Coral Harte Vocal no Paço Imperial em 28/4/1994.",
         date: "1994",
         category: "programas",
         notes: "",
@@ -1090,28 +1121,31 @@ export const documentDivisions: DocumentDivision[] = [
       {
         id: "doc-prog-20",
         title: "Quintas feiras musicais” no Projeto Cultural CCF Brasil",
-        description: "Programa da apresentação do Coral CBM-Centro na série “Quintas feiras musicais” no Projeto Cultural CCF Brasil em 22/12/1994 no Paço Imperial.",
+        description:
+          "Programa da apresentação do Coral CBM-Centro na série “Quintas feiras musicais” no Projeto Cultural CCF Brasil em 22/12/1994 no Paço Imperial.",
         date: "1994",
         category: "programas",
         notes: "",
         images: [
           "/images/galeria/_programas/C1a1.jpg",
-          "/images/galeria/_programas/C1a2.jpg",                                     
+          "/images/galeria/_programas/C1a2.jpg",
         ],
       },
       {
         id: "doc-prog-21",
         title: "Rio Jazz Club",
-        description: "Programa do concerto do Coral Harte Vocal no Rio Jazz Club em 01/10/1995.",
+        description:
+          "Programa do concerto do Coral Harte Vocal no Rio Jazz Club em 01/10/1995.",
         date: "1995",
         category: "programas",
         notes: "",
-       imageUrl: "/images/galeria/_programas/C3.jpg",
+        imageUrl: "/images/galeria/_programas/C3.jpg",
       },
       {
         id: "doc-prog-22",
         title: "Série Vesperal",
-        description: "Programa do concerto do Coral Harte Vocal na Série Vesperal em 04/8/1995 na Sala Cecília Meireles.",
+        description:
+          "Programa do concerto do Coral Harte Vocal na Série Vesperal em 04/8/1995 na Sala Cecília Meireles.",
         date: "1995",
         category: "programas",
         notes: "",
@@ -1119,22 +1153,24 @@ export const documentDivisions: DocumentDivision[] = [
           "/images/galeria/_programas/C4a1.jpg",
           "/images/galeria/_programas/C4a2.jpg",
           "/images/galeria/_programas/C4a3.jpg",
-          "/images/galeria/_programas/C4a4.jpg",                                     
+          "/images/galeria/_programas/C4a4.jpg",
         ],
       },
       {
         id: "doc-prog-23",
         title: "Série “Humaitá Canta”",
-        description: "Programa do concerto do Coral Harte Vocal no Rio Jazz Club em 01/10/1995.",
+        description:
+          "Programa do concerto do Coral Harte Vocal no Rio Jazz Club em 01/10/1995.",
         date: "1995",
         category: "programas",
         notes: "",
-       imageUrl: "/images/galeria/_programas/C5.jpg",
+        imageUrl: "/images/galeria/_programas/C5.jpg",
       },
       {
         id: "doc-prog-24",
         title: "“Pérolas e Corais” no CCBB",
-        description: "Programa da série “Pérolas e Corais” promovido pelo Centro Cultural Banco do Brasil com participação do Coral Harte Vocal em 26/3/1996.",
+        description:
+          "Programa da série “Pérolas e Corais” promovido pelo Centro Cultural Banco do Brasil com participação do Coral Harte Vocal em 26/3/1996.",
         date: "1996",
         category: "programas",
         notes: "",
@@ -1142,7 +1178,7 @@ export const documentDivisions: DocumentDivision[] = [
           "/images/galeria/_programas/C6a1.jpg",
           "/images/galeria/_programas/C6a2.jpg",
           "/images/galeria/_programas/C6a3.jpg",
-          "/images/galeria/_programas/C6a4.jpg", 
+          "/images/galeria/_programas/C6a4.jpg",
           "/images/galeria/_programas/C6a5.jpg",
           "/images/galeria/_programas/C6a6.jpg",
           "/images/galeria/_programas/C6a7.jpg",
@@ -1152,22 +1188,24 @@ export const documentDivisions: DocumentDivision[] = [
           "/images/galeria/_programas/C6a11.jpg",
           "/images/galeria/_programas/C6a12.jpg",
           "/images/galeria/_programas/C6a13.jpg",
-          "/images/galeria/_programas/C6a14.jpg",                                              
+          "/images/galeria/_programas/C6a14.jpg",
         ],
       },
       {
         id: "doc-prog-25",
         title: "10 anos do Coral Harte Vocal",
-        description: "Programa do concerto comemorativo dos 10 anos do Coral Harte Vocal realizado na Sala Cecília Meires em 29/11/1998.",
+        description:
+          "Programa do concerto comemorativo dos 10 anos do Coral Harte Vocal realizado na Sala Cecília Meires em 29/11/1998.",
         date: "1998",
         category: "programas",
         notes: "",
-       imageUrl: "/images/galeria/_programas/C7.jpg",
+        imageUrl: "/images/galeria/_programas/C7.jpg",
       },
       {
         id: "doc-prog-26",
         title: "Festival de Música Internacional de Inverno de Campos-R",
-        description: "Programa do Festival de Música Internacional de Inverno de Campos-RJ com participação do Coral Harte Vocal no Encontro Nacional de Coros realizado em 28/7/2001 no Teatro do Censa (p. 23)",
+        description:
+          "Programa do Festival de Música Internacional de Inverno de Campos-RJ com participação do Coral Harte Vocal no Encontro Nacional de Coros realizado em 28/7/2001 no Teatro do Censa (p. 23)",
         date: "2001",
         category: "programas",
         notes: "",
@@ -1175,23 +1213,23 @@ export const documentDivisions: DocumentDivision[] = [
           "/images/galeria/_programas/C8a1.jpg",
           "/images/galeria/_programas/C8a2.jpg",
           "/images/galeria/_programas/C8a3.jpg",
-          "/images/galeria/_programas/C8a4.jpg", 
+          "/images/galeria/_programas/C8a4.jpg",
           "/images/galeria/_programas/C8a5.jpg",
           "/images/galeria/_programas/C8a6.jpg",
           "/images/galeria/_programas/C8a7.jpg",
-          "/images/galeria/_programas/C8a8.jpg", 
+          "/images/galeria/_programas/C8a8.jpg",
           "/images/galeria/_programas/C8a9.jpg",
           "/images/galeria/_programas/C8a10.jpg",
           "/images/galeria/_programas/C8a11.jpg",
-          "/images/galeria/_programas/C8a12.jpg", 
+          "/images/galeria/_programas/C8a12.jpg",
           "/images/galeria/_programas/C8a13.jpg",
           "/images/galeria/_programas/C8a14.jpg",
           "/images/galeria/_programas/C8a15.jpg",
-          "/images/galeria/_programas/C8a16.jpg", 
+          "/images/galeria/_programas/C8a16.jpg",
           "/images/galeria/_programas/C8a17.jpg",
           "/images/galeria/_programas/C8a18.jpg",
           "/images/galeria/_programas/C8a19.jpg",
-          "/images/galeria/_programas/C8a20.jpg", 
+          "/images/galeria/_programas/C8a20.jpg",
           "/images/galeria/_programas/C8a21.jpg",
           "/images/galeria/_programas/C8a22.jpg",
           "/images/galeria/_programas/C8a23.jpg",
@@ -1199,22 +1237,24 @@ export const documentDivisions: DocumentDivision[] = [
           "/images/galeria/_programas/C8a25.jpg",
           "/images/galeria/_programas/C8a26.jpg",
           "/images/galeria/_programas/C8a27.jpg",
-          "/images/galeria/_programas/C8a28.jpg",                                      
+          "/images/galeria/_programas/C8a28.jpg",
         ],
       },
       {
         id: "doc-prog-27",
         title: "30 anos de regência de Solange Pinto Mendonça",
-        description: "Programa do concerto comemorativo dos 30 anos de regência de Solange Pinto Mendonça com participação do Coro de Câmara Vocalis – CBM Tijuca e do Coral Harte Vocal em 07/11/2001 no Outeiro da Glória.",
+        description:
+          "Programa do concerto comemorativo dos 30 anos de regência de Solange Pinto Mendonça com participação do Coro de Câmara Vocalis – CBM Tijuca e do Coral Harte Vocal em 07/11/2001 no Outeiro da Glória.",
         date: "2001",
         category: "programas",
         notes: "",
-       imageUrl: "/images/galeria/_programas/C9.jpg",
+        imageUrl: "/images/galeria/_programas/C9.jpg",
       },
-       {
+      {
         id: "doc-prog-28",
         title: "I Mostra Arte Nacional de Canto Coral",
-        description: "Programa da I Mostra Arte Nacional de Canto Coral com participação do Coral Harte Vocal em 04/11 ",
+        description:
+          "Programa da I Mostra Arte Nacional de Canto Coral com participação do Coral Harte Vocal em 04/11 ",
         date: "",
         category: "programas",
         notes: "",
@@ -1223,13 +1263,14 @@ export const documentDivisions: DocumentDivision[] = [
           "/images/galeria/_programas/D1a2.jpg",
           "/images/galeria/_programas/D1a3.jpg",
           "/images/galeria/_programas/D1a4.jpg",
-          "/images/galeria/_programas/D1a5.jpg",                                        
+          "/images/galeria/_programas/D1a5.jpg",
         ],
       },
-       {
+      {
         id: "doc-prog-29",
         title: "VI Encontro de Corais do Grajaú Country Club",
-        description: "Programa do VI Encontro de Corais do Grajaú Country Club, com participação do Coral Harte Vocal em 04/11 ",
+        description:
+          "Programa do VI Encontro de Corais do Grajaú Country Club, com participação do Coral Harte Vocal em 04/11 ",
         date: "",
         category: "programas",
         notes: "",
@@ -1239,13 +1280,14 @@ export const documentDivisions: DocumentDivision[] = [
           "/images/galeria/_programas/D2a3.jpg",
           "/images/galeria/_programas/D2a4.jpg",
           "/images/galeria/_programas/D2a5.jpg",
-          "/images/galeria/_programas/D2a6.jpg",                                        
+          "/images/galeria/_programas/D2a6.jpg",
         ],
       },
       {
         id: "doc-prog-30",
         title: "Projeto Som Vocal",
-        description: "Programa do concerto do Coral Harte Vocal no projeto Som Vocal ",
+        description:
+          "Programa do concerto do Coral Harte Vocal no projeto Som Vocal ",
         date: "",
         category: "programas",
         notes: "",
@@ -1253,31 +1295,32 @@ export const documentDivisions: DocumentDivision[] = [
           "/images/galeria/_programas/D3a1.jpg",
           "/images/galeria/_programas/D3a2.jpg",
           "/images/galeria/_programas/D3a3.jpg",
-          "/images/galeria/_programas/D3a4.jpg",                                                 
+          "/images/galeria/_programas/D3a4.jpg",
         ],
       },
       {
         id: "doc-prog-31",
         title: "2º Encontro de Corais da Associação de Canto Coral",
-        description: "Programação do 2º Encontro de Corais da Associação de Canto Coral com participação do Coral Harte Vocal ",
+        description:
+          "Programação do 2º Encontro de Corais da Associação de Canto Coral com participação do Coral Harte Vocal ",
         date: "",
         category: "programas",
         notes: "",
-       imageUrl: "/images/galeria/_programas/D4.jpg",
+        imageUrl: "/images/galeria/_programas/D4.jpg",
       },
       {
         id: "doc-prog-32",
         title: "“Ciclo de apresentações de Orfeões Escolares” do CEPAM",
-        description: "Programa da apresentação do Orfeão do Ginásio Estadual Tobias Monteiro no “Ciclo de apresentações de Orfeões Escolares” do CEPAM em 28/8 no Auditório do Instituto de Educação.",
+        description:
+          "Programa da apresentação do Orfeão do Ginásio Estadual Tobias Monteiro no “Ciclo de apresentações de Orfeões Escolares” do CEPAM em 28/8 no Auditório do Instituto de Educação.",
         date: "",
         category: "programas",
         notes: "",
         images: [
           "/images/galeria/_programas/D5a1.jpg",
-          "/images/galeria/_programas/D5a2.jpg",                                                          
+          "/images/galeria/_programas/D5a2.jpg",
         ],
       },
     ],
   },
 ];
-

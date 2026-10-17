@@ -68,6 +68,7 @@ export interface AudioItem {
   speaker: string;
   comment: string;
   audioUrl?: string;
+  youtubeId?: string;
 }
 
 export interface VideoItem {

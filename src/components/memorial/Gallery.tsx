@@ -57,8 +57,10 @@ export function Gallery() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [isMuted, setIsMuted] = useState(false);
+  const [realDuration, setRealDuration] = useState<number | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
   const oscillatorIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const audioElRef = useRef<HTMLAudioElement | null>(null);
 
   // Video State
   const [selectedVideo, setSelectedVideo] = useState<VideoItem>(
@@ -66,7 +68,9 @@ export function Gallery() {
   );
 
   // Audio Playback simulation using gentle ambient synthesis
+  // (apenas para áudios sem arquivo real)
   useEffect(() => {
+    if (selectedAudio.audioUrl) return;
     let timer: NodeJS.Timeout;
     if (isPlaying) {
       timer = setInterval(() => {
@@ -80,9 +84,20 @@ export function Gallery() {
       }, 1000);
     }
     return () => clearInterval(timer);
-  }, [isPlaying]);
+  }, [isPlaying, selectedAudio.audioUrl]);
 
   function togglePlay() {
+    // Se o áudio selecionado tem arquivo real, toca o elemento <audio>.
+    if (selectedAudio.audioUrl) {
+      const el = audioElRef.current;
+      if (!el) return;
+      if (isPlaying) {
+        el.pause();
+      } else {
+        el.play().catch(() => {});
+      }
+      return;
+    }
     if (isPlaying) {
       setIsPlaying(false);
       if (audioContextRef.current) {
@@ -135,15 +150,26 @@ export function Gallery() {
     if (selectedAudio.id !== audio.id) {
       setIsPlaying(false);
       setCurrentTime(0);
+      // Encerra a síntese ambiente ao trocar de áudio.
+      if (audioContextRef.current) {
+        audioContextRef.current.close().catch(() => {});
+        audioContextRef.current = null;
+      }
+      if (oscillatorIntervalRef.current) {
+        clearInterval(oscillatorIntervalRef.current);
+      }
       setSelectedAudio(audio);
+      setRealDuration(null);
     }
   }
 
   function formatSeconds(secs: number) {
-    const m = Math.floor(secs / 60);
-    const s = secs % 60;
-    return `${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
-  }
+  const totalSeconds = Math.floor(secs);
+  const m = Math.floor(totalSeconds / 60);
+  const s = totalSeconds % 60;
+
+  return `${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
+}
 
   return (
     <section id="galeria" className="scroll-mt-24 space-y-6">
@@ -287,9 +313,9 @@ export function Gallery() {
                   <Music className="h-5 w-5" />
                 </span>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wider text-[var(--sage-dark)]">
+                  {/* <p className="text-xs font-semibold uppercase tracking-wider text-[var(--sage-dark)]">
                     Player de Áudio Memorial
-                  </p>
+                  </p> */}
                   <h3 className="font-display text-xl text-[#393f36]">
                     {selectedAudio.title}
                   </h3>
@@ -303,12 +329,40 @@ export function Gallery() {
             {/* Descrição e orador */}
             <div className="mt-4 rounded-2xl bg-[#faf8f3] p-4 text-sm text-[#545b50]">
               <p className="font-medium text-[#3b4138]">
-                Voz de: {selectedAudio.speaker}
+                {selectedAudio.speaker}
               </p>
               <p className="mt-1 text-xs leading-5 text-[var(--warm-gray)] sm:text-sm">
-                “{selectedAudio.comment}”
+                {selectedAudio.comment}
               </p>
             </div>
+
+            {/* Elemento de áudio real (arquivo da pasta _audio) */}
+            {selectedAudio.audioUrl && (
+              <audio
+                ref={audioElRef}
+                src={selectedAudio.audioUrl}
+                onPlay={() => setIsPlaying(true)}
+                onPause={() => setIsPlaying(false)}
+                muted={isMuted}
+                onTimeUpdate={(e) =>
+                  setCurrentTime(e.currentTarget.currentTime)
+                }
+                onLoadedMetadata={(e) => {
+                  const d = e.currentTarget.duration;
+                  if (Number.isFinite(d)) {
+                    setRealDuration(d);
+                    const m = Math.floor(d / 60);
+                    const s = Math.round(d % 60);
+                    setSelectedAudio((prev) => ({
+                      ...prev,
+                      duration: `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`,
+                    }));
+                  }
+                }}
+                onEnded={() => setIsPlaying(false)}
+                preload="metadata"
+              />
+            )}
 
             {/* Controles do Player */}
             <div className="mt-6 flex flex-col gap-4">
@@ -347,7 +401,10 @@ export function Gallery() {
                     <div
                       className="h-full rounded-full bg-[#A4B494] transition-all duration-300"
                       style={{
-                        width: `${Math.min(100, (currentTime / 102) * 100)}%`,
+                        width: `${Math.min(
+                          100,
+                          (currentTime / (realDuration ?? 102)) * 100,
+                        )}%`,
                       }}
                     />
                   </div>
