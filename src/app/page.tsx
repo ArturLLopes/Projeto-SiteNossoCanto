@@ -6,6 +6,7 @@ import { Hero } from "@/components/memorial/Hero";
 import { HomeIntro } from "@/components/memorial/HomeIntro";
 import { AboutSection } from "@/components/memorial/AboutSection";
 import { BiographySection } from "@/components/memorial/BiographySection";
+import { BiographySection2 } from "@/components/memorial/BiographySection2";
 import { Timeline } from "@/components/memorial/Timeline";
 import { Gallery } from "@/components/memorial/Gallery";
 import { Documents } from "@/components/memorial/Documents";
@@ -54,6 +55,7 @@ export default function Home() {
               <div id="sobre" className="scroll-mt-24 space-y-8 sm:space-y-10">
                 <AboutSection />
                 <BiographySection />
+                <BiographySection2 />
               </div>
             )}
             {activeTab === "linha-do-tempo" && <Timeline />}

@@ -62,6 +62,18 @@ export const memorialInfo4: Memorial = {
   ],
   familyCredit: "",
 };
+export const memorialInfo5: Memorial = {
+  name: "Canto Coral",
+  birthDate: "",
+  deathDate: "",
+  birthPlace: "",
+  deathPlace: "",
+  quote: "“Eu fui criando meu próprio estilo... Com voz branca, sem impostação, sem vibrato. [...] Sempre trabalhei com alunos de escola pública. Sempre fui uma pessoa muito simples, nunca fui vaidosa, sempre trabalhei, sempre reconheci as minhas dificuldades e todos foram assim também, foram ficando, foram aprendendo... Por que em primeiro lugar em sempre fui educadora.”Solange Pinto Mendonça, 2011",
+  biography: [
+    
+  ],
+  familyCredit: "",
+};
 
 export const timelineEvents: TimelineEvent[] = [
   {
