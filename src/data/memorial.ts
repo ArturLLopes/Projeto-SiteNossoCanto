@@ -248,7 +248,7 @@ export const favorites: Favorite[] = [
 export const galleryFolders: GalleryFolder[] = [
   {
     id: "folder-1",
-    title: "Galéria de fotos",
+    title: "Galeria de fotos",
     date: "",
     comment:
       "",
