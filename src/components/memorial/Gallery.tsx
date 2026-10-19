@@ -256,9 +256,9 @@ export function Gallery() {
                       {folder.title}
                     </h3>
 
-                    <p className="mt-1 text-xs leading-5 text-[var(--warm-gray)] sm:text-sm">
+                    {/* <p className="mt-1 text-xs leading-5 text-[var(--warm-gray)] sm:text-sm">
                       {folder.comment}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
 
@@ -796,9 +796,9 @@ export function Gallery() {
                     {selectedPhoto.item.description}
                   </p>
 
-                  <p className="border-t border-[var(--border)] pt-2 text-xs text-[#777b73]">
+                  {/* <p className="border-t border-[var(--border)] pt-2 text-xs text-[#777b73]">
                     Acervo fotografico preservado e digitalizado com carinho.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             );

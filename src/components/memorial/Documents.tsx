@@ -12,6 +12,7 @@ import {
   Images,
   ZoomIn,
 } from "lucide-react";
+import Image from "next/image";
 import { Card } from "@/components/ui/Card";
 import { Modal } from "@/components/ui/Modal";
 import { ImageLightbox } from "@/components/ui/ImageLightbox";
@@ -176,10 +177,13 @@ export function Documents() {
                       {/* Visualização / miniatura */}
                       {coverImage ? (
                         <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#e8e4db]">
-                          <img
+                          <Image
                             src={coverImage}
                             alt={item.title}
-                            className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                            fill
+                            sizes="(max-width: 639px) 100vw, (max-width: 767px) 50vw, 33vw"
+                            loading="lazy"
+                            className="object-cover transition duration-300 group-hover:scale-105"
                           />
                           {itemImages.length > 1 && (
                             <span className="absolute right-2 top-2 flex items-center gap-1 rounded-full bg-black/65 px-2 py-0.5 text-[10px] font-semibold text-white backdrop-blur">
@@ -194,14 +198,15 @@ export function Documents() {
                             <span className="rounded-md border border-[var(--border)] bg-white/70 px-2 py-0.5 font-mono text-[10px] text-[#555]">
                               DOCUMENTO
                             </span>
+
                             {getDivisionIcon(item.category)}
                           </div>
+
                           <span className="line-clamp-2 font-medium text-[#4f564b]">
                             {item.title}
                           </span>
                         </div>
                       )}
-
                       {/* Texto informativo */}
                       <div className="p-3">
                         <h4 className="line-clamp-1 font-display text-sm font-semibold text-[#383e35]">
@@ -236,10 +241,13 @@ export function Documents() {
                   onClick={() => setIsLightboxOpen(true)}
                   title="Clique na foto para ampliar em tela cheia com zoom"
                 >
-                  <img
+                  <Image
                     src={modalImages[activeImageIndex]}
                     alt={`${selectedDoc.item.title} - Foto ${activeImageIndex + 1}`}
-                    className="h-full w-full object-contain transition duration-200 group-hover/img:scale-[1.02] pointer-events-none select-none"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 800px"
+                    loading="eager"
+                    className="pointer-events-none select-none object-contain transition duration-200 group-hover/img:scale-[1.02]"
                     draggable={false}
                     onContextMenu={(e) => e.preventDefault()}
                   />
@@ -290,7 +298,7 @@ export function Documents() {
 
                 {/* Miniaturas se houver mais de uma foto */}
                 {modalImages.length > 1 && (
-                  <div className="flex gap-2 overflow-x-auto py-1">
+                  <div className="flex gap-2 overflow-x-auto py-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                     {modalImages.map((img, idx) => (
                       <button
                         key={idx}
@@ -302,10 +310,13 @@ export function Documents() {
                             : "border-transparent opacity-60 hover:opacity-100"
                         }`}
                       >
-                        <img
+                        <Image
                           src={img}
                           alt={`Miniatura ${idx + 1}`}
-                          className="h-full w-full object-cover"
+                          fill
+                          sizes="56px"
+                          loading="lazy"
+                          className="object-cover"
                         />
                       </button>
                     ))}
@@ -356,9 +367,9 @@ export function Documents() {
                 </div>
               )}
 
-              <p className="border-t border-[var(--border)] pt-2 text-xs text-[#777b73]">
+              {/* <p className="border-t border-[var(--border)] pt-2 text-xs text-[#777b73]">
                 Acervo documental preservado e digitalizado com carinho.
-              </p>
+              </p> */}
             </div>
           </div>
         )}

@@ -251,7 +251,7 @@ export const galleryFolders: GalleryFolder[] = [
     title: "Galéria de fotos",
     date: "",
     comment:
-      "Momentos que merecem ser guardados.",
+      "",
     items: [
       {
         id: "img-1",
