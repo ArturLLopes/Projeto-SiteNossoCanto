@@ -5,6 +5,7 @@ import {
   Camera,
   FolderHeart,
   ImageIcon,
+  Images,
   Music,
   Pause,
   Play,
@@ -14,6 +15,9 @@ import {
   Calendar,
   MessageSquare,
   ZoomIn,
+  ZoomOut,
+  ChevronLeft,
+  ChevronRight,
   Quote,
 } from "lucide-react";
 
@@ -51,6 +55,7 @@ export function Gallery() {
     folderDate: string;
   } | null>(null);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const [activePhotoIndex, setActivePhotoIndex] = useState(0);
 
   // Audio Player State
   const [selectedAudio, setSelectedAudio] = useState<AudioItem>(
@@ -243,61 +248,102 @@ export function Gallery() {
                   <span className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl bg-[#edf0e9] text-[var(--sage-dark)]">
                     <FolderHeart className="h-5 w-5" />
                   </span>
+
                   <div>
                     <h3 className="font-display text-xl text-[#393f36]">
                       {folder.title}
                     </h3>
+
                     <p className="mt-1 text-xs leading-5 text-[var(--warm-gray)] sm:text-sm">
                       {folder.comment}
                     </p>
                   </div>
                 </div>
-                <span className="inline-flex w-fit items-center gap-1 rounded-full border border-[var(--border)] bg-[#faf8f4] px-3 py-1 text-xs font-semibold text-[var(--sage-dark)]">
+
+                {/* <span className="inline-flex w-fit items-center gap-1 rounded-full border border-[var(--border)] bg-[#faf8f4] px-3 py-1 text-xs font-semibold text-[var(--sage-dark)]">
                   <Calendar className="h-3 w-3" />
                   {folder.date}
-                </span>
+                </span> */}
               </div>
 
               {/* Grid de fotografias da pasta */}
               <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
-                {folder.items.map((item) => (
-                  <button
-                    key={item.id}
-                    type="button"
-                    onClick={() =>
-                      setSelectedPhoto({
-                        item,
-                        folderTitle: folder.title,
-                        folderDate: folder.date,
-                      })
-                    }
-                    className="group rounded-2xl text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sage)]"
-                  >
-                    <div className="overflow-hidden rounded-2xl border border-[var(--border)] bg-white transition group-hover:shadow-md">
-                      {item.imageUrl ? (
-                        <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#e8e4db]">
-                          <img
-                            src={item.imageUrl}
-                            alt={item.title}
-                            className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-                          />
-                        </div>
-                      ) : (
-                        <div className="placeholder-sheen flex aspect-[4/3] items-end justify-between p-3 text-xs text-[#6d716a]">
-                          <span className="font-medium text-[#4f564b]">
+                {folder.items.map((item) => {
+                  // Aceita várias imagens ou a imagem antiga
+                  const images = item.images?.length
+                    ? item.images
+                    : item.imageUrl
+                      ? [item.imageUrl]
+                      : [];
+
+                  // Define a imagem principal do cartão
+                  const coverImage = images[0];
+
+                  return (
+                    <button
+                      key={item.id}
+                      type="button"
+                      onClick={() => {
+                        setActivePhotoIndex(0);
+                        setSelectedPhoto({
+                          item,
+                          folderTitle: folder.title,
+                          folderDate: folder.date,
+                        });
+                      }}
+                      className="group rounded-2xl text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sage)]"
+                    >
+                      <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-[var(--border)] bg-white transition group-hover:shadow-md">
+                        {/* Visualização / miniatura */}
+                        {coverImage ? (
+                          <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#e8e4db]">
+                            <img
+                              src={coverImage}
+                              alt={item.title}
+                              loading="lazy"
+                              className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                            />
+
+                            {/* Indicador de quantidade de fotografias */}
+                            {images.length > 1 && (
+                              <span className="absolute right-2 top-2 flex items-center gap-1 rounded-full bg-black/65 px-2 py-0.5 text-[10px] font-semibold text-white backdrop-blur">
+                                <Images className="h-3 w-3" />
+                                {images.length} fotos
+                              </span>
+                            )}
+                          </div>
+                        ) : (
+                          <div className="placeholder-sheen flex aspect-[4/3] flex-col justify-between p-3.5 text-xs text-[#6d716a]">
+                            <div className="flex items-center justify-between">
+                              <span className="rounded-md border border-[var(--border)] bg-white/70 px-2 py-0.5 font-mono text-[10px] text-[#555]">
+                                FOTOGRAFIA
+                              </span>
+
+                              <Camera className="h-4 w-4" aria-hidden="true" />
+                            </div>
+
+                            <span className="line-clamp-2 font-medium text-[#4f564b]">
+                              {item.title}
+                            </span>
+                          </div>
+                        )}
+
+                        {/* Texto informativo */}
+                        {/* <div className="flex-1 p-3">
+                          <h4 className="line-clamp-1 font-display text-sm font-semibold text-[#383e35]">
                             {item.title}
-                          </span>
-                          <Camera className="h-4 w-4" aria-hidden="true" />
-                        </div>
-                      )}
-                      <div className="p-3">
-                        <h4 className="line-clamp-1 font-display text-sm font-medium text-[#383e35]">
-                          {item.title}
-                        </h4>
+                          </h4>
+
+                          {images.length > 1 && (
+                            <p className="mt-1 text-xs text-[var(--warm-gray)]">
+                              {images.length} fotografias
+                            </p>
+                          )}
+                        </div> */}
                       </div>
-                    </div>
-                  </button>
-                ))}
+                    </button>
+                  );
+                })}
               </div>
             </Card>
           ))}
@@ -596,7 +642,7 @@ export function Gallery() {
         </div>
       )}
 
-      {/* Modal de Fotografia Ampliada */}
+      {/* Modal de Fotografia Ampliada com Carrossel */}
       <Modal
         open={Boolean(selectedPhoto)}
         title={selectedPhoto?.item.title ?? ""}
@@ -605,51 +651,291 @@ export function Gallery() {
           setIsLightboxOpen(false);
         }}
       >
-        {selectedPhoto?.item.imageUrl ? (
-          <div
-            className="group/img relative aspect-[4/3] w-full cursor-zoom-in overflow-hidden rounded-2xl bg-black"
-            onClick={() => setIsLightboxOpen(true)}
-            title="Clique para ampliar em tela cheia"
-          >
-            <img
-              src={selectedPhoto.item.imageUrl}
-              alt={selectedPhoto.item.title}
-              className="h-full w-full object-contain transition duration-200 group-hover/img:scale-[1.02] pointer-events-none select-none"
-              draggable={false}
-              onContextMenu={(e) => e.preventDefault()}
-            />
-            <div className="absolute right-3 top-3 flex items-center gap-1.5 rounded-full bg-black/70 px-3 py-1.5 text-xs font-medium text-white shadow-lg backdrop-blur transition group-hover/img:bg-black/90">
-              <ZoomIn className="h-3.5 w-3.5" />
-              <span>Ampliar</span>
-            </div>
-          </div>
-        ) : (
-          <div className="placeholder-sheen flex aspect-[4/3] items-center justify-center rounded-2xl text-sm font-medium text-[#6d716a]">
-            FOTOGRAFIA MEMORIAL
-          </div>
-        )}
-        <div className="mt-4 space-y-2">
-          <div className="flex items-center justify-between text-xs text-[var(--warm-gray)]">
-            <span className="font-medium text-[var(--sage-dark)]">
-              Pasta: {selectedPhoto?.folderTitle}
-            </span>
-            <span>{selectedPhoto?.item.date}</span>
-          </div>
-          <p className="text-sm leading-6 text-[#535950]">
-            {selectedPhoto?.item.description}
-          </p>
-          <p className="pt-2 text-xs text-[#777b73] border-t border-[var(--border)]">
-            Legenda preservada com carinho no acervo da família.
-          </p>
-        </div>
+        {selectedPhoto &&
+          (() => {
+            // Compatibilidade com fotografias antigas e listas de imagens.
+            const modalImages = selectedPhoto.item.images?.length
+              ? selectedPhoto.item.images
+              : selectedPhoto.item.imageUrl
+                ? [selectedPhoto.item.imageUrl]
+                : [];
+
+            return (
+              <div className="space-y-4">
+                {modalImages.length > 0 ? (
+                  <div className="space-y-2">
+                    {/* Imagem principal */}
+                    <div
+                      className="group/img relative aspect-[4/3] w-full cursor-zoom-in overflow-hidden rounded-2xl bg-black"
+                      onClick={() => setIsLightboxOpen(true)}
+                      title="Clique na foto para ampliar em tela cheia com zoom"
+                    >
+                      <img
+                        src={modalImages[0]}
+                        alt={selectedPhoto.item.title}
+                        className="pointer-events-none h-full w-full select-none object-contain transition duration-200 group-hover/img:scale-[1.02]"
+                        draggable={false}
+                        onContextMenu={(e) => e.preventDefault()}
+                      />
+
+                      {/* Indicador de ampliação */}
+                      <div className="absolute right-3 top-3 flex items-center gap-1.5 rounded-full bg-black/70 px-3 py-1.5 text-xs font-medium text-white shadow-lg backdrop-blur transition group-hover/img:bg-black/90">
+                        <ZoomIn className="h-3.5 w-3.5" />
+                        <span>Ampliar</span>
+                      </div>
+
+                      {/* Navegação caso existam várias fotografias */}
+                      {modalImages.length > 1 && (
+                        <>
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setIsLightboxOpen(true);
+                            }}
+                            className="absolute left-2 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full bg-black/60 text-white backdrop-blur transition hover:bg-black/90"
+                            aria-label="Abrir fotografias ampliadas"
+                          >
+                            <ChevronLeft className="h-5 w-5" />
+                          </button>
+
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setIsLightboxOpen(true);
+                            }}
+                            className="absolute right-2 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full bg-black/60 text-white backdrop-blur transition hover:bg-black/90"
+                            aria-label="Abrir fotografias ampliadas"
+                          >
+                            <ChevronRight className="h-5 w-5" />
+                          </button>
+
+                          <div className="absolute bottom-2 right-2 rounded-full bg-black/70 px-2.5 py-0.5 text-xs font-medium text-white backdrop-blur">
+                            {modalImages.length} fotos
+                          </div>
+                        </>
+                      )}
+                    </div>
+
+                    {/* Miniaturas */}
+                    {modalImages.length > 1 && (
+                      <div className="flex gap-2 overflow-x-auto py-1">
+                        {modalImages.map((img, idx) => (
+                          <button
+                            key={`${selectedPhoto.item.id}-${idx}`}
+                            type="button"
+                            onClick={() => {
+                              // A seleção individual pode ser feita no lightbox.
+                              setIsLightboxOpen(true);
+                            }}
+                            className="relative h-14 w-14 shrink-0 overflow-hidden rounded-xl border-2 border-transparent opacity-75 transition hover:border-[#A4B494] hover:opacity-100"
+                            aria-label={`Abrir fotografia ${idx + 1}`}
+                          >
+                            <img
+                              src={img}
+                              alt={`Miniatura ${idx + 1}`}
+                              className="h-full w-full object-cover"
+                            />
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <div className="placeholder-sheen flex aspect-[4/3] items-center justify-center rounded-2xl text-sm font-medium text-[#6d716a]">
+                    FOTOGRAFIA MEMORIAL
+                  </div>
+                )}
+
+                {/* Informações da fotografia */}
+                <div className="space-y-2">
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-[var(--warm-gray)]">
+                    <span className="font-medium text-[var(--sage-dark)]">
+                      {selectedPhoto.folderTitle}
+                    </span>
+                    <span>{selectedPhoto.item.date}</span>
+                  </div>
+
+                  <p className="text-sm leading-6 text-[#535950]">
+                    {selectedPhoto.item.description}
+                  </p>
+
+                  <p className="border-t border-[var(--border)] pt-2 text-xs text-[#777b73]">
+                    Acervo fotografico preservado e digitalizado com carinho.
+                  </p>
+                </div>
+              </div>
+            );
+          })()}
       </Modal>
 
-      {/* Lightbox em tela cheia com Zoom */}
+      {/* Lightbox em tela cheia */}
+
+      {/* Modal de fotografia com carrossel */}
+      <Modal
+        open={Boolean(selectedPhoto)}
+        title={selectedPhoto?.item.title ?? ""}
+        onClose={() => {
+          setSelectedPhoto(null);
+          setIsLightboxOpen(false);
+          setActivePhotoIndex(0);
+        }}
+      >
+        {selectedPhoto &&
+          (() => {
+            const modalImages = selectedPhoto.item.images?.length
+              ? selectedPhoto.item.images
+              : selectedPhoto.item.imageUrl
+                ? [selectedPhoto.item.imageUrl]
+                : [];
+
+            const safeIndex =
+              activePhotoIndex >= 0 && activePhotoIndex < modalImages.length
+                ? activePhotoIndex
+                : 0;
+
+            const changePhoto = (index: number) => {
+              setActivePhotoIndex(index);
+            };
+
+            return (
+              <div className="space-y-4">
+                {modalImages.length > 0 ? (
+                  <div className="space-y-2">
+                    {/* Imagem principal */}
+                    <div
+                      className="group/img relative aspect-[4/3] w-full cursor-zoom-in overflow-hidden rounded-2xl bg-black"
+                      onClick={() => setIsLightboxOpen(true)}
+                      title="Clique para ampliar em tela cheia"
+                    >
+                      <img
+                        src={modalImages[safeIndex]}
+                        alt={`${selectedPhoto.item.title} - Foto ${safeIndex + 1}`}
+                        className="pointer-events-none h-full w-full select-none object-contain transition duration-200 group-hover/img:scale-[1.02]"
+                        draggable={false}
+                        onContextMenu={(e) => e.preventDefault()}
+                      />
+
+                      {/* Indicador de zoom */}
+                      <div className="absolute right-3 top-3 flex items-center gap-1.5 rounded-full bg-black/70 px-3 py-1.5 text-xs font-medium text-white shadow-lg backdrop-blur transition group-hover/img:bg-black/90">
+                        <ZoomIn className="h-3.5 w-3.5" />
+                        <span>Ampliar</span>
+                      </div>
+
+                      {/* Navegação entre imagens */}
+                      {modalImages.length > 1 && (
+                        <>
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              changePhoto(
+                                safeIndex > 0
+                                  ? safeIndex - 1
+                                  : modalImages.length - 1,
+                              );
+                            }}
+                            className="absolute left-2 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full bg-black/60 text-white backdrop-blur transition hover:bg-black/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                            aria-label="Fotografia anterior"
+                          >
+                            <ChevronLeft className="h-5 w-5" />
+                          </button>
+
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              changePhoto(
+                                safeIndex < modalImages.length - 1
+                                  ? safeIndex + 1
+                                  : 0,
+                              );
+                            }}
+                            className="absolute right-2 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full bg-black/60 text-white backdrop-blur transition hover:bg-black/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                            aria-label="Próxima fotografia"
+                          >
+                            <ChevronRight className="h-5 w-5" />
+                          </button>
+
+                          {/* Contador */}
+                          <div className="absolute bottom-2 right-2 rounded-full bg-black/70 px-2.5 py-1 text-xs font-medium text-white backdrop-blur">
+                            {safeIndex + 1} / {modalImages.length}
+                          </div>
+                        </>
+                      )}
+                    </div>
+
+                    {/* Miniaturas sincronizadas */}
+                    {modalImages.length > 1 && (
+                      <div className="flex gap-2 overflow-x-auto py-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        {modalImages.map((img, idx) => (
+                          <button
+                            key={`${selectedPhoto.item.id}-${idx}`}
+                            type="button"
+                            onClick={() => changePhoto(idx)}
+                            className={`relative h-14 w-14 shrink-0 overflow-hidden rounded-xl border-2 transition ${
+                              safeIndex === idx
+                                ? "border-[#A4B494] ring-2 ring-[#A4B494]/40"
+                                : "border-transparent opacity-60 hover:opacity-100"
+                            }`}
+                            aria-label={`Selecionar fotografia ${idx + 1}`}
+                            aria-current={
+                              safeIndex === idx ? "true" : undefined
+                            }
+                          >
+                            <img
+                              src={img}
+                              alt={`Miniatura ${idx + 1}`}
+                              className="h-full w-full object-cover"
+                            />
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <div className="placeholder-sheen flex aspect-[4/3] items-center justify-center rounded-2xl text-sm font-medium text-[#6d716a]">
+                    FOTOGRAFIA MEMORIAL
+                  </div>
+                )}
+
+                {/* Informações da fotografia */}
+                <div className="space-y-2">
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-[var(--warm-gray)]">
+                    <span className="font-medium text-[var(--sage-dark)]">
+                      {selectedPhoto.folderTitle}
+                    </span>
+                    <span>{selectedPhoto.item.date}</span>
+                  </div>
+
+                  <p className="text-sm leading-6 text-[#535950]">
+                    {selectedPhoto.item.description}
+                  </p>
+
+                  <p className="border-t border-[var(--border)] pt-2 text-xs text-[#777b73]">
+                    Acervo fotografico preservado e digitalizado com carinho.
+                  </p>
+                </div>
+              </div>
+            );
+          })()}
+      </Modal>
+
+      {/* Lightbox em tela cheia sincronizado com o modal */}
       <ImageLightbox
         open={isLightboxOpen}
         images={
-          selectedPhoto?.item.imageUrl ? [selectedPhoto.item.imageUrl] : []
+          selectedPhoto
+            ? selectedPhoto.item.images?.length
+              ? selectedPhoto.item.images
+              : selectedPhoto.item.imageUrl
+                ? [selectedPhoto.item.imageUrl]
+                : []
+            : []
         }
+        currentIndex={activePhotoIndex}
+        onIndexChange={setActivePhotoIndex}
         title={selectedPhoto?.item.title}
         onClose={() => setIsLightboxOpen(false)}
       />

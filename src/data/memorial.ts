@@ -248,93 +248,443 @@ export const favorites: Favorite[] = [
 export const galleryFolders: GalleryFolder[] = [
   {
     id: "folder-1",
-    title: "Primeiros Anos & Juventude",
-    date: "1945 — 1964",
+    title: "Galéria de fotos",
+    date: "",
     comment:
-      "Registros da infância em Santa Aurora, tempos de escola e os primeiros passeios inesquecíveis.",
+      "Momentos que merecem ser guardados.",
     items: [
       {
         id: "img-1",
-        title: "Com os pais no sítio",
-        description: "Tarde ensolarada de verão na casa dos avós.",
-        date: "1952",
+        title: "Coral Harmonia ",
+        description: "Coral Harmonia do DER em março de 1974.",
+        date: "1974",
+        imageUrl:"/images/galeria/_fotos/pba/a1.jpg",
       },
       {
         id: "img-2",
-        title: "Formatura do colégio",
+        title: "Coral Harmonia e Coral Julia Pardini",
         description:
-          "O dia em que decidiu seguir com orgulho a carreira de professora.",
-        date: "1960",
+          "Coral Harmonia e Coral Julia Pardini  na Igreja São Francisco de Assis em Ouro Preto em 30/3/1975.",
+        date: "1975",
+        imageUrl:"/images/galeria/_fotos/pba/a2.jpg",
       },
       {
         id: "img-3",
-        title: "Passeio com as amigas",
+        title: "Coral Harmonia",
         description:
-          "Primeira viagem de trem até a capital com as companheiras de turma.",
-        date: "1963",
+          "Coral Harmonia em setembro de 1975",
+        date: "1975",
+        imageUrl:"/images/galeria/_fotos/pba/a3.jpg",
       },
-    ],
-  },
-  {
-    id: "folder-2",
-    title: "Casamento & Vida em Família",
-    date: "1965 — 1985",
-    comment:
-      "O início de uma linda jornada a dois, o nascimento dos filhos e celebrações cheias de afeto.",
-    items: [
       {
-        id: "img-4",
-        title: "O dia do casamento",
+        id: "img-222",
+        title: "Coral Harmonia",
         description:
-          "Celebração serena e cheia de amor com a família e os amigos mais próximos.",
-        date: "1965",
-      },
+          "Coral Harmonia em Paraíba do Sul em 11/6/1977",
+        date: "1977",
+        imageUrl:"/images/galeria/_fotos/pba/a4.jpg",
+      },      
       {
         id: "img-5",
         title: "Primeiro aniversário dos filhos",
         description:
           "Festa no quintal de casa com bolo caseiro e sorrisos sinceros.",
         date: "1971",
+        images: [
+          "/images/galeria/_fotos/gp1/a7.jpg",
+          "/images/galeria/_fotos/gp1/a8.jpg",          
+        ],
+      },
+      {
+        id: "img-4",
+        title: "Harte Vocal",
+        description:
+          "Harte Vocal na Sala Cecília Meireles em 1987.",
+        date: "1987",
+        images: [
+          "/images/galeria/_fotos/a5.jpg",
+          "/images/galeria/_fotos/a6.jpg",          
+        ],
       },
       {
         id: "img-6",
-        title: "Férias de verão na serra",
+        title: "Encontro com José Vieira",
         description:
-          "Piquenique à beira do lago em um final de semana de sol e descanso.",
-        date: "1979",
+          "Coral Harte Vocal em julho de 1991 no Conservatório Brasileiro de Música em homenagem a José Vieira Brandão ",
+        date: "1991",
+        imageUrl:"/images/galeria/_fotos/a9.jpg",
       },
-    ],
-  },
-  {
-    id: "folder-3",
-    title: "O Jardim & Tardes Especiais",
-    date: "1986 — 2015",
-    comment:
-      "Flores, café fresquinho, reuniões dominicais e a dedicação única a cada cantinho do lar.",
-    items: [
       {
         id: "img-7",
-        title: "Cuidando das hortênsias",
+        title: "Coral Harte Vocal",
         description:
-          "O momento favorito da tarde entre as mudas de flores e a terra molhada.",
+          "Coral Harte Vocal no Paço Imperial no Projeto Montrealbank em 1992.",
         date: "1992",
+        imageUrl:"/images/galeria/_fotos/b1.jpg",
       },
       {
         id: "img-8",
-        title: "Café da tarde de domingo",
+        title: "Coral Harte Vocal",
         description:
-          "A mesa posta com carinho para receber todos que chegavam sem pressa.",
-        date: "2004",
+          "Coral Harte Vocal em 1994 ",
+        date: "1994",
+        imageUrl:"/images/galeria/_fotos/b2.jpg",
       },
       {
         id: "img-9",
-        title: "Com os netos no jardim",
+        title: "Coral Harte Vocal",
         description:
-          "Contando histórias do passado sob a copa da grande árvore.",
-        date: "2012",
+          "Coral Harte Vocal em 1994 ",
+        date: "1994",
+        images: [
+          "/images/galeria/_fotos/gp2/b3.jpg",
+          "/images/galeria/_fotos/gp2/b4.jpg",     
+          "/images/galeria/_fotos/gp2/b4a.jpg",   
+        ],
+      },
+      {
+        id: "img-10",
+        title: "Coral Harte Vocal",
+        description:
+          "Harte Vocal na Série Vesperal em 04/8/1995 na Sala Cecília Meireles.",
+        date: "1995",
+        images: [
+          "/images/galeria/_fotos/gp3/b5.jpg",
+          "/images/galeria/_fotos/gp3/b6.jpg",     
+          "/images/galeria/_fotos/gp3/b7.jpg",   
+        ],
+      },
+      {
+        id: "img-11",
+        title: "Harte Vocal",
+        description:
+          "Harte Vocal com Francis Hime na série “Pérolas e Corais” no CCBB em 26/3/1996.",
+        date: "1996",
+        images: [
+          "/images/galeria/_fotos/gp4/b8.jpg",
+          "/images/galeria/_fotos/gp4/b9.jpg",     
+          "/images/galeria/_fotos/gp4/c1.jpg",
+          "/images/galeria/_fotos/gp4/c2.jpg",
+          "/images/galeria/_fotos/gp4/c3.jpg",     
+          "/images/galeria/_fotos/gp4/c4.jpg",    
+        ],
+      },
+      {
+        id: "img-12",
+        title: "Harte Vocal",
+        description:
+          "Concerto de 10 anos do Harte Vocal em 29/11/1998 na Sala Cecília Meireles.",
+        date: "1998",
+        imageUrl:"/images/galeria/_fotos/c5.jpg",
+      },
+      {
+        id: "img-13",
+        title: "Harte Vocal",
+        description:
+          "Coral Harte Vocal no 11º Concurso de Corais do Rio de Janeiro em 1988.",
+        date: "1988",
+        images: [             
+          "/images/galeria/_fotos/gp5/c6.jpg",
+          "/images/galeria/_fotos/gp5/c7.jpg",
+          "/images/galeria/_fotos/gp5/c8.jpg",     
+          "/images/galeria/_fotos/gp5/c9.jpg",    
+        ],
+      },
+      {
+        id: "img-14",
+        title: "Harte Vocal",
+        description:
+          "Coral Harte Vocal no Jardim Botânico em 1995.",
+        date: "1995",
+        images: [             
+          "/images/galeria/_fotos/pbc/c9a.jpg",
+          "/images/galeria/_fotos/pbc/c9b.jpg",
+          "/images/galeria/_fotos/pbc/c9c.jpg",     
+          "/images/galeria/_fotos/pbc/c9d.jpg",
+          "/images/galeria/_fotos/pbc/c9e.jpg",    
+        ],
+      },
+      {
+        id: "img-15",
+        title: "Harte Vocal",
+        description:
+          "Harte Vocal na Bienal de Música em 1999 no CCBB.",
+        date: "1999",
+        images: [             
+          "/images/galeria/_fotos/gp6/d1.jpg",
+          "/images/galeria/_fotos/gp6/d2.jpg",            
+        ],
+      },
+      {
+        id: "img-16",
+        title: "Harte Vocal",
+        description:
+          "Coral Harte Vocal no VIII Festival de Corais de Atenas no ano 2000.",
+        date: "2000",
+        images: [             
+          "/images/galeria/_fotos/gp7/d3.jpg",
+          "/images/galeria/_fotos/gp7/d4.jpg",
+          "/images/galeria/_fotos/gp7/d5.jpg",     
+          "/images/galeria/_fotos/gp7/d6.jpg", 
+          "/images/galeria/_fotos/gp7/d7.jpg", 
+          "/images/galeria/_fotos/gp7/d8.jpg",    
+        ],
+      },
+      {
+        id: "img-17",
+        title: "Harte Vocal",
+        description:
+          "Coral Harte Vocal na Sala Cecília Meireles em 14/12/2000.",
+        date: "2000",
+        images: [             
+          "/images/galeria/_fotos/gp8/d9.jpg",
+          "/images/galeria/_fotos/gp8/e1.jpg",            
+        ],
+      },
+      {
+        id: "img-18",
+        title: "Harte Vocal",
+        description:
+          "Coral Harte Vocal na Igreja de N.S. da Glória do Outeiro em 07/11/2001.",
+        date: "2001",
+        images: [             
+          "/images/galeria/_fotos/gp9/e2.jpg",
+          "/images/galeria/_fotos/gp9/e3.jpg",            
+        ],        
+      },
+      {
+        id: "img-19",
+        title: "Concerto comemorativo",
+        description:
+          "Concerto comemorativo pelos 30 anos de regência de Solange Pinto Mendonça no Salão Leopoldo Miguez da Escola de Música da UFRJ com participação de José Vieira Brandão  em 24/11/2001.",
+        date: "2001",
+        images: [             
+          "/images/galeria/_fotos/gp10/e4.jpg",
+          "/images/galeria/_fotos/gp10/e5.jpg",
+          "/images/galeria/_fotos/gp10/e6.jpg",
+          "/images/galeria/_fotos/gp10/e7.jpg",
+          "/images/galeria/_fotos/gp10/e8.jpg",
+          "/images/galeria/_fotos/gp10/e9.jpg",
+          "/images/galeria/_fotos/gp10/f1.jpg",            
+        ],
+      },
+      {
+        id: "img-20",
+        title: "Concerto comemorativo",
+        description:
+          "Concerto comemorativo pelos 30 anos de regência de Solange Pinto Mendonça no Salão Leopoldo Miguez da Escola de Música da UFRJ em 24/11/2001.",
+        date: "2001",
+        images: [             
+          "/images/galeria/_fotos/gp11/f2.jpg",
+          "/images/galeria/_fotos/gp11/f3.jpg",
+          "/images/galeria/_fotos/gp11/f4.jpg",
+          "/images/galeria/_fotos/gp11/f5.jpg",
+          "/images/galeria/_fotos/gp11/f6.jpg",                     
+        ],
+      },
+      {
+        id: "img-21",
+        title: "Lorenzo Fernandes",
+        description:
+          "Coral Lorenzo Fernandes no IX Febacor – Festival Bach de Corais em São Lourenço em 2001.",
+        date: "2001",
+        images: [             
+          "/images/galeria/_fotos/gp12/f7.jpg",
+          "/images/galeria/_fotos/gp12/f8.jpg",
+          "/images/galeria/_fotos/gp12/f9.jpg",
+          "/images/galeria/_fotos/gp12/g1.jpg",
+          "/images/galeria/_fotos/gp12/g2.jpg",                     
+        ],
+      },
+      {
+        id: "img-22",
+        title: "Harte Vocal",
+        description:
+          "Harte Vocal em Campos em 28/7/2001.",
+        date: "2001",
+        imageUrl:"/images/galeria/_fotos/g3.jpg",
+      },
+      {
+        id: "img-23",
+        title: "Harte Vocal",
+        description:
+          "Coral Harte Vocal no CBM em 2001.",
+        date: "2001",
+        imageUrl:"/images/galeria/_fotos/g4.jpg",
+      },
+      {
+        id: "img-24",
+        title: "Harte Vocal",
+        description:
+          "Coral Harmonia na Capela de S. Conrado.",
+        date: "",
+        imageUrl:"/images/galeria/_fotos/g5.jpg",
+      },
+      {
+        id: "img-25",
+        title: "Harte Vocal",
+        description:
+          "Coral Harmonia.",
+        date: "",
+        imageUrl:"/images/galeria/_fotos/g6.jpg",
+      },
+      {
+        id: "img-26",
+        title: "Harte Vocal",
+        description:
+          "Coral Harte Vocal, Solange Pinto Mendonça e José Vieira Brandão ",
+        date: "",
+        imageUrl:"/images/galeria/_fotos/g7.jpg",
+      },
+      {
+        id: "img-27",
+        title: "Harte Vocal",
+        description:
+          "Coral Harte Vocal no Palácio de Cristal em Petrópolis.",
+        date: "",
+        imageUrl:"/images/galeria/_fotos/g8.jpg",
+      },
+      {
+        id: "img-28",
+        title: "Lorenzo Fernandes",
+        description:
+          "Coral Lorenzo Fernandes no Auditório do Conservatório Brasileiro de Música",
+        date: "",
+        imageUrl:"/images/galeria/_fotos/g9.jpg",
+      },
+      {
+        id: "img-29",
+        title: "Lorenzo Fernandes",
+        description:
+          "Coral Lorenzo Fernandes",
+        date: "",
+        imageUrl:"/images/galeria/_fotos/h1.jpg",
+      },
+      {
+        id: "img-30",
+        title: "Harte Vocal",
+        description:
+          "Coral Harte Vocal em São Lourenzo ",
+        date: "2001",
+        images: [             
+          "/images/galeria/_fotos/gp13/h2.jpg",
+          "/images/galeria/_fotos/gp13/h3.jpg",                             
+        ]
+      },
+      {
+        id: "img-31",
+        title: "Colégio Estadual Brigadeiro Schorcht",
+        description:
+          "Coral do Colégio Estadual Brigadeiro Schorcht na Sala Cecília Meireles ",
+        date: "",
+        imageUrl:"/images/galeria/_fotos/h4.jpg",
+      },
+      {
+        id: "img-32",
+        title: "Orfeão Carlos Gomes ",
+        description:
+          "Orfeão Carlos Gomes ",
+        date: "",
+        imageUrl:"/images/galeria/_fotos/h5.jpg",
+      },
+      {
+        id: "img-33",
+        title: "Solange Pinto Mendoça",
+        description:
+          "Solange Pinto Mendoça",
+        date: "",
+        imageUrl:"/images/galeria/_fotos/h6.jpg",
+      },
+      {
+        id: "img-34",
+        title: "Solange Pinto Mendoça",
+        description:
+          "Solange Pinto Mendonça e José Vieira Brandão na Sala Cecília Meireles ",
+        date: "",
+        imageUrl:"/images/galeria/_fotos/h7.jpg",
+      },
+      {
+        id: "img-35",
+        title: "Harte Vocal",
+        description:
+          "Coral Harte Vocal no SESC Tijuca  ",
+        date: "",
+        imageUrl:"/images/galeria/_fotos/h8.jpg",
       },
     ],
   },
+  // {
+  //   id: "folder-2",
+  //   title: "Harte Vocal",
+  //   date: "1987-1991",
+  //   comment:
+  //     "O início de uma linda jornada, Encontro de Coros em Brasília .",
+  //   items: [
+  //     {
+  //       id: "img-4",
+  //       title: "Harte Vocal",
+  //       description:
+  //         "Harte Vocal na Sala Cecília Meireles em 1987.",
+  //       date: "1987",
+  //       images: [
+  //         "/images/galeria/_fotos/a5.jpg",
+  //         "/images/galeria/_fotos/a6.jpg",          
+  //       ],
+  //     },
+  //     {
+  //       id: "img-5",
+  //       title: "Primeiro aniversário dos filhos",
+  //       description:
+  //         "Festa no quintal de casa com bolo caseiro e sorrisos sinceros.",
+  //       date: "1971",
+  //       images: [
+  //         "/images/galeria/_fotos/gp1/a7.jpg",
+  //         "/images/galeria/_fotos/gp1/a8.jpg",          
+  //       ],
+  //     },
+  //     {
+  //       id: "img-6",
+  //       title: "Encontro com José Vieira",
+  //       description:
+  //         "Coral Harte Vocal em julho de 1991 no Conservatório Brasileiro de Música em homenagem a José Vieira Brandão ",
+  //       date: "1991",
+  //       imageUrl:"/images/galeria/_fotos/a9.jpg",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: "folder-3",
+  //   title: "O Jardim & Tardes Especiais",
+  //   date: "1986 — 2015",
+  //   comment:
+  //     "Flores, café fresquinho, reuniões dominicais e a dedicação única a cada cantinho do lar.",
+  //   items: [
+  //     {
+  //       id: "img-7",
+  //       title: "Cuidando das hortênsias",
+  //       description:
+  //         "O momento favorito da tarde entre as mudas de flores e a terra molhada.",
+  //       date: "1992",
+  //       imageUrl:"/images/galeria/_fotos/e3.jpg",
+  //     },
+  //     {
+  //       id: "img-8",
+  //       title: "Café da tarde de domingo",
+  //       description:
+  //         "A mesa posta com carinho para receber todos que chegavam sem pressa.",
+  //       date: "2004",
+  //       imageUrl:"/images/galeria/_fotos/f3.jpg",
+  //     },
+  //     {
+  //       id: "img-9",
+  //       title: "Com os netos no jardim",
+  //       description:
+  //         "Contando histórias do passado sob a copa da grande árvore.",
+  //       date: "2012",
+  //       imageUrl:"/images/galeria/_fotos/g3.jpg",
+  //     },
+  //   ],
+  // },
 ];
 
 export const galleryItems: GalleryItem[] = galleryFolders.flatMap(

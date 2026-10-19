@@ -28,6 +28,7 @@ export interface GalleryItem {
   description: string;
   date: string;
   imageUrl?: string;
+  images?: string[];
 }
 
 export interface GalleryFolder {

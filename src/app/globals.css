@@ -62,6 +62,15 @@ img, picture, video, audio, .protected-media {
   -webkit-touch-callout: none;
 }
 
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* Proteção contra impressão ou exportação para PDF (Ctrl+P) */
 @media print {
   img, video, audio, .protected-media {
