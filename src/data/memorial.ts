@@ -250,15 +250,14 @@ export const galleryFolders: GalleryFolder[] = [
     id: "folder-1",
     title: "Galeria de fotos",
     date: "",
-    comment:
-      "",
+    comment: "",
     items: [
       {
         id: "img-1",
         title: "Coral Harmonia ",
         description: "Coral Harmonia do DER em março de 1974.",
         date: "1974",
-        imageUrl:"/images/galeria/_fotos/pba/a1.jpg",
+        imageUrl: "/images/galeria/_fotos/pba/a1.jpg",
       },
       {
         id: "img-2",
@@ -266,24 +265,22 @@ export const galleryFolders: GalleryFolder[] = [
         description:
           "Coral Harmonia e Coral Julia Pardini  na Igreja São Francisco de Assis em Ouro Preto em 30/3/1975.",
         date: "1975",
-        imageUrl:"/images/galeria/_fotos/pba/a2.jpg",
+        imageUrl: "/images/galeria/_fotos/pba/a2.jpg",
       },
       {
         id: "img-3",
         title: "Coral Harmonia",
-        description:
-          "Coral Harmonia em setembro de 1975",
+        description: "Coral Harmonia em setembro de 1975",
         date: "1975",
-        imageUrl:"/images/galeria/_fotos/pba/a3.jpg",
+        imageUrl: "/images/galeria/_fotos/pba/a3.jpg",
       },
       {
         id: "img-222",
         title: "Coral Harmonia",
-        description:
-          "Coral Harmonia em Paraíba do Sul em 11/6/1977",
+        description: "Coral Harmonia em Paraíba do Sul em 11/6/1977",
         date: "1977",
-        imageUrl:"/images/galeria/_fotos/pba/a4.jpg",
-      },      
+        imageUrl: "/images/galeria/_fotos/pba/a4.jpg",
+      },
       {
         id: "img-5",
         title: "Primeiro aniversário dos filhos",
@@ -292,18 +289,17 @@ export const galleryFolders: GalleryFolder[] = [
         date: "1971",
         images: [
           "/images/galeria/_fotos/gp1/a7.jpg",
-          "/images/galeria/_fotos/gp1/a8.jpg",          
+          "/images/galeria/_fotos/gp1/a8.jpg",
         ],
       },
       {
         id: "img-4",
         title: "Harte Vocal",
-        description:
-          "Harte Vocal na Sala Cecília Meireles em 1987.",
+        description: "Harte Vocal na Sala Cecília Meireles em 1987.",
         date: "1987",
         images: [
           "/images/galeria/_fotos/a5.jpg",
-          "/images/galeria/_fotos/a6.jpg",          
+          "/images/galeria/_fotos/a6.jpg",
         ],
       },
       {
@@ -312,7 +308,7 @@ export const galleryFolders: GalleryFolder[] = [
         description:
           "Coral Harte Vocal em julho de 1991 no Conservatório Brasileiro de Música em homenagem a José Vieira Brandão ",
         date: "1991",
-        imageUrl:"/images/galeria/_fotos/a9.jpg",
+        imageUrl: "/images/galeria/_fotos/a9.jpg",
       },
       {
         id: "img-7",
@@ -320,26 +316,24 @@ export const galleryFolders: GalleryFolder[] = [
         description:
           "Coral Harte Vocal no Paço Imperial no Projeto Montrealbank em 1992.",
         date: "1992",
-        imageUrl:"/images/galeria/_fotos/b1.jpg",
+        imageUrl: "/images/galeria/_fotos/b1.jpg",
       },
       {
         id: "img-8",
         title: "Coral Harte Vocal",
-        description:
-          "Coral Harte Vocal em 1994 ",
+        description: "Coral Harte Vocal em 1994 ",
         date: "1994",
-        imageUrl:"/images/galeria/_fotos/b2.jpg",
+        imageUrl: "/images/galeria/_fotos/b2.jpg",
       },
       {
         id: "img-9",
         title: "Coral Harte Vocal",
-        description:
-          "Coral Harte Vocal em 1994 ",
+        description: "Coral Harte Vocal em 1994 ",
         date: "1994",
         images: [
           "/images/galeria/_fotos/gp2/b3.jpg",
-          "/images/galeria/_fotos/gp2/b4.jpg",     
-          "/images/galeria/_fotos/gp2/b4a.jpg",   
+          "/images/galeria/_fotos/gp2/b4.jpg",
+          "/images/galeria/_fotos/gp2/b4a.jpg",
         ],
       },
       {
@@ -350,8 +344,8 @@ export const galleryFolders: GalleryFolder[] = [
         date: "1995",
         images: [
           "/images/galeria/_fotos/gp3/b5.jpg",
-          "/images/galeria/_fotos/gp3/b6.jpg",     
-          "/images/galeria/_fotos/gp3/b7.jpg",   
+          "/images/galeria/_fotos/gp3/b6.jpg",
+          "/images/galeria/_fotos/gp3/b7.jpg",
         ],
       },
       {
@@ -362,11 +356,11 @@ export const galleryFolders: GalleryFolder[] = [
         date: "1996",
         images: [
           "/images/galeria/_fotos/gp4/b8.jpg",
-          "/images/galeria/_fotos/gp4/b9.jpg",     
+          "/images/galeria/_fotos/gp4/b9.jpg",
           "/images/galeria/_fotos/gp4/c1.jpg",
           "/images/galeria/_fotos/gp4/c2.jpg",
-          "/images/galeria/_fotos/gp4/c3.jpg",     
-          "/images/galeria/_fotos/gp4/c4.jpg",    
+          "/images/galeria/_fotos/gp4/c3.jpg",
+          "/images/galeria/_fotos/gp4/c4.jpg",
         ],
       },
       {
@@ -375,7 +369,7 @@ export const galleryFolders: GalleryFolder[] = [
         description:
           "Concerto de 10 anos do Harte Vocal em 29/11/1998 na Sala Cecília Meireles.",
         date: "1998",
-        imageUrl:"/images/galeria/_fotos/c5.jpg",
+        imageUrl: "/images/galeria/_fotos/c5.jpg",
       },
       {
         id: "img-13",
@@ -383,36 +377,34 @@ export const galleryFolders: GalleryFolder[] = [
         description:
           "Coral Harte Vocal no 11º Concurso de Corais do Rio de Janeiro em 1988.",
         date: "1988",
-        images: [             
+        images: [
           "/images/galeria/_fotos/gp5/c6.jpg",
           "/images/galeria/_fotos/gp5/c7.jpg",
-          "/images/galeria/_fotos/gp5/c8.jpg",     
-          "/images/galeria/_fotos/gp5/c9.jpg",    
+          "/images/galeria/_fotos/gp5/c8.jpg",
+          "/images/galeria/_fotos/gp5/c9.jpg",
         ],
       },
       {
         id: "img-14",
         title: "Harte Vocal",
-        description:
-          "Coral Harte Vocal no Jardim Botânico em 1995.",
+        description: "Coral Harte Vocal no Jardim Botânico em 1995.",
         date: "1995",
-        images: [             
+        images: [
           "/images/galeria/_fotos/pbc/c9a.jpg",
           "/images/galeria/_fotos/pbc/c9b.jpg",
-          "/images/galeria/_fotos/pbc/c9c.jpg",     
+          "/images/galeria/_fotos/pbc/c9c.jpg",
           "/images/galeria/_fotos/pbc/c9d.jpg",
-          "/images/galeria/_fotos/pbc/c9e.jpg",    
+          "/images/galeria/_fotos/pbc/c9e.jpg",
         ],
       },
       {
         id: "img-15",
         title: "Harte Vocal",
-        description:
-          "Harte Vocal na Bienal de Música em 1999 no CCBB.",
+        description: "Harte Vocal na Bienal de Música em 1999 no CCBB.",
         date: "1999",
-        images: [             
+        images: [
           "/images/galeria/_fotos/gp6/d1.jpg",
-          "/images/galeria/_fotos/gp6/d2.jpg",            
+          "/images/galeria/_fotos/gp6/d2.jpg",
         ],
       },
       {
@@ -421,13 +413,13 @@ export const galleryFolders: GalleryFolder[] = [
         description:
           "Coral Harte Vocal no VIII Festival de Corais de Atenas no ano 2000.",
         date: "2000",
-        images: [             
+        images: [
           "/images/galeria/_fotos/gp7/d3.jpg",
           "/images/galeria/_fotos/gp7/d4.jpg",
-          "/images/galeria/_fotos/gp7/d5.jpg",     
-          "/images/galeria/_fotos/gp7/d6.jpg", 
-          "/images/galeria/_fotos/gp7/d7.jpg", 
-          "/images/galeria/_fotos/gp7/d8.jpg",    
+          "/images/galeria/_fotos/gp7/d5.jpg",
+          "/images/galeria/_fotos/gp7/d6.jpg",
+          "/images/galeria/_fotos/gp7/d7.jpg",
+          "/images/galeria/_fotos/gp7/d8.jpg",
         ],
       },
       {
@@ -436,9 +428,9 @@ export const galleryFolders: GalleryFolder[] = [
         description:
           "Coral Harte Vocal na Sala Cecília Meireles em 14/12/2000.",
         date: "2000",
-        images: [             
+        images: [
           "/images/galeria/_fotos/gp8/d9.jpg",
-          "/images/galeria/_fotos/gp8/e1.jpg",            
+          "/images/galeria/_fotos/gp8/e1.jpg",
         ],
       },
       {
@@ -447,10 +439,10 @@ export const galleryFolders: GalleryFolder[] = [
         description:
           "Coral Harte Vocal na Igreja de N.S. da Glória do Outeiro em 07/11/2001.",
         date: "2001",
-        images: [             
+        images: [
           "/images/galeria/_fotos/gp9/e2.jpg",
-          "/images/galeria/_fotos/gp9/e3.jpg",            
-        ],        
+          "/images/galeria/_fotos/gp9/e3.jpg",
+        ],
       },
       {
         id: "img-19",
@@ -458,14 +450,14 @@ export const galleryFolders: GalleryFolder[] = [
         description:
           "Concerto comemorativo pelos 30 anos de regência de Solange Pinto Mendonça no Salão Leopoldo Miguez da Escola de Música da UFRJ com participação de José Vieira Brandão  em 24/11/2001.",
         date: "2001",
-        images: [             
+        images: [
           "/images/galeria/_fotos/gp10/e4.jpg",
           "/images/galeria/_fotos/gp10/e5.jpg",
           "/images/galeria/_fotos/gp10/e6.jpg",
           "/images/galeria/_fotos/gp10/e7.jpg",
           "/images/galeria/_fotos/gp10/e8.jpg",
           "/images/galeria/_fotos/gp10/e9.jpg",
-          "/images/galeria/_fotos/gp10/f1.jpg",            
+          "/images/galeria/_fotos/gp10/f1.jpg",
         ],
       },
       {
@@ -474,12 +466,12 @@ export const galleryFolders: GalleryFolder[] = [
         description:
           "Concerto comemorativo pelos 30 anos de regência de Solange Pinto Mendonça no Salão Leopoldo Miguez da Escola de Música da UFRJ em 24/11/2001.",
         date: "2001",
-        images: [             
+        images: [
           "/images/galeria/_fotos/gp11/f2.jpg",
           "/images/galeria/_fotos/gp11/f3.jpg",
           "/images/galeria/_fotos/gp11/f4.jpg",
           "/images/galeria/_fotos/gp11/f5.jpg",
-          "/images/galeria/_fotos/gp11/f6.jpg",                     
+          "/images/galeria/_fotos/gp11/f6.jpg",
         ],
       },
       {
@@ -488,45 +480,41 @@ export const galleryFolders: GalleryFolder[] = [
         description:
           "Coral Lorenzo Fernandes no IX Febacor – Festival Bach de Corais em São Lourenço em 2001.",
         date: "2001",
-        images: [             
+        images: [
           "/images/galeria/_fotos/gp12/f7.jpg",
           "/images/galeria/_fotos/gp12/f8.jpg",
           "/images/galeria/_fotos/gp12/f9.jpg",
           "/images/galeria/_fotos/gp12/g1.jpg",
-          "/images/galeria/_fotos/gp12/g2.jpg",                     
+          "/images/galeria/_fotos/gp12/g2.jpg",
         ],
       },
       {
         id: "img-22",
         title: "Harte Vocal",
-        description:
-          "Harte Vocal em Campos em 28/7/2001.",
+        description: "Harte Vocal em Campos em 28/7/2001.",
         date: "2001",
-        imageUrl:"/images/galeria/_fotos/g3.jpg",
+        imageUrl: "/images/galeria/_fotos/g3.jpg",
       },
       {
         id: "img-23",
         title: "Harte Vocal",
-        description:
-          "Coral Harte Vocal no CBM em 2001.",
+        description: "Coral Harte Vocal no CBM em 2001.",
         date: "2001",
-        imageUrl:"/images/galeria/_fotos/g4.jpg",
+        imageUrl: "/images/galeria/_fotos/g4.jpg",
       },
       {
         id: "img-24",
         title: "Harte Vocal",
-        description:
-          "Coral Harmonia na Capela de S. Conrado.",
+        description: "Coral Harmonia na Capela de S. Conrado.",
         date: "",
-        imageUrl:"/images/galeria/_fotos/g5.jpg",
+        imageUrl: "/images/galeria/_fotos/g5.jpg",
       },
       {
         id: "img-25",
         title: "Harte Vocal",
-        description:
-          "Coral Harmonia.",
+        description: "Coral Harmonia.",
         date: "",
-        imageUrl:"/images/galeria/_fotos/g6.jpg",
+        imageUrl: "/images/galeria/_fotos/g6.jpg",
       },
       {
         id: "img-26",
@@ -534,15 +522,14 @@ export const galleryFolders: GalleryFolder[] = [
         description:
           "Coral Harte Vocal, Solange Pinto Mendonça e José Vieira Brandão ",
         date: "",
-        imageUrl:"/images/galeria/_fotos/g7.jpg",
+        imageUrl: "/images/galeria/_fotos/g7.jpg",
       },
       {
         id: "img-27",
         title: "Harte Vocal",
-        description:
-          "Coral Harte Vocal no Palácio de Cristal em Petrópolis.",
+        description: "Coral Harte Vocal no Palácio de Cristal em Petrópolis.",
         date: "",
-        imageUrl:"/images/galeria/_fotos/g8.jpg",
+        imageUrl: "/images/galeria/_fotos/g8.jpg",
       },
       {
         id: "img-28",
@@ -550,26 +537,24 @@ export const galleryFolders: GalleryFolder[] = [
         description:
           "Coral Lorenzo Fernandes no Auditório do Conservatório Brasileiro de Música",
         date: "",
-        imageUrl:"/images/galeria/_fotos/g9.jpg",
+        imageUrl: "/images/galeria/_fotos/g9.jpg",
       },
       {
         id: "img-29",
         title: "Lorenzo Fernandes",
-        description:
-          "Coral Lorenzo Fernandes",
+        description: "Coral Lorenzo Fernandes",
         date: "",
-        imageUrl:"/images/galeria/_fotos/h1.jpg",
+        imageUrl: "/images/galeria/_fotos/h1.jpg",
       },
       {
         id: "img-30",
         title: "Harte Vocal",
-        description:
-          "Coral Harte Vocal em São Lourenzo ",
+        description: "Coral Harte Vocal em São Lourenzo ",
         date: "2001",
-        images: [             
+        images: [
           "/images/galeria/_fotos/gp13/h2.jpg",
-          "/images/galeria/_fotos/gp13/h3.jpg",                             
-        ]
+          "/images/galeria/_fotos/gp13/h3.jpg",
+        ],
       },
       {
         id: "img-31",
@@ -577,23 +562,21 @@ export const galleryFolders: GalleryFolder[] = [
         description:
           "Coral do Colégio Estadual Brigadeiro Schorcht na Sala Cecília Meireles ",
         date: "",
-        imageUrl:"/images/galeria/_fotos/h4.jpg",
+        imageUrl: "/images/galeria/_fotos/h4.jpg",
       },
       {
         id: "img-32",
         title: "Orfeão Carlos Gomes ",
-        description:
-          "Orfeão Carlos Gomes ",
+        description: "Orfeão Carlos Gomes ",
         date: "",
-        imageUrl:"/images/galeria/_fotos/h5.jpg",
+        imageUrl: "/images/galeria/_fotos/h5.jpg",
       },
       {
         id: "img-33",
         title: "Solange Pinto Mendoça",
-        description:
-          "Solange Pinto Mendoça",
+        description: "Solange Pinto Mendoça",
         date: "",
-        imageUrl:"/images/galeria/_fotos/h6.jpg",
+        imageUrl: "/images/galeria/_fotos/h6.jpg",
       },
       {
         id: "img-34",
@@ -601,15 +584,14 @@ export const galleryFolders: GalleryFolder[] = [
         description:
           "Solange Pinto Mendonça e José Vieira Brandão na Sala Cecília Meireles ",
         date: "",
-        imageUrl:"/images/galeria/_fotos/h7.jpg",
+        imageUrl: "/images/galeria/_fotos/h7.jpg",
       },
       {
         id: "img-35",
         title: "Harte Vocal",
-        description:
-          "Coral Harte Vocal no SESC Tijuca  ",
+        description: "Coral Harte Vocal no SESC Tijuca  ",
         date: "",
-        imageUrl:"/images/galeria/_fotos/h8.jpg",
+        imageUrl: "/images/galeria/_fotos/h8.jpg",
       },
     ],
   },
@@ -628,7 +610,7 @@ export const galleryFolders: GalleryFolder[] = [
   //       date: "1987",
   //       images: [
   //         "/images/galeria/_fotos/a5.jpg",
-  //         "/images/galeria/_fotos/a6.jpg",          
+  //         "/images/galeria/_fotos/a6.jpg",
   //       ],
   //     },
   //     {
@@ -639,7 +621,7 @@ export const galleryFolders: GalleryFolder[] = [
   //       date: "1971",
   //       images: [
   //         "/images/galeria/_fotos/gp1/a7.jpg",
-  //         "/images/galeria/_fotos/gp1/a8.jpg",          
+  //         "/images/galeria/_fotos/gp1/a8.jpg",
   //       ],
   //     },
   //     {
@@ -709,7 +691,7 @@ export const memorialAudios: AudioItem[] = [
   //   date: "24 de dezembro de 1998",
   //   duration: "01:42",
   //   comment:
-  //     "Gravação em fita cassete com uma mensagem carinhosa desejando paz, saúde e união a todos.",    
+  //     "Gravação em fita cassete com uma mensagem carinhosa desejando paz, saúde e união a todos.",
   // },
   // {
   //   id: "audio-2",
@@ -830,7 +812,8 @@ export const memorialVideos: VideoItem[] = [
   },
   {
     id: "video-13",
-    title: "Concerto comemorativo dos 40 anos de regência de Solange Pinto Mendonça",
+    title:
+      "Concerto comemorativo dos 40 anos de regência de Solange Pinto Mendonça",
     date: "03 de dezembro de 2011",
     youtubeId: "lbwXO1yz-Fk",
     comment:
@@ -844,33 +827,48 @@ export const memorialVideos: VideoItem[] = [
     comment:
       "Concerto do Coro de Câmara Vocalis na Associação Scholem Aleichem (ASA) em 03 de outubro de 2015.",
   },
-    
 ];
 
 export const stories: Story[] = [
   {
     id: "story-1",
-    title: "Uma tarde que nunca esqueceremos",
-    author: "Margaret",
-    date: "22 de março de 2026",
+    title: "A trajetória de Solange Pinto Mendonça",
+    author: "CASTRO, V. W.; KROGER, M. M.",
+    date: "2022",
     summary:
-      "Uma lembrança simples sobre café, chuva e uma conversa que ficou no coração.",
+      "A trajetória de Solange Pinto Mendonça nos Concursos de Corais do Jornal do Brasil: construção da excelência no canto coral carioca. Trabalho de conclusão de Curso (TCC) – Universidade Federal da Bahia, Curso de Especialização em Regência Coral",
+    image: "/images/documentos/doc1.png",
+    url: "https://drive.google.com/file/d/1Ytq1LsIKonrUYyHSNRGxW44rajcgkMBO/view?usp=sharing",
   },
   {
     id: "story-2",
-    title: "O jardim da frente",
-    author: "Thomas",
-    date: "26 de março de 2026",
+    title: "Caderno de planejamento",
+    author: "CASTRO, V. W.",
+    date: "2023",
     summary:
-      "Como uma pequena muda de flores virou parte da história da família.",
+      "Caderno de planejamento: testemunho da prática docente de uma professora de música no Estado da Guanabara em 1970. In: CONGRESSO NACIONAL DA ABEM, XXVI, 2023, Ouro Preto/MG.  Anais... Ouro Preto/MG, 2023.",
+    image: "/images/documentos/doc2.png",
+    url: "https://drive.google.com/file/d/1zZcqB0EOJRC7pCiH_kWjkkszA8RpXb2S/view?usp=sharing",
   },
   {
     id: "story-3",
-    title: "Domingos em família",
-    author: "Helen",
-    date: "2 de abril de 2026",
+    title: "O arquivo pessoal de Solange Pinto Mendonça",
+    author: "CASTRO, V. W. ",
+    date: "2023",
     summary:
-      "As refeições, as risadas e os costumes que atravessaram gerações.",
+      "O arquivo pessoal de Solange Pinto Mendonça e a memória do canto coral brasileiro. In: IV Seminário do Grupo de Pesquisa Educação de Mulheres nos séculos XIX e XX: II Encontro do Grupo de Pesquisa Arquivos Pessoais, Patrimônio e Educação, 2023, Rio de Janeiro. Anais IV Seminário do Grupo de Pesquisa Educação de Mulheres nos séculos XIX e XX: II Encontro do Grupo de Pesquisa Arquivos Pessoais, Patrimônio e Educação. Fortaleza: EdUECE, 2023. p. 255-255.",
+    image: "/images/documentos/doc3.png",
+    url: "https://drive.google.com/file/d/1epAcreppO1VcWTv8sShl_sOW8d4GRM3u/view?usp=sharing",
+  },
+   {
+    id: "story-4",
+    title: "A trajetória de Solange Pinto Mendonça",
+    author: "CASTRO, V. W.; KROGER, M. M.",
+    date: "2025",
+    summary:
+      "A trajetória de Solange Pinto Mendonça nos Concursos de Corais do Jornal do Brasil: construção da excelência no canto coral carioca. In: GARBUIO, R. L.; BRANDÃO, J. M. V. (Org.). Um panorama coral brasileiro: reflexões sobre a prática na atualidade. 1ed.Salvador: EDUFBA, 2025, v. , p. 133-150.Observação: Este capítulo corresponde ao TCC apresentado ao curso de especialização em Regência Coral da UFBA com algumas alterações.",
+    image: "/images/documentos/doc4.png",
+    url: "https://repositorio.ufba.br/bitstream/ri/43552/1/um-panorama-coral-brasileiro-RI.pdf",
   },
 ];
 

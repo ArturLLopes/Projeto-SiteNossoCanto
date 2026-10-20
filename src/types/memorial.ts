@@ -81,11 +81,13 @@ export interface VideoItem {
 }
 
 export interface Story {
-  id: string;
+   id: string;
   title: string;
   author: string;
   date: string;
   summary: string;
+  image?: string;
+  url?: string;
 }
 
 export interface Tribute {
