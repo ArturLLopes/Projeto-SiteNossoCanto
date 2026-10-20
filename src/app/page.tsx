@@ -12,7 +12,7 @@ import { Gallery } from "@/components/memorial/Gallery";
 import { Documents } from "@/components/memorial/Documents";
 import { Stories } from "@/components/memorial/Stories";
 import { GalleryPreview } from "@/components/sidebar/GalleryPreview";
-import { RecentUpdates } from "@/components/sidebar/RecentUpdates";
+import { SocialLinks as RecentUpdates } from "@/components/sidebar/RecentUpdates";
 import { RemembranceDays } from "@/components/sidebar/RemembranceDays";
 import { MusicPreview } from "@/components/sidebar/MusicPreview";
 
