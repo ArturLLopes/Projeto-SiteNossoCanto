@@ -69,8 +69,18 @@ export interface AudioItem {
   speaker: string;
   comment: string;
   audioUrl?: string;
-  youtubeId?: string;
+  soundcloudUrl?: string;  
 }
+
+export type MemorialAlbum = {
+  id: string;
+  title: string;
+  speaker: string;
+  date: string;
+  comment: string;
+  playlistUrl: string;
+  coverImage?: string;
+};
 
 export interface VideoItem {
   id: string;
