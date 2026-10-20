@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import {
   Camera,
@@ -26,13 +26,11 @@ import { Card } from "@/components/ui/Card";
 import { Modal } from "@/components/ui/Modal";
 import { ImageLightbox } from "@/components/ui/ImageLightbox";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-
 import {
   galleryFolders,
   memorialAlbums,
   memorialVideos,
 } from "@/data/memorial";
-
 import type { GalleryItem, VideoItem } from "@/types/memorial";
 
 type GalleryCategory = "imagens" | "audios" | "videos";
@@ -40,7 +38,17 @@ type GalleryCategory = "imagens" | "audios" | "videos";
 export function Gallery() {
   const videoPlayerRef = useRef<HTMLDivElement>(null);
 
-  const [category, setCategory] = useState<GalleryCategory>("imagens");
+  // Inicializa o estado lendo o localStorage de forma segura (sem usar useEffect para setState)
+  const [category, setCategory] = useState<GalleryCategory>(() => {
+    if (typeof window !== "undefined") {
+      const savedTab = localStorage.getItem("gallery_initial_tab") as GalleryCategory;
+      if (savedTab) {
+        localStorage.removeItem("gallery_initial_tab");
+        return savedTab;
+      }
+    }
+    return "imagens";
+  });
 
   const [selectedPhoto, setSelectedPhoto] = useState<{
     item: GalleryItem;
@@ -63,6 +71,40 @@ export function Gallery() {
     (total, folder) => total + folder.items.length,
     0,
   );
+
+  // Se abriu via localStorage (veio do preview), faz o scroll até a galeria logo após montar
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Se a categoria inicial for álbuns (porque leu do localStorage), faz o scroll
+      const initialTab = category;
+      if (initialTab === "audios") {
+        requestAnimationFrame(() => {
+          document.getElementById("galeria")?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        });
+      }
+    }
+
+    // Evento customizado para quando a galeria já está na tela
+    const handleOpenAlbums = () => {
+      setCategory("audios");
+
+      requestAnimationFrame(() => {
+        document.getElementById("galeria")?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      });
+    };
+
+    window.addEventListener("nosso-canto:open-albums", handleOpenAlbums);
+
+    return () => {
+      window.removeEventListener("nosso-canto:open-albums", handleOpenAlbums);
+    };
+  }, []);
 
   const closePhoto = () => {
     setSelectedPhoto(null);
@@ -147,10 +189,7 @@ export function Gallery() {
         </button>
       </div>
 
-      {/* ================================================== */}
       {/* IMAGENS */}
-      {/* ================================================== */}
-
       {category === "imagens" && (
         <div className="space-y-6">
           {galleryFolders.map((folder) => (
@@ -225,26 +264,11 @@ export function Gallery() {
                               </span>
                               <Camera className="h-4 w-4" />
                             </div>
-
                             <span className="line-clamp-2 font-medium">
                               {item.title}
                             </span>
                           </div>
                         )}
-
-                        {/* ================================================== */}
-                        {/* DESCRIÇÃO DE CADA FOTO */}
-                        {/* ================================================== */}
-
-                        {/* <div className="p-3">
-                          <h4 className="line-clamp-1 font-display text-sm font-semibold text-[#383e35]">
-                            {item.title}
-                          </h4>
-
-                          <p className="mt-1 text-xs text-[var(--warm-gray)]">
-                            {item.date}
-                          </p>
-                        </div> */}
                       </div>
                     </button>
                   );
@@ -255,10 +279,7 @@ export function Gallery() {
         </div>
       )}
 
-      {/* ================================================== */}
       {/* ÁLBUNS E PLAYLISTS DO SOUNDCLOUD */}
-      {/* ================================================== */}
-
       {category === "audios" && (
         <div className="space-y-5">
           <div className="flex items-start gap-3 rounded-2xl bg-[#FFFFFF] p-4 sm:p-5">
@@ -270,7 +291,6 @@ export function Gallery() {
               <h3 className="font-display text-lg text-[#3d443a]">
                 Acervo musical
               </h3>
-
               <p className="mt-1 text-sm leading-6 text-[#596052]">
                 Cada álbum reúne gravações e apresentações que preservam a
                 memória musical. Selecione uma coleção para abrir sua playlist e
@@ -289,7 +309,6 @@ export function Gallery() {
                   className="group overflow-hidden rounded-2xl border border-[var(--border)] bg-white text-left transition duration-300 hover:-translate-y-0.5 hover:border-[#A4B494] hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A4B494]"
                   aria-label={`Abrir álbum ${album.title}`}
                 >
-                  {/* Capa do álbum */}
                   <div className="relative aspect-square overflow-hidden bg-[#e8e4db]">
                     {album.coverImage ? (
                       <Image
@@ -315,18 +334,16 @@ export function Gallery() {
                       </span>
                     </div>
 
-                    <span className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-white/50 bg-white/85 px-3 py-1.5 text-xs font-semibold text-[#485143] shadow-sm backdrop-blur">
+                    <span className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-[#A4B494]/50 text-white px-3 py-1.5 text-xs font-semibold shadow-sm backdrop-blur">
                       <ListMusic className="h-3.5 w-3.5" />
                       Playlist
                     </span>
                   </div>
 
-                  {/* Informações do álbum */}
                   <div className="space-y-2 p-4">
                     <h3 className="font-display text-lg leading-snug text-[#383e35]">
                       {album.title}
                     </h3>
-
                     <p className="text-sm font-medium text-[var(--sage-dark)]">
                       {album.speaker}
                     </p>
@@ -355,11 +372,9 @@ export function Gallery() {
           ) : (
             <Card className="p-8 text-center">
               <Disc3 className="mx-auto h-10 w-10 text-[var(--sage-dark)]" />
-
               <h3 className="mt-3 font-display text-lg text-[#393f36]">
                 Álbuns em preparação
               </h3>
-
               <p className="mt-2 text-sm text-[var(--warm-gray)]">
                 As playlists serão disponibilizadas neste espaço.
               </p>
@@ -368,7 +383,7 @@ export function Gallery() {
         </div>
       )}
 
-      {/* Janela da playlist selecionada */}
+      {/* Modal da playlist */}
       <Modal
         open={Boolean(selectedAlbum)}
         title={selectedAlbum?.title ?? "Playlist musical"}
@@ -377,23 +392,15 @@ export function Gallery() {
         {selectedAlbum && (
           <div className="space-y-4">
             <div className="flex items-start gap-3 rounded-2xl bg-[#faf8f3] p-3 sm:p-4">
-            
-
               <div className="min-w-0 flex-1">
                 <h3 className="font-display text-lg text-[#393f36]">
                   {selectedAlbum.title}
                 </h3>
-
-                {/* <p className="mt-1 text-sm font-medium text-[var(--sage-dark)]">
-                  {selectedAlbum.speaker}
-                </p> */}
-
                 {selectedAlbum.date && (
                   <p className="mt-1 text-xs text-[var(--warm-gray)]">
                     {selectedAlbum.date}
                   </p>
                 )}
-
                 {selectedAlbum.comment && (
                   <p className="mt-2 text-sm leading-5 text-[#596052]">
                     {selectedAlbum.comment}
@@ -402,7 +409,6 @@ export function Gallery() {
               </div>
             </div>
 
-            {/* Player oficial do SoundCloud */}
             <div className="overflow-hidden rounded-2xl border border-[var(--border)] bg-white">
               <iframe
                 key={selectedAlbum.id}
@@ -418,11 +424,6 @@ export function Gallery() {
               />
             </div>
 
-            <p className="text-center text-xs leading-5 text-[var(--warm-gray)]">
-              A reprodução e a seleção das faixas são controladas pelo player
-              oficial do SoundCloud.
-            </p>
-
             <a
               href={selectedAlbum.playlistUrl}
               target="_blank"
@@ -436,10 +437,7 @@ export function Gallery() {
         )}
       </Modal>
 
-      {/* ================================================== */}
-      {/* VÍDEOS DO YOUTUBE */}
-      {/* ================================================== */}
-
+      {/* VÍDEOS */}
       {category === "videos" && selectedVideo && (
         <div ref={videoPlayerRef} className="space-y-5">
           <Card className="overflow-hidden p-5 sm:p-7">
@@ -447,7 +445,6 @@ export function Gallery() {
               <h3 className="font-display text-xl text-[#383e35]">
                 {selectedVideo.title}
               </h3>
-
               <span className="rounded-full bg-[#f4f1ea] px-3 py-1 text-xs text-[var(--warm-gray)]">
                 {selectedVideo.date}
               </span>
@@ -467,12 +464,10 @@ export function Gallery() {
             <div className="mt-4 rounded-2xl bg-[#faf8f3] p-4 text-sm text-[#545b50]">
               <div className="flex items-start gap-2.5">
                 <MessageSquare className="mt-0.5 h-4 w-4 shrink-0 text-[var(--sage-dark)]" />
-
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wider text-[var(--warm-gray)]">
                     Sobre este registro
                   </p>
-
                   <p className="mt-1 leading-6 text-[#555d51]">
                     {selectedVideo.comment}
                   </p>
@@ -503,16 +498,13 @@ export function Gallery() {
                   >
                     <div className="flex items-center gap-2">
                       <Video className="h-4 w-4 shrink-0 text-[var(--sage-dark)]" />
-
                       <h5 className="font-display text-base text-[#383e35]">
                         {video.title}
                       </h5>
                     </div>
-
                     <p className="mt-1 text-xs text-[var(--sage-dark)]">
                       {video.date}
                     </p>
-
                     <p className="mt-2 line-clamp-2 text-xs leading-5 text-[var(--warm-gray)]">
                       {video.comment}
                     </p>
@@ -520,35 +512,11 @@ export function Gallery() {
                 );
               })}
             </div>
-
-            <div className="flex items-start gap-3 rounded-2xl bg-[#edf0e9] p-4">
-              <Quote className="mt-0.5 h-5 w-5 shrink-0 text-[var(--sage-dark)]" />
-
-              <div>
-                <p className="text-base italic leading-6 text-[#3f443e]">
-                  Cada apresentação guarda um pouco da história e do legado
-                  musical que permanece vivo na memória.
-                </p>
-
-                <a
-                  href="https://www.youtube.com/@SolangePintoMendonca-Legado/videos"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#A4B494] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#8d9e7d]"
-                >
-                  <Play className="h-5 w-5" />
-                  Assistir aos vídeos no YouTube
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       )}
 
-      {/* ================================================== */}
-      {/* MODAL DE FOTOGRAFIAS */}
-      {/* ================================================== */}
-
+      {/* Modal de Fotografias */}
       <Modal
         open={Boolean(selectedPhoto)}
         title={selectedPhoto?.item.title ?? ""}
@@ -567,7 +535,7 @@ export function Gallery() {
                 ? activePhotoIndex
                 : 0;
 
-            return (
+             return (
               <div className="space-y-4">
                 {modalImages.length > 0 ? (
                   <div className="space-y-2">

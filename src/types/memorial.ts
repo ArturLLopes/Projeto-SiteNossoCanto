@@ -72,6 +72,12 @@ export interface AudioItem {
   soundcloudUrl?: string;  
 }
 
+export type MemorialTrack = {
+  id: string;
+  title: string;
+  url: string;
+};
+
 export type MemorialAlbum = {
   id: string;
   title: string;
@@ -80,6 +86,7 @@ export type MemorialAlbum = {
   comment: string;
   playlistUrl: string;
   coverImage?: string;
+  tracks: MemorialTrack[];
 };
 
 export interface VideoItem {

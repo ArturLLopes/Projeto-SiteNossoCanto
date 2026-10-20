@@ -855,6 +855,13 @@ export const memorialAlbums: MemorialAlbum[] = [
       "A diversidade, as cores, a exuberância da Natureza. O mar, as montanhas, as florestas. Um povo moreno que jamais perde a esperança de dias melhores.Antes que tudo se perca, precisamos reinventar o Brasil, conhece-lo de verdade, ouvir suas histórias, suas canções.Para isso, nada melhor do que o Canto Coral alma sonora desse imenso país romântico, sensível, em constante estado de poesia para representar a meiguice e a grandeza de nossa gente.Conheça o Brasil! Ele cabe inteirinho no CD do Orfeão Carlos Gomes!",
     playlistUrl: "https://soundcloud.com/legado-solange/sets/500-anos-de-musica-coral?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     coverImage: "/images/galeria/_audio/alb_1.jpg",
+    tracks: [
+      {
+        id: "musica-1",
+        title: "Hino Nacional Brasileiro ",
+        url: "https://soundcloud.com/legado-solange/1-hino-nacional-brasileiro-letra-osorio-duque-estrada-musica-francisco-manuel-da-silva-1?in=legado-solange/sets/500-anos-de-musica-coral&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      },
+    ],
   },
 
   {
@@ -866,6 +873,13 @@ export const memorialAlbums: MemorialAlbum[] = [
       "Gravado ao vivo na Igreja da Candelária em 28/9/2003. Corais participantes: Coro Feminino José Vieira Brandão, regência Solange Pinto Mendonça (faixas 1 e 2); Coral do Centro Educacional de Niterói, regência de Ermano Soares de Sá (faixas 3 e 4); Coral Jovem Pro-Arte, regência Julio Moretzohn (faixa 5 e 6); Coral Lorenzo Fernandes, regência Solange Pinto Mendonça (faixas 7 e 8); Grupo Laetare, regência Ermano Soares de Sá (faixas 9 e 10); Coral Canto em Canto, regência Elza Lakschevitz; Coral Harte Vocal, regência Solange Pìnto Mendonça (Faixas 13 e 14). Todos os corais (faixa 15)",
     playlistUrl: "https://soundcloud.com/legado-solange/sets/encontro-de-corais-homenagem?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     coverImage: "/images/galeria/_audio/alb_2.jpg",
+    tracks: [
+      {
+        id: "musica-1",
+        title: "Canção de Itabira",
+        url: "https://soundcloud.com/legado-solange/1-cancao-de-itabira-jose-vieira-brandao-e-carlos-drummond-de-andrade-1?in=legado-solange/sets/encontro-de-corais-homenagem&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      },
+    ],
   },
   {
     id: "album3",
@@ -876,6 +890,13 @@ export const memorialAlbums: MemorialAlbum[] = [
       "Cantando o repertório que apresentou no Concurso Internacional de Corais de Atenas. Este CD não tem finalidade comercial e foi concebido om base na gravação realizada no concerto do Coral Harte Vocal na Sala Cecília Meireles em 14/12/2000. Com o objetivo de registro do evento, forma mantidos os ruídos do ambiente, as participações das crianças da plateia nas palmas do Sabiá e a maravilhosa acústica daquela sala de concertos",
     playlistUrl: "https://soundcloud.com/legado-solange/sets/harte-vocal?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     coverImage: "/images/galeria/_audio/alb_3.jpg",
+    tracks: [
+      {
+        id: "musica-1",
+        title: "Ave Maria",
+        url: "https://soundcloud.com/legado-solange/1-ave-maria-javier-busto-1?in=legado-solange/sets/harte-vocal&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      },
+    ],
   },
   {
     id: "album4",
@@ -886,6 +907,13 @@ export const memorialAlbums: MemorialAlbum[] = [
       "Concerto gravado ao vivo no dia 24/11/2001 no Salão Leopoldo Miguez, realizado como parte das comemorações dos 30 anos de regência coral de Solange Pinto Mendonça contando com a participação dos integrantes e ex-integrantes do seus corais. Mais de uma centena de cantores participaram desta gravação. CD comemorativo - sem objetivos comerciais.",
     playlistUrl: "https://soundcloud.com/legado-solange/sets/comemoracao-dos-30-anos-de-2?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     coverImage: "/images/galeria/_audio/alb_4.jpg",
+    tracks: [
+      {
+        id: "musica-1",
+        title: "Locutor",
+        url: "https://soundcloud.com/legado-solange/1abf4670-c38c-4a25-b11c-c7d8773e7c15?in=legado-solange/sets/comemoracao-dos-30-anos-de-2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      },
+    ],
   },
   {
     id: "album5",
@@ -896,6 +924,13 @@ export const memorialAlbums: MemorialAlbum[] = [
       "Concerto gravado ao vivo no Outeiro da Glória no dia 07/11/2001, realizado como parte das comemorações dos 30 anos de regência de Solange Pinto Mendonça. Participaram da gravação o Coro de Cãmara Vocalis - CBM Tijuca, regido por Solange Pinto Mendonça; o Conjunto de Flautas, regido por Valéria Mendonça; e o Coral Harte Vocal, regido por Solange Pinto Mendonça. CD Comemorativo - Sem objetivo comercial.",
     playlistUrl: "https://soundcloud.com/legado-solange/sets/comemoracao-dos-30-anos-de-1?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     coverImage: "/images/galeria/_audio/alb_5.jpg",
+    tracks: [
+      {
+        id: "musica-1",
+        title: "Lasciate mi morire",
+        url: "https://soundcloud.com/legado-solange/7e73673a-280b-4125-8669-ec6064f4eca3?in=legado-solange/sets/comemoracao-dos-30-anos-de-1&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      },
+    ],
   },
   {
     id: "album6",
@@ -906,6 +941,13 @@ export const memorialAlbums: MemorialAlbum[] = [
       "Concerto gravado ao vivo no Auditório do Conservatório Brasileiro de Música no dia 01/10/2001, realizado como parte das comemorações dos 30 anos de regência coral de Solange Pinto Mendonça. Participaram da gravação: o Coro de Câmara Vocalis - CBM Tijuca, regido por Solange Pinto Mendonça; o Orfeão Carlos Gomes - ISERJ, regido por Solange Pinto Mendonça; e o Coral Lorenzo Fernandes - CBM Centro, regido por Solange Pinto Mendonça. CD Comemorativo - Sem objetivo comercial.",
     playlistUrl: "https://soundcloud.com/legado-solange/sets/comemoracao-dos-30-anos-de?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     coverImage: "/images/galeria/_audio/alb_6.jpg",
+    tracks: [
+      {
+        id: "musica-1",
+        title: " Lasciate mi morire (C. Monteverdi)",
+        url: "https://soundcloud.com/legado-solange/track-1-1?in=legado-solange/sets/comemoracao-dos-30-anos-de&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      },
+    ],
   },
 
   

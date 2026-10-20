@@ -14,6 +14,7 @@ import { Stories } from "@/components/memorial/Stories";
 import { GalleryPreview } from "@/components/sidebar/GalleryPreview";
 import { RecentUpdates } from "@/components/sidebar/RecentUpdates";
 import { RemembranceDays } from "@/components/sidebar/RemembranceDays";
+import { MusicPreview } from "@/components/sidebar/MusicPreview";
 
 const validTabs = [
   "inicio",
@@ -37,7 +38,12 @@ export default function Home() {
     handleHash();
     window.addEventListener("hashchange", handleHash);
     return () => window.removeEventListener("hashchange", handleHash);
-  }, []);
+  }, []);  
+
+const handleOpenMusicGallery = () => {
+  setActiveTab("galeria");
+  window.history.replaceState(null, "", "#galeria");
+};
 
   return (
     <>
@@ -65,8 +71,9 @@ export default function Home() {
           </main>
           <aside className="hidden min-w-0 space-y-5 lg:block lg:sticky lg:top-16">
             <RecentUpdates />
-            <RemembranceDays />
+            {/* <RemembranceDays /> */}
             <GalleryPreview />
+            <MusicPreview onOpenGallery={handleOpenMusicGallery} />
           </aside>
         </div>
       </div>
