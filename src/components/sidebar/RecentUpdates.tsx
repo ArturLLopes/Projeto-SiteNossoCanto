@@ -7,19 +7,19 @@ export function SocialLinks() {
       title: "Inscreva-se no nosso canal do YouTube",
       type: "youtube",
       url: "https://www.youtube.com/@SolangePintoMendon%C3%A7a-Legado",
-      label: "YouTube",
+      label: "",
     },
     {
       title: "Ouça nossas gravações no SoundCloud",
       type: "soundcloud",
       url: "https://on.soundcloud.com/hijpSOspLwHAtI8ZTI",
-      label: "SoundCloud",
+      label: "",
     },
     {
       title: "Siga o Projeto Legado no Instagram",
       type: "instagram",
       url: "https://www.instagram.com/projetolegado_solangepmendonca/",
-      label: "Instagram",
+      label: "",
     },
     {
       title: "Entre em contato por E-mail",
