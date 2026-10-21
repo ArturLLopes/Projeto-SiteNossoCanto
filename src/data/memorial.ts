@@ -9,6 +9,7 @@ import type {
   MemorialAlbum,
   RecentUpdate,
   RemembranceDay,
+  RepertoireItem,
   Story,
   TimelineEvent,
   Tribute,
@@ -2168,3 +2169,29 @@ export const documentDivisions: DocumentDivision[] = [
     ],
   },
 ];
+
+// Acervo visual do Repertório — cada imagem da pasta /public/images/repertorio
+// aparece como um item individual da galeria, em ordem alfabética.
+// Exemplo de item:
+// {
+//   id: "rep-1",
+//   title: "Título do programa/repertório",
+//   description: "Descrição opcional exibida no card e no modal.",
+//   date: "1990",
+//   images: ["/images/repertorio/rep1a.jpg", "/images/repertorio/rep1b.jpg"],
+// },
+function buildRepertoireItems(): RepertoireItem[] {
+  const files = [
+    "A", "B", "C", "D", "E", "F", "G", "I", "J",
+    "L", "M", "N", "O", "P", "Q", "R", "S", "T",
+    "U", "V", "W", "X", "Y", "Z",
+  ];
+
+  return files.map((letter) => ({
+    id: `rep-${letter.toLowerCase()}`,
+    title: `Repertório ${letter}`,
+    imageUrl: `/images/repertorio/${letter}.png`,
+  }));
+}
+
+export const repertoireItems: RepertoireItem[] = buildRepertoireItems();

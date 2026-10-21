@@ -10,6 +10,7 @@ import { BiographySection2 } from "@/components/memorial/BiographySection2";
 import { Timeline } from "@/components/memorial/Timeline";
 import { Gallery } from "@/components/memorial/Gallery";
 import { Documents } from "@/components/memorial/Documents";
+import { Repertoire } from "@/components/memorial/Repertoire";
 import { Stories } from "@/components/memorial/Stories";
 import { GalleryPreview } from "@/components/sidebar/GalleryPreview";
 import { SocialLinks as RecentUpdates } from "@/components/sidebar/RecentUpdates";
@@ -21,6 +22,7 @@ const validTabs = [
   "sobre",
   "linha-do-tempo",
   "galeria",
+  "repertorio",
   "documentos",
   "historias",
 ];
@@ -38,7 +40,7 @@ export default function Home() {
     handleHash();
     window.addEventListener("hashchange", handleHash);
     return () => window.removeEventListener("hashchange", handleHash);
-  }, []);  
+  }, []);
 
 const handleOpenMusicGallery = () => {
   setActiveTab("galeria");
@@ -66,6 +68,7 @@ const handleOpenMusicGallery = () => {
             )}
             {activeTab === "linha-do-tempo" && <Timeline />}
             {activeTab === "galeria" && <Gallery />}
+            {activeTab === "repertorio" && <Repertoire />}
             {activeTab === "documentos" && <Documents />}
             {activeTab === "historias" && <Stories />}
           </main>

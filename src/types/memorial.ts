@@ -53,6 +53,15 @@ export interface DocumentItem {
 }
 
 
+export interface RepertoireItem {
+  id: string;
+  title: string;
+  description?: string;
+  date?: string;
+  imageUrl?: string;
+  images?: string[];
+}
+
 export interface DocumentDivision {
   id: DocumentCategoryType;
   title: string;

@@ -7,6 +7,7 @@ const links: Array<{ id: string; label: string; isHome?: boolean }> = [
   { id: "sobre", label: "Sobre" },
   { id: "linha-do-tempo", label: "Linha do Tempo" },
   { id: "galeria", label: "Galeria" },
+  { id: "repertorio", label: "Repertório" },
   { id: "documentos", label: "Documentos" },
   { id: "historias", label: "Trabalhos Acadêmicos" },
 ];

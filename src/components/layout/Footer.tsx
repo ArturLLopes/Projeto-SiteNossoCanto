@@ -89,6 +89,9 @@ export function Footer() {
             <a href="#galeria" className="transition-colors hover:text-[#3e443d]">
               Galeria
             </a>
+            <a href="#repertorio" className="transition-colors hover:text-[#3e443d]">
+              Repertório
+            </a>
             <a href="#documentos" className="transition-colors hover:text-[#3e443d]">
               Documentos
             </a>
