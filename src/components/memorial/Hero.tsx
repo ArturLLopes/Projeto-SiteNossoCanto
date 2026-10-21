@@ -14,7 +14,7 @@ export function Hero() {
           <img
             src="/images/capa/solange_logo.png"
             alt={`Capa em memória de ${memorialInfo.name}`}
-            className="absolute inset-0 h-full  object-cover  w-44 sm:w-50 md:w-64 lg:w-130 xl:w-150"
+            className="absolute inset-0 h-full object-contain object-left-bottom w-44 sm:w-50 md:w-64 lg:w-130 xl:w-150"
           />
 
           {/* Gradiente e texto sobre a imagem */}

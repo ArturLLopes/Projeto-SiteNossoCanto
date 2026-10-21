@@ -23,7 +23,7 @@ export function SectionTitle({
       </h2>
 
       {description && (
-        <div className="mt-2 max-w-2xl text-base leading-6 text-[var(--warm-gray)]">
+        <div className="mt-2 max-w-2xl break-words text-base leading-6 text-[var(--warm-gray)]">
           {description}
         </div>
       )}

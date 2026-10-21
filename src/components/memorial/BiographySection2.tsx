@@ -42,13 +42,13 @@ export function BiographySection2() {
             </button>
 
             <div className="flex-1">
-              <p className="text-justify indent-8 sm:flex-1">
+              <p className="text-justify indent-8">
                 Em 2000, participou do VIII Festival de Corais de Atenas com o
                 Coral Harte Vocal e foi premiada como Melhor Coral Folclórico,
                 além de receber Medalha de Bronze na Categoria Corais Mistos e
                 Medalhe de Bronze na categoria Coros de Câmara.
               </p>
-              <p className="text-justify indent-8 sm:flex-1">
+              <p className="text-justify indent-8">
                 Ao longo de sua trajetória, realizou gravações que integram a
                 memória do canto coral brasileiro e teve composições dedicadas
                 aos grupos que dirigia por importantes nomes da composição coral
@@ -62,7 +62,7 @@ export function BiographySection2() {
                 convivência, sensibilidade artística e desenvolvimento humano
                 que marcaram a trajetória de inúmeros estudantes e cantores.
               </p>
-              <p className="text-justify indent-8 sm:flex-1">
+              <p className="text-justify indent-8">
                 A identidade sonora dos corais regidos por Solange era marcada pela clareza das vozes brancas, sem impostação, sem vibrato, pela afinação cuidadosamente trabalhada e pela execução exclusivamente a cappella. A essas características somava-se uma impressionante paleta de nuances dinâmicas, que conferia expressividade e singularidade às interpretações de seus grupos. Essa sonoridade, fruto de um trabalho musical rigoroso e sensível, permanece como uma das marcas mais significativas de sua contribuição à história do canto coral.
               </p>
             </div>

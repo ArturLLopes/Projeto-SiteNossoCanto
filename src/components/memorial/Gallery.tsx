@@ -104,7 +104,7 @@ export function Gallery() {
     return () => {
       window.removeEventListener("nosso-canto:open-albums", handleOpenAlbums);
     };
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const closePhoto = () => {
     setSelectedPhoto(null);

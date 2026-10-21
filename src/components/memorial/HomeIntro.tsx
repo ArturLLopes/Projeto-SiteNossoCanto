@@ -99,7 +99,7 @@ export function HomeIntro() {
               />
             </button>
             <div className="flex-1">
-              <p className="text-justify indent-8 sm:flex-1">
+              <p className="text-justify indent-8">
                 A trajetória de Solange Pinto Mendonça como regente e
                 professora, ao longo de 45 anos de atividade ininterrupta,
                 constitui um capítulo importante da história do canto coral no
@@ -113,7 +113,7 @@ export function HomeIntro() {
                 práticas e de suas experiências na construção dessa história.
               </p>
 
-              <p className="mt-4 text-justify indent-8 sm:flex-1">
+              <p className="mt-4 text-justify indent-8">
                 Reunimos, assim, passado, presente e futuro. Conhecer as
                 experiências e realizações de Solange nos permite compreender os
                 caminhos percorridos pelo canto coral, refletir sobre o presente
@@ -154,7 +154,7 @@ export function HomeIntro() {
               />
             </button>
             <div className="flex-1">
-              <p className="text-justify indent-8 sm:flex-1">
+              <p className="text-justify indent-8">
                 Solange deixou parte de sua história registrada em seu acervo e
                 em suas realizações. Sua memória permanece viva nas lembranças
                 daqueles que cantaram sob sua regência, compartilharam
@@ -166,7 +166,7 @@ export function HomeIntro() {
                 fronteiras geográficas e temporais e se torne acessível a
                 diferentes públicos. <br></br>
               </p>
-              <p className="text-justify indent-8 sm:flex-1">
+              <p className="text-justify indent-8">
                 O acervo disponibilizado neste espaço reúne fotografias, vídeos
                 e gravações de áudio relacionados à atividade coral de Solange
                 Pinto Mendonça, além de certificados de participação em eventos,
@@ -215,13 +215,13 @@ export function HomeIntro() {
               />
             </button>
             <div className="flex-1">
-              <p className="text-justify indent-8 sm:flex-1">
+              <p className="text-justify indent-8">
                 Nessa perspectiva, o acervo de Solange constitui um patrimônio
                 documental de grande riqueza, capaz de oferecer fontes para a
                 investigação de sua trajetória e para o estudo mais amplo da
                 atividade coral no Rio de Janeiro.<br></br>
               </p>
-              <p className="text-justify indent-8 sm:flex-1">
+              <p className="text-justify indent-8">
                 Este site se constitui, assim, tanto em um espaço de memória e
                 reencontro para aqueles que conviveram musicalmente com Solange
                 quanto em uma fonte de pesquisa para pesquisadores, musicólogos,
@@ -231,7 +231,7 @@ export function HomeIntro() {
                 da intensa atividade coral desenvolvida no Rio de Janeiro na
                 segunda metade do século XX e no início do século XXI.<br></br>
               </p>
-              <p className="text-justify indent-8 sm:flex-1">
+              <p className="text-justify indent-8">
                 Mais do que reunir documentos sobre o passado, este projeto
                 busca conferir novos sentidos a esses registros, tornando-os
                 acessíveis, estimulando pesquisas e favorecendo a circulação do

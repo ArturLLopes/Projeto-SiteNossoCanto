@@ -42,8 +42,8 @@ export function Modal({
       }}
     >
       <div className="relative max-h-[94vh] w-full max-w-2xl overflow-auto rounded-3xl bg-white p-4 shadow-2xl sm:p-6">
-        <div className="mb-4 flex items-center justify-between">
-          <h2 id="modal-title" className="font-display text-2xl">
+        <div className="mb-4 flex items-start justify-between gap-2">
+          <h2 id="modal-title" className="min-w-0 font-display text-xl leading-snug sm:text-2xl">
             {title}
           </h2>
           <button

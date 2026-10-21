@@ -69,7 +69,7 @@ const handleOpenMusicGallery = () => {
             {activeTab === "documentos" && <Documents />}
             {activeTab === "historias" && <Stories />}
           </main>
-          <aside className="hidden min-w-0 space-y-5 lg:block lg:sticky lg:top-16">
+          <aside className="hidden min-w-0 space-y-5 self-start lg:block lg:sticky lg:top-24">
             <RecentUpdates />
             {/* <RemembranceDays /> */}
             <GalleryPreview />

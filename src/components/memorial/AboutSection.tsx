@@ -58,14 +58,14 @@ export function AboutSection() {
               />
             </button>
             <div className="flex-1">
-              <p className="text-justify indent-8 sm:flex-1">
+              <p className="text-justify indent-8">
                 Solange Pinto Mendonça nasceu em 29 de outubro de 1933. Formada em Piano pela Escola Nacional de Música e em Pedagogia pela Sociedade Unificada de Ensino Augosto Motta (SUAM), ingressou, por concurso público, no magistério do Estado da Guanabara, em 1965, na cadeira de Educação Musical. Cursou também pós-graduação em Orientação Educacional pela Universidade Estácio de Sá.
               </p>
 
-              <p className="mt-4 text-justify indent-8 sm:flex-1">
+              <p className="mt-4 text-justify indent-8">
                 Dotada de grande musicalidade e de voz naturalmente afinada, Solange fez do canto seu principal instrumento de musicalização desde o início de sua trajetória docente. Embora não tivesse formação específica em regência coral nem em Canto Orfeônico, desenvolveu, de maneira autodidata, uma sólida atuação à frente de corais escolares e independentes.
               </p>
-              <p className="mt-4 text-justify indent-8 sm:flex-1">
+              <p className="mt-4 text-justify indent-8">
                 Solange foi uma educadora-regente que fez da escola e da sala de aula espaços privilegiados para o desenvolvimento musical, artístico e humano de seus alunos. Sua prática com o canto articulava o trabalho regular de musicalização em sala de aula à formação de corais em diferentes instituições de ensino. Atuou nos colégios estaduais Tobias Monteiro, Brigadeiro Schorcht e Visconde de Cairu e, posteriormente, no Instituto Superior de Educação do Rio de Janeiro (ISERJ). Em cada escola por onde passou, deixou uma marca de sua atuação: um coro formado e uma experiência musical compartilhada.
               </p>
             </div>
