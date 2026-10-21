@@ -86,7 +86,7 @@ export function HomeIntro() {
                   alt: "Registro histórico de Solange",
                 })
               }
-              className="float-left mb-4 ml-6 mr-4 block w-full max-w-[300px] cursor-zoom-in rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sage-dark)]"
+              className="mb-4 mx-auto block w-full max-w-[300px] cursor-zoom-in rounded-xl sm:float-left sm:ml-6 sm:mr-4 sm:mb-4 sm:mx-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sage-dark)]"
               aria-label="Ampliar foto histórica de Solange"
             >
               <Image
@@ -141,7 +141,7 @@ export function HomeIntro() {
                   alt: "Registro histórico de Solange",
                 })
               }
-              className="float-right mb-4 ml-6 mr-4 block w-full max-w-[300px] cursor-zoom-in rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sage-dark)]"
+              className="mb-4 mx-auto block w-full max-w-[300px] cursor-zoom-in rounded-xl sm:float-right sm:ml-6 sm:mr-4 sm:mb-4 sm:mx-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sage-dark)]"
               aria-label="Ampliar foto histórica de Solange"
             >
               <Image
@@ -202,7 +202,7 @@ export function HomeIntro() {
                   alt: "Registro histórico de Solange",
                 })
               }
-              className="float-left mb-4 ml-6 mr-4 block w-full max-w-[300px] cursor-zoom-in rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sage-dark)]"
+              className="mb-4 mx-auto block w-full max-w-[300px] cursor-zoom-in rounded-xl sm:float-left sm:ml-6 sm:mr-4 sm:mb-4 sm:mx-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sage-dark)]"
               aria-label="Ampliar foto histórica de Solange"
             >
               <Image
