@@ -842,7 +842,7 @@ export const memorialAudios: AudioItem[] = [
   //   speaker: "Acervo musical",
   //   comment: "Uma lembrança preservada em áudio.",
   //   soundcloudUrl: "https://soundcloud.com/legado-solange/track-18-18?in=legado-solange/sets/comemoracao-dos-30-anos-de&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-  // },    
+  // },
 ];
 
 export const memorialAlbums: MemorialAlbum[] = [
@@ -853,7 +853,8 @@ export const memorialAlbums: MemorialAlbum[] = [
     date: "2000",
     comment:
       "A diversidade, as cores, a exuberância da Natureza. O mar, as montanhas, as florestas. Um povo moreno que jamais perde a esperança de dias melhores.Antes que tudo se perca, precisamos reinventar o Brasil, conhece-lo de verdade, ouvir suas histórias, suas canções.Para isso, nada melhor do que o Canto Coral alma sonora desse imenso país romântico, sensível, em constante estado de poesia para representar a meiguice e a grandeza de nossa gente.Conheça o Brasil! Ele cabe inteirinho no CD do Orfeão Carlos Gomes!",
-    playlistUrl: "https://soundcloud.com/legado-solange/sets/500-anos-de-musica-coral?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    playlistUrl:
+      "https://soundcloud.com/legado-solange/sets/500-anos-de-musica-coral?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     coverImage: "/images/galeria/_audio/alb_1.jpg",
     tracks: [
       {
@@ -871,7 +872,8 @@ export const memorialAlbums: MemorialAlbum[] = [
     date: "2003",
     comment:
       "Gravado ao vivo na Igreja da Candelária em 28/9/2003. Corais participantes: Coro Feminino José Vieira Brandão, regência Solange Pinto Mendonça (faixas 1 e 2); Coral do Centro Educacional de Niterói, regência de Ermano Soares de Sá (faixas 3 e 4); Coral Jovem Pro-Arte, regência Julio Moretzohn (faixa 5 e 6); Coral Lorenzo Fernandes, regência Solange Pinto Mendonça (faixas 7 e 8); Grupo Laetare, regência Ermano Soares de Sá (faixas 9 e 10); Coral Canto em Canto, regência Elza Lakschevitz; Coral Harte Vocal, regência Solange Pìnto Mendonça (Faixas 13 e 14). Todos os corais (faixa 15)",
-    playlistUrl: "https://soundcloud.com/legado-solange/sets/encontro-de-corais-homenagem?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    playlistUrl:
+      "https://soundcloud.com/legado-solange/sets/encontro-de-corais-homenagem?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     coverImage: "/images/galeria/_audio/alb_2.jpg",
     tracks: [
       {
@@ -883,12 +885,14 @@ export const memorialAlbums: MemorialAlbum[] = [
   },
   {
     id: "album3",
-    title: "Repertório que apresentou no Concurso Internacional de Corais de Atenas",
+    title:
+      "Repertório que apresentou no Concurso Internacional de Corais de Atenas",
     speaker: "",
     date: "2000",
     comment:
       "Cantando o repertório que apresentou no Concurso Internacional de Corais de Atenas. Este CD não tem finalidade comercial e foi concebido om base na gravação realizada no concerto do Coral Harte Vocal na Sala Cecília Meireles em 14/12/2000. Com o objetivo de registro do evento, forma mantidos os ruídos do ambiente, as participações das crianças da plateia nas palmas do Sabiá e a maravilhosa acústica daquela sala de concertos",
-    playlistUrl: "https://soundcloud.com/legado-solange/sets/harte-vocal?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    playlistUrl:
+      "https://soundcloud.com/legado-solange/sets/harte-vocal?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     coverImage: "/images/galeria/_audio/alb_3.jpg",
     tracks: [
       {
@@ -905,7 +909,8 @@ export const memorialAlbums: MemorialAlbum[] = [
     date: "2001",
     comment:
       "Concerto gravado ao vivo no dia 24/11/2001 no Salão Leopoldo Miguez, realizado como parte das comemorações dos 30 anos de regência coral de Solange Pinto Mendonça contando com a participação dos integrantes e ex-integrantes do seus corais. Mais de uma centena de cantores participaram desta gravação. CD comemorativo - sem objetivos comerciais.",
-    playlistUrl: "https://soundcloud.com/legado-solange/sets/comemoracao-dos-30-anos-de-2?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    playlistUrl:
+      "https://soundcloud.com/legado-solange/sets/comemoracao-dos-30-anos-de-2?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     coverImage: "/images/galeria/_audio/alb_4.jpg",
     tracks: [
       {
@@ -922,7 +927,8 @@ export const memorialAlbums: MemorialAlbum[] = [
     date: "2001",
     comment:
       "Concerto gravado ao vivo no Outeiro da Glória no dia 07/11/2001, realizado como parte das comemorações dos 30 anos de regência de Solange Pinto Mendonça. Participaram da gravação o Coro de Cãmara Vocalis - CBM Tijuca, regido por Solange Pinto Mendonça; o Conjunto de Flautas, regido por Valéria Mendonça; e o Coral Harte Vocal, regido por Solange Pinto Mendonça. CD Comemorativo - Sem objetivo comercial.",
-    playlistUrl: "https://soundcloud.com/legado-solange/sets/comemoracao-dos-30-anos-de-1?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    playlistUrl:
+      "https://soundcloud.com/legado-solange/sets/comemoracao-dos-30-anos-de-1?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     coverImage: "/images/galeria/_audio/alb_5.jpg",
     tracks: [
       {
@@ -934,12 +940,14 @@ export const memorialAlbums: MemorialAlbum[] = [
   },
   {
     id: "album6",
-    title: "Concerto gravado ao vivo no Auditório do Conservatório Brasileiro de Música",
+    title:
+      "Concerto gravado ao vivo no Auditório do Conservatório Brasileiro de Música",
     speaker: "",
     date: "2001",
     comment:
       "Concerto gravado ao vivo no Auditório do Conservatório Brasileiro de Música no dia 01/10/2001, realizado como parte das comemorações dos 30 anos de regência coral de Solange Pinto Mendonça. Participaram da gravação: o Coro de Câmara Vocalis - CBM Tijuca, regido por Solange Pinto Mendonça; o Orfeão Carlos Gomes - ISERJ, regido por Solange Pinto Mendonça; e o Coral Lorenzo Fernandes - CBM Centro, regido por Solange Pinto Mendonça. CD Comemorativo - Sem objetivo comercial.",
-    playlistUrl: "https://soundcloud.com/legado-solange/sets/comemoracao-dos-30-anos-de?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    playlistUrl:
+      "https://soundcloud.com/legado-solange/sets/comemoracao-dos-30-anos-de?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     coverImage: "/images/galeria/_audio/alb_6.jpg",
     tracks: [
       {
@@ -949,10 +957,7 @@ export const memorialAlbums: MemorialAlbum[] = [
       },
     ],
   },
-
-  
 ];
-
 
 export const memorialVideos: VideoItem[] = [
   {
@@ -2005,6 +2010,159 @@ export const documentDivisions: DocumentDivision[] = [
         images: [
           "/images/galeria/_programas/D5a1.jpg",
           "/images/galeria/_programas/D5a2.jpg",
+        ],
+      },
+    ],
+  },
+  {
+    id: "dedicatorias",
+    title: "Dedicatórias",
+    description: "Em reconhecimento e gratidão",
+    dateRange: "",
+    items: [
+      {
+        id: "doc-cartaz-1",
+        title: "Guerra Peixe",
+        description: "Dedicatória de Guerra Peixe à Solange e ao Coral Harmonia na partitura de Série Xavante, em 1973.",
+        date: "1973",
+        category: "cartazes",
+        notes: "",
+        images: [
+          "/images/documentos/_dedicatorias/a1a.jpg",
+          "/images/documentos/_dedicatorias/a1b.jpg",
+        ],
+      },
+      {
+        id: "doc-cartaz-2",
+        title: "Ricardo Tacuchian",
+        description:
+          "Dedicatória de Ricardo Tacuchian à Solange e ao Coral Harmonia na partitura de A anunciação, em 1977.",
+        date: "1977",
+        category: "cartazes",
+        notes: "",
+        images: [
+          "/images/documentos/_dedicatorias/a2a.jpg",
+          "/images/documentos/_dedicatorias/a2b.jpg",
+        ],
+      },
+      {
+        id: "doc-cartaz-3",
+        title:
+          "Henrique David Korenchendler  1",
+        description:
+          "Dedicatória de Henrique David Korenchendler  ao Coral Harmonia na partitura de Canto de Desespero em forma de oração (Cantata nº 8, op. 57), em 1978.",
+        date: "1978",
+        category: "cartazes",
+        notes: "",
+        images: [
+          "/images/documentos/_dedicatorias/a3a.jpg",
+          "/images/documentos/_dedicatorias/a3b.jpg",
+        ],
+      },
+      {
+        id: "doc-cartaz-4",
+        title:
+          "Henrique David Korenchendler  2",
+        description:
+          "Dedicatória de Henrique David Korenchendler  ao Coral Harmonia na partitura de Mural (op. 58), em 1978.",
+        date: "1978",
+        category: "cartazes",
+        notes: "",
+        images: [
+          "/images/documentos/_dedicatorias/a4a.jpg",
+          "/images/documentos/_dedicatorias/a4b.jpg",
+        ],
+      },
+      {
+        id: "doc-cartaz-5",
+        title: "Cacilda Borges Barbosa",
+        description:
+          "Dedicatória de Cacilda Borges Barbosa à Solange na partitura de Diorama, em 1981.",
+        date: "1981",
+        category: "cartazes",
+        notes: "",
+        images: [
+          "/images/documentos/_dedicatorias/a5a.jpg",
+          "/images/documentos/_dedicatorias/a5b.jpg",
+        ],
+      },
+      {
+        id: "doc-cartaz-6",
+        title: "Marlos Nobre 1",
+        description:
+          "Dedicatória de Marlos Nobre à Solange e ao Coral Harmonia na partitura de Agô Lonã, em 1982.",
+        date: "1982",
+        category: "cartazes",
+        notes: "",
+        images: [
+          "/images/documentos/_dedicatorias/a6a.jpg",
+          "/images/documentos/_dedicatorias/a6b.jpg",
+        ],
+      },
+      {
+        id: "doc-cartaz-7",
+        title: "Marlos Nobre 2",
+        description:
+          "Dedicatória de Marlos Nobre à Solange e ao Coral Harmonia na partitura de 3 Coros de Natal, em 1982.",
+        date: "1982",
+        category: "cartazes",
+        notes: "",
+        images: [
+          "/images/documentos/_dedicatorias/a7a.jpg",
+          "/images/documentos/_dedicatorias/a7b.jpg",
+        ],
+      },
+      {
+        id: "doc-cartaz-8",
+        title: "Ronaldo Miranda 1",
+        description:
+          "Dedicatória de Ronaldo Miranda à Solange e ao Coral Harmonia na partitura de Belo Belo, com um bilhete anexado, em 1983.",
+        date: "1983",
+        category: "cartazes",
+        notes: "",
+        images: [
+          "/images/documentos/_dedicatorias/a8a.jpg",
+          "/images/documentos/_dedicatorias/a8b.jpg",
+          "/images/documentos/_dedicatorias/a8c.jpg",
+          "/images/documentos/_dedicatorias/a8d.jpg",
+        ],
+      },
+      {
+        id: "doc-cartaz-9",
+        title: "Ronaldo Miranda 2",
+        description:
+          "Dedicatória de Ronaldo Miranda à Solange e ao Coral Harmonia na partitura de Suíte Nordestina, em 1983.",
+        date: "1983",
+        category: "cartazes",
+        notes: "",
+        images: [
+          "/images/documentos/_dedicatorias/a9a.jpg",
+          "/images/documentos/_dedicatorias/a9b.jpg",
+        ],
+      },
+      {
+        id: "doc-cartaz-10",
+        title: "Ronaldo Miranda 3",
+        description: "Dedicatória de Ronaldo Miranda à Solange e ao Coral Harmonia na partitura de Aleluia, em 1985.",
+        date: "1985",
+        category: "cartazes",
+        notes: "",
+        images: [
+          "/images/documentos/_dedicatorias/b1aa.jpg",
+          "/images/documentos/_dedicatorias/b1ba.jpg",
+        ],
+      },
+      {
+        id: "doc-cartaz-11",
+        title: "Esther Scliar",
+        description:
+          "Dedicatória de Esther Scliar à Solange na partitura de Beira Mar ",
+        date: "",
+        category: "cartazes",
+        notes: "",
+        images: [
+          "/images/documentos/_dedicatorias/b2aa.jpg",
+          "/images/documentos/_dedicatorias/b2ba.jpg",
         ],
       },
     ],

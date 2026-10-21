@@ -39,7 +39,7 @@ export interface GalleryFolder {
   items: GalleryItem[];
 }
 
-export type DocumentCategoryType = "cartazes" | "convites" | "correspondencias" | "certificados" | "programas" | "correspondencias_cartas";
+export type DocumentCategoryType = "cartazes" | "convites" | "correspondencias" | "certificados" | "programas" | "correspondencias_cartas"| "dedicatorias";
 
 export interface DocumentItem {
   id: string;

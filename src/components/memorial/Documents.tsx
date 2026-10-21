@@ -56,6 +56,8 @@ export function Documents() {
       case "certificados":
         return <BookOpen className="h-5 w-5" />;
       case "programas":
+        return <BookOpen className="h-5 w-5" />;
+      case "dedicatorias":
         return <Calendar className="h-5 w-5" />;
       default:
         return <BookOpen className="h-5 w-5" />;
