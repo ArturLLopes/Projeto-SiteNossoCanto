@@ -54,7 +54,7 @@ import {
 
 export function HomeIntro() {
   // const [lightboxOpen, setLightboxOpen] = useState(false);
-  // const [photoIndex, setPhotoIndex] = useState(0); 
+  // const [photoIndex, setPhotoIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState<{
     src: string;
     alt: string;
@@ -254,7 +254,8 @@ export function HomeIntro() {
             title="Referências"
             description={
               <>
-                ARTIÈRES, Philippe. Arquivar a própria vida. <span className="font-bold underline">Estudos Históricos</span>,
+                ARTIÈRES, Philippe. Arquivar a própria vida.{" "}
+                <span className="font-bold underline">Estudos Históricos</span>,
                 Rio de Janeiro, v. 11, n. 21, p. 9-34, 1998.
                 <br />
                 Disponível em:{" "}
@@ -274,8 +275,15 @@ export function HomeIntro() {
                 metade do século XX). In: BRAGANÇA, Inês Ferreira de Sousa;
                 ABRAHÃO, Maria Helena Menna Barreto; FERREIRA, Márcia Santos
                 (org.).
-                <span className="font-bold underline">Perspectivas epistêmico-metodológicas da pesquisa
-                (auto)biográfica.</span>  Curitiba: CRV, 2016.
+                <span className="font-bold underline">
+                  Perspectivas epistêmico-metodológicas da pesquisa
+                  (auto)biográfica.
+                </span>{" "}
+                Curitiba: CRV, 2016.
+                <p className="text-justify ">
+                  <br />
+                  LE GOFF, Jacques.<span className="font-bold underline"> História e Memória.</span> Campinas, SP: Editora da Unicamp, 2013
+                </p>
               </>
             }
           />
@@ -299,7 +307,6 @@ export function HomeIntro() {
           </div>
         )}
       </Modal>
-
     </div>
   );
 }
