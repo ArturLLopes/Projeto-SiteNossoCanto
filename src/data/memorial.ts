@@ -958,6 +958,44 @@ export const memorialAlbums: MemorialAlbum[] = [
       },
     ],
   },
+  {
+    id: "album7",
+    title:
+      "LP gravado pela Fundação Nacional de Arte",
+    speaker: "",
+    date: "1983",
+    comment:
+      "LP gravado em 1983 pela Fundação Nacional de Arte (Funarte).Produção: Funarte Supervisão: Edino Krieger Coordenação:Nestor de Holanda Cavalcanti Técnico de gravação: Toninho Barbosa Estúdio: Sono-Viso Rio de Janeiro 1982Edição: Departamento de Editoração da Funarte Projeto Gráfico: Paula Nogueira",
+    playlistUrl:
+      "https://soundcloud.com/legado-solange/sets/coral-harmonia?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    coverImage: "/images/galeria/_audio/alb_7.jpg",
+    tracks: [
+      {
+        id: "musica-1",
+        title: "A Velha Cotó (Francisco Mignone)",
+        url: "https://soundcloud.com/legado-solange/1-a-velha-coto-francisco-mignone-127-1?in=legado-solange/sets/coral-harmonia&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      },
+    ],
+  },
+  {
+    id: "album8",
+    title:
+      "Concerto na Sala Cecília Meireles",
+    speaker: "",
+    date: "1995",
+    comment:
+      "Inicialmente, o concerto na Sala Cecília Meireles foi gravado apenas como forma de registro, muito embora já houvesse a intenção latente de buscar o lançamento do primeiro CD do Coral. O resultado final do concerto e da gravação entusiasmou a todos nós. Havia também o compromisso de comemorar de forma significativa as bodas de prata da Solange com a regência coral. Somaram-se o entusiasmo e a obrigação, resultando na realização de um sonho conjunto como, aliás, são nossas vozes. O CD foi concebido sem retoques ou maquiagens, de forma autêntica, ao vivo, com todos os ruídos do ambiente. Apesar de tudo, o canto coral continua vivo graças a pessoas como Solange. Ass. Harte Vocal. Concerto gravado ao vivo em 04/8/1995 na Sala Cecília Meireles. Integrantes: Soprano - Carla Lourenço, Daniele Castro, Débora Campos, Flaise Miranda, Luciana Caiado, Nancy Nonato, Tânia Lopes, Vera Lúcia Melo. Contraltos - Ana Cristina Nunes, Célia Silva, Cristiane Lacerda, Érica Campos, Fabíola Farias, Jacilene Eller, Leonor Cardoso, Márcia Leal, Sueli Nonato, Sandra Márcia Carvalho. Tenores - Antônio Lyrio, Eduardo Carvalho, Márcio Monteiro, Jair Dias, Marcelo Duque Estrada, Paulo José da Costa, Renato Selvini. Baixos - Carlos Eduardo Castro, Leandro Oliveira, Luiz Otávio Vogel, Marcos Maselli, Nilton dos Santos.",
+    playlistUrl:
+      "https://soundcloud.com/legado-solange/sets/harte-vocal-ao-vivo-na-sala?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    coverImage: "/images/galeria/_audio/alb_8.jpg",
+    tracks: [
+      {
+        id: "musica-1",
+        title: "Calme des nuits (C. Saint-Saëns)",
+        url: "https://soundcloud.com/legado-solange/7ab5bf2c-c729-4298-8ae7-5d3603e3b323?in=legado-solange/sets/harte-vocal-ao-vivo-na-sala&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      },
+    ],
+  },
 ];
 
 export const memorialVideos: VideoItem[] = [
