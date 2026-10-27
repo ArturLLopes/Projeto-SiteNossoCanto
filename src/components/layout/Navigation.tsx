@@ -1,15 +1,29 @@
 "use client";
 
-import { Home } from "lucide-react";
+import {
+  Home,
+  User,
+  Clock,
+  Image,
+  Music,
+  FileText,
+  GraduationCap,
+} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
-const links: Array<{ id: string; label: string; isHome?: boolean }> = [
-  { id: "inicio", label: "Início", isHome: true },
-  { id: "sobre", label: "Sobre" },
-  { id: "linha-do-tempo", label: "Linha do Tempo" },
-  { id: "galeria", label: "Galeria" },
-  { id: "repertorio", label: "Repertório" },
-  { id: "documentos", label: "Documentos" },
-  { id: "historias", label: "Trabalhos Acadêmicos" },
+const links: Array<{
+  id: string;
+  label: string;
+  icon: LucideIcon;
+  isHome?: boolean;
+}> = [
+  { id: "inicio", label: "Início", icon: Home, isHome: true },
+  { id: "sobre", label: "Sobre", icon: User },
+  { id: "linha-do-tempo", label: "Linha do Tempo", icon: Clock },
+  { id: "galeria", label: "Galeria", icon: Image },
+  { id: "repertorio", label: "Repertório", icon: Music },
+  { id: "documentos", label: "Documentos", icon: FileText },
+  { id: "historias", label: "Trabalhos Acadêmicos", icon: GraduationCap },
 ];
 
 interface NavigationProps {
@@ -22,20 +36,22 @@ export function Navigation({
   onTabChange,
 }: NavigationProps) {
   return (
-    <div className="sticky top-0 z-30 mx-auto max-w-7xl px-3 sm:px-6">
+    <div className="sticky top-0 z-30 mx-auto max-w-7xl px-4 sm:px-6">
       <nav
         aria-label="Navegação do memorial"
         className="overflow-hidden rounded-b-[1.5rem] border-x border-b border-[var(--border)] bg-[#A4B494] shadow-[var(--shadow-soft)] sm:rounded-b-[2rem]"
       >
-        <div className="px-2.5 py-2 sm:px-6 sm:py-2.5">
-          {/* Layout em 3 colunas no mobile (2 linhas perfeitas de 3 itens) e flex no desktop, eliminando barra de rolagem */}
-          <div className="grid grid-cols-3 gap-1.5 sm:flex sm:flex-wrap sm:items-center sm:gap-2">
+        <div className="px-2 py-2 sm:px-6 sm:py-2.5">
+          {/* Mobile: ícones centralizados em linha | Desktop: ícone + texto */}
+          <div className="flex items-center justify-around gap-1 sm:flex-wrap sm:justify-start sm:gap-2">
             {links.map((link) => {
               const isActive = activeTab === link.id;
+              const Icon = link.icon;
               return (
                 <button
                   key={link.id}
                   type="button"
+                  title={link.label}
                   onClick={() => {
                     onTabChange?.(link.id);
                     if (typeof window !== "undefined") {
@@ -47,15 +63,16 @@ export function Navigation({
                   }}
                   className={
                     isActive
-                      ? "flex cursor-pointer items-center justify-center gap-1 rounded-xl bg-white px-2 py-2 text-center text-xs font-semibold text-[#2f382a] shadow-sm transition sm:px-4 sm:py-2 sm:text-sm"
-                      : "flex cursor-pointer items-center justify-center gap-1 rounded-xl px-2 py-2 text-center text-xs font-medium text-white/95 transition hover:bg-white/20 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:px-4 sm:py-2 sm:text-sm"
+                      ? "flex cursor-pointer items-center justify-center gap-1.5 rounded-xl bg-white px-2.5 py-2 text-center text-[#2f382a] shadow-sm transition sm:px-4 sm:py-2"
+                      : "flex cursor-pointer items-center justify-center gap-1.5 rounded-xl px-2.5 py-2 text-center text-white/90 transition hover:bg-white/20 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:px-4 sm:py-2"
                   }
                   aria-current={isActive ? "page" : undefined}
                 >
-                  {link.isHome && (
-                    <Home className="h-3.5 w-3.5 shrink-0 sm:h-4 sm:w-4" />
-                  )}
-                  <span className="truncate">{link.label}</span>
+                  <Icon className="h-4.5 w-4.5 shrink-0 sm:h-4 sm:w-4" />
+                  {/* Texto visível apenas no desktop */}
+                  <span className="hidden text-sm font-medium sm:inline">
+                    {link.label}
+                  </span>
                 </button>
               );
             })}
